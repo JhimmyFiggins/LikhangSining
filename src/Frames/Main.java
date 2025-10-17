@@ -75,21 +75,44 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Menu = new javax.swing.JPanel();
         jLayeredPane = new javax.swing.JLayeredPane();
+        Home = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(247, 235, 65));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMinimumSize(new java.awt.Dimension(800, 720));
         setPreferredSize(new java.awt.Dimension(1118, 680));
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
+        Menu.setBackground(new java.awt.Color(247, 236, 221));
+        Menu.setForeground(new java.awt.Color(24, 23, 23));
+        Menu.setPreferredSize(new java.awt.Dimension(1118, 200));
+
+        javax.swing.GroupLayout MenuLayout = new javax.swing.GroupLayout(Menu);
+        Menu.setLayout(MenuLayout);
+        MenuLayout.setHorizontalGroup(
+            MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 544, Short.MAX_VALUE)
+        );
+        MenuLayout.setVerticalGroup(
+            MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 680, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(Menu);
+
         jLayeredPane.setBackground(new java.awt.Color(247, 235, 221));
-        jLayeredPane.setForeground(new java.awt.Color(247, 235, 221));
         jLayeredPane.setPreferredSize(new java.awt.Dimension(1055, 680));
         jLayeredPane.setLayout(new java.awt.CardLayout());
+
+        Home.setBackground(new java.awt.Color(247, 236, 221));
+        jLayeredPane.add(Home, "card2");
+
         getContentPane().add(jLayeredPane);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     public static void main(String args[]) {
@@ -115,6 +138,8 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Home;
+    private javax.swing.JPanel Menu;
     private javax.swing.JLayeredPane jLayeredPane;
     // End of variables declaration//GEN-END:variables
 }
