@@ -29,6 +29,7 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         Menu = new javax.swing.JPanel();
+        line = new javax.swing.JPanel();
         Home_BTN = new SystemOtherComps.PH_Panel();
         Home_BT = new javax.swing.JLabel();
         Artist_BTN = new SystemOtherComps.PH_Panel();
@@ -47,6 +48,19 @@ public class Main extends javax.swing.JFrame {
 
         Menu.setBackground(new java.awt.Color(247, 235, 221));
         Menu.setPreferredSize(new java.awt.Dimension(63, 680));
+
+        line.setPreferredSize(new java.awt.Dimension(1, 0));
+
+        javax.swing.GroupLayout lineLayout = new javax.swing.GroupLayout(line);
+        line.setLayout(lineLayout);
+        lineLayout.setHorizontalGroup(
+            lineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        lineLayout.setVerticalGroup(
+            lineLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 668, Short.MAX_VALUE)
+        );
 
         Home_BTN.setBackground(new java.awt.Color(247, 235, 221));
 
@@ -123,7 +137,11 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Home_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
+            .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
+                    .addGap(0, 61, Short.MAX_VALUE)
+                    .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         MenuLayout.setVerticalGroup(
             MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -134,7 +152,12 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
                 .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(628, Short.MAX_VALUE))
+                .addContainerGap(490, Short.MAX_VALUE))
+            .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
+                    .addContainerGap(7, Short.MAX_VALUE)
+                    .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(7, Short.MAX_VALUE)))
         );
 
         getContentPane().add(Menu);
@@ -148,11 +171,11 @@ public class Main extends javax.swing.JFrame {
         Home.setLayout(HomeLayout);
         HomeLayout.setHorizontalGroup(
             HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 2180, Short.MAX_VALUE)
+            .addGap(0, 939, Short.MAX_VALUE)
         );
         HomeLayout.setVerticalGroup(
             HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 820, Short.MAX_VALUE)
+            .addGap(0, 682, Short.MAX_VALUE)
         );
 
         jLayeredPane1.add(Home, "card2");
@@ -163,24 +186,26 @@ public class Main extends javax.swing.JFrame {
         ArtistPage.setLayout(ArtistPageLayout);
         ArtistPageLayout.setHorizontalGroup(
             ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 2180, Short.MAX_VALUE)
+            .addGap(0, 939, Short.MAX_VALUE)
         );
         ArtistPageLayout.setVerticalGroup(
             ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 820, Short.MAX_VALUE)
+            .addGap(0, 682, Short.MAX_VALUE)
         );
 
         jLayeredPane1.add(ArtistPage, "card3");
+
+        RequestPage.setPreferredSize(new java.awt.Dimension(1001, 680));
 
         javax.swing.GroupLayout RequestPageLayout = new javax.swing.GroupLayout(RequestPage);
         RequestPage.setLayout(RequestPageLayout);
         RequestPageLayout.setHorizontalGroup(
             RequestPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 2180, Short.MAX_VALUE)
+            .addGap(0, 939, Short.MAX_VALUE)
         );
         RequestPageLayout.setVerticalGroup(
             RequestPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 820, Short.MAX_VALUE)
+            .addGap(0, 682, Short.MAX_VALUE)
         );
 
         jLayeredPane1.add(RequestPage, "card4");
@@ -227,5 +252,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JPanel line;
     // End of variables declaration//GEN-END:variables
 }
