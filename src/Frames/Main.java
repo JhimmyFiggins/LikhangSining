@@ -29,10 +29,14 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         Menu = new javax.swing.JPanel();
-        Home = new SystemOtherComps.PH_Panel();
+        Home_BTN = new SystemOtherComps.PH_Panel();
         Home_BT = new javax.swing.JLabel();
+        Artist_BTN = new SystemOtherComps.PH_Panel();
+        jLabel1 = new javax.swing.JLabel();
+        Request_BTN = new SystemOtherComps.PH_Panel();
+        jLabel2 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jPanel2 = new javax.swing.JPanel();
+        Home = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 720));
@@ -42,30 +46,69 @@ public class Main extends javax.swing.JFrame {
         Menu.setBackground(new java.awt.Color(247, 235, 221));
         Menu.setPreferredSize(new java.awt.Dimension(63, 680));
 
-        Home.setBackground(new java.awt.Color(247, 235, 221));
+        Home_BTN.setBackground(new java.awt.Color(247, 235, 221));
 
         Home_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Home.png"))); // NOI18N
         Home_BT.setToolTipText("Home");
 
-        javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
-        Home.setLayout(HomeLayout);
-        HomeLayout.setHorizontalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Home_BTNLayout = new javax.swing.GroupLayout(Home_BTN);
+        Home_BTN.setLayout(Home_BTNLayout);
+        Home_BTNLayout.setHorizontalGroup(
+            Home_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Home_BTNLayout.createSequentialGroup()
+                .addComponent(Home_BT)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Home_BTNLayout.setVerticalGroup(
+            Home_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Home_BT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        Artist_BTN.setBackground(new java.awt.Color(247, 235, 221));
+
+        jLabel1.setBackground(new java.awt.Color(247, 235, 221));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mdi_paint-outline.png"))); // NOI18N
+        jLabel1.setToolTipText("Art_BT");
+
+        javax.swing.GroupLayout Artist_BTNLayout = new javax.swing.GroupLayout(Artist_BTN);
+        Artist_BTN.setLayout(Artist_BTNLayout);
+        Artist_BTNLayout.setHorizontalGroup(
+            Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(HomeLayout.createSequentialGroup()
+            .addGroup(Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Artist_BTNLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Home_BT)
+                    .addComponent(jLabel1)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        HomeLayout.setVerticalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Artist_BTNLayout.setVerticalGroup(
+            Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
-            .addGroup(HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(HomeLayout.createSequentialGroup()
+            .addGroup(Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Artist_BTNLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Home_BT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1)
                     .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        Request_BTN.setBackground(new java.awt.Color(247, 235, 221));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/clarity_form-line (1).png"))); // NOI18N
+        jLabel2.setToolTipText("Request_BTN");
+
+        javax.swing.GroupLayout Request_BTNLayout = new javax.swing.GroupLayout(Request_BTN);
+        Request_BTN.setLayout(Request_BTNLayout);
+        Request_BTNLayout.setHorizontalGroup(
+            Request_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Request_BTNLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2))
+        );
+        Request_BTNLayout.setVerticalGroup(
+            Request_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Request_BTNLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2))
         );
 
         javax.swing.GroupLayout MenuLayout = new javax.swing.GroupLayout(Menu);
@@ -74,15 +117,22 @@ public class Main extends javax.swing.JFrame {
             MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addComponent(Home, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Home_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         MenuLayout.setVerticalGroup(
             MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(Home, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(625, Short.MAX_VALUE))
+                .addComponent(Home_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+                .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(488, Short.MAX_VALUE))
         );
 
         getContentPane().add(Menu);
@@ -90,20 +140,20 @@ public class Main extends javax.swing.JFrame {
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(1055, 680));
         jLayeredPane1.setLayout(new java.awt.CardLayout());
 
-        jPanel2.setPreferredSize(new java.awt.Dimension(1001, 680));
+        Home.setPreferredSize(new java.awt.Dimension(1001, 680));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
+        Home.setLayout(HomeLayout);
+        HomeLayout.setHorizontalGroup(
+            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1001, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        HomeLayout.setVerticalGroup(
+            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 680, Short.MAX_VALUE)
         );
 
-        jLayeredPane1.add(jPanel2, "card2");
+        jLayeredPane1.add(Home, "card2");
 
         getContentPane().add(jLayeredPane1);
 
@@ -136,10 +186,14 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private SystemOtherComps.PH_Panel Home;
+    private SystemOtherComps.PH_Panel Artist_BTN;
+    private javax.swing.JPanel Home;
     public javax.swing.JLabel Home_BT;
+    private SystemOtherComps.PH_Panel Home_BTN;
     private javax.swing.JPanel Menu;
+    private SystemOtherComps.PH_Panel Request_BTN;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLayeredPane jLayeredPane1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
