@@ -214,15 +214,30 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pH_TextField1" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="41" max="32767" attributes="0"/>
+                          <Component id="pH_TextField1" alignment="0" pref="41" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
+                  <SubComponents>
+                    <Component class="SystemOtherComps.PH_TextField" name="pH_TextField1">
+                      <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
+                        <Property name="text" type="java.lang.String" value="Enter Name..."/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pH_TextField1ActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
                 </Container>
                 <Component class="SystemOtherComps.PH_Label" name="pH_Label6">
                   <Properties>
@@ -265,15 +280,30 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pH_TextField2" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="41" max="32767" attributes="0"/>
+                          <Component id="pH_TextField2" alignment="0" pref="41" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
+                  <SubComponents>
+                    <Component class="SystemOtherComps.PH_TextField" name="pH_TextField2">
+                      <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
+                        <Property name="text" type="java.lang.String" value="Enter Number..."/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pH_TextField2ActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
                 </Container>
                 <Container class="SystemOtherComps.PH_Panel" name="pH_Panel8">
                   <Properties>
@@ -295,15 +325,30 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pH_TextField3" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="41" max="32767" attributes="0"/>
+                          <Component id="pH_TextField3" alignment="0" pref="41" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
+                  <SubComponents>
+                    <Component class="SystemOtherComps.PH_TextField" name="pH_TextField3">
+                      <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
+                        <Property name="text" type="java.lang.String" value="Enter Email..."/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pH_TextField3ActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
                 </Container>
                 <Component class="SystemOtherComps.PH_Label" name="pH_Label8">
                   <Properties>
@@ -351,19 +396,21 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="pH_Label3" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="pH_Panel5" alignment="0" pref="410" max="32767" attributes="0"/>
-                                  <Component id="pH_Button1" alignment="0" pref="410" max="32767" attributes="0"/>
-                                  <Component id="pH_Label2" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="pH_Panel9" pref="410" max="32767" attributes="0"/>
-                                  <Component id="pH_Panel4" alignment="0" pref="410" max="32767" attributes="0"/>
-                                  <Component id="pH_Label9" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="pH_Label5" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="pH_Panel5" pref="410" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="pH_Label3" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="pH_Button1" alignment="0" pref="410" max="32767" attributes="0"/>
+                                      <Component id="pH_Label2" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="pH_Panel9" pref="410" max="32767" attributes="0"/>
+                                      <Component id="pH_Panel4" alignment="0" pref="410" max="32767" attributes="0"/>
+                                      <Component id="pH_Label9" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="pH_Label5" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="jCalendar1" min="-2" pref="228" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jCalendar1" min="-2" pref="228" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="43" max="32767" attributes="0"/>
                       </Group>
@@ -437,48 +484,23 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="410" max="32767" attributes="0"/>
+                          <Component id="pH_TextField5" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="56" max="32767" attributes="0"/>
+                          <Component id="pH_TextField5" alignment="0" pref="56" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
-                </Container>
-                <Container class="SystemOtherComps.PH_Panel" name="pH_Panel5">
-                  <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ea" green="f0" red="f5" type="rgb"/>
-                    </Property>
-                    <Property name="AAA_ImageBoundArcSize" type="int" value="30"/>
-                    <Property name="AAA_roundBottomLeft" type="int" value="30"/>
-                    <Property name="AAA_roundBottomRight" type="int" value="30"/>
-                    <Property name="AAA_roundTopLeft" type="int" value="30"/>
-                    <Property name="AAA_roundTopRight" type="int" value="30"/>
-                    <Property name="AA_ArcSize" type="int" value="30"/>
-                    <Property name="AA_BorderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="47" green="64" red="89" type="rgb"/>
-                    </Property>
-                    <Property name="AA_DrawBorder" type="boolean" value="true"/>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
-                    </Property>
-                  </Properties>
-
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="410" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="102" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
+                  <SubComponents>
+                    <Component class="SystemOtherComps.PH_TextField" name="pH_TextField5">
+                      <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
+                        <Property name="text" type="java.lang.String" value="Set Amount..."/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
                 </Container>
                 <Component class="SystemOtherComps.PH_Label" name="pH_Label3">
                   <Properties>
@@ -546,15 +568,43 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="410" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jComboBox1" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="56" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jComboBox1" pref="44" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JComboBox" name="jComboBox1">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ea" green="f0" red="f5" type="rgb"/>
+                        </Property>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="Item 1"/>
+                            <StringItem index="1" value="Item 2"/>
+                            <StringItem index="2" value="Item 3"/>
+                            <StringItem index="3" value="Item 4"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
                 </Container>
                 <Component class="com.toedter.calendar.JCalendar" name="jCalendar1">
                   <Properties>
@@ -576,6 +626,48 @@
                     </Property>
                   </Properties>
                 </Component>
+                <Container class="SystemOtherComps.PH_Panel" name="pH_Panel5">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ea" green="f0" red="f5" type="rgb"/>
+                    </Property>
+                    <Property name="AAA_ImageBoundArcSize" type="int" value="30"/>
+                    <Property name="AAA_roundBottomLeft" type="int" value="30"/>
+                    <Property name="AAA_roundBottomRight" type="int" value="30"/>
+                    <Property name="AAA_roundTopLeft" type="int" value="30"/>
+                    <Property name="AAA_roundTopRight" type="int" value="30"/>
+                    <Property name="AA_ArcSize" type="int" value="30"/>
+                    <Property name="AA_BorderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="47" green="64" red="89" type="rgb"/>
+                    </Property>
+                    <Property name="AA_DrawBorder" type="boolean" value="true"/>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pH_TextField4" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="pH_TextField4" alignment="1" pref="102" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="SystemOtherComps.PH_TextField" name="pH_TextField4">
+                      <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
+                        <Property name="text" type="java.lang.String" value="Enter Description..."/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
               </SubComponents>
             </Container>
             <Component class="SystemOtherComps.PH_Label" name="pH_Label1">

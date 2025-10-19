@@ -33,22 +33,28 @@ public class Request extends javax.swing.JFrame {
         pH_Panel1 = new SystemOtherComps.PH_Panel();
         pH_Label4 = new SystemOtherComps.PH_Label();
         pH_Panel6 = new SystemOtherComps.PH_Panel();
+        pH_TextField1 = new SystemOtherComps.PH_TextField();
         pH_Label6 = new SystemOtherComps.PH_Label();
         pH_Label7 = new SystemOtherComps.PH_Label();
         pH_Panel7 = new SystemOtherComps.PH_Panel();
+        pH_TextField2 = new SystemOtherComps.PH_TextField();
         pH_Panel8 = new SystemOtherComps.PH_Panel();
+        pH_TextField3 = new SystemOtherComps.PH_TextField();
         pH_Label8 = new SystemOtherComps.PH_Label();
         pH_Panel2 = new SystemOtherComps.PH_Panel();
         pH_Panel3 = new SystemOtherComps.PH_Panel();
         pH_Label2 = new SystemOtherComps.PH_Label();
         pH_Label5 = new SystemOtherComps.PH_Label();
         pH_Panel4 = new SystemOtherComps.PH_Panel();
-        pH_Panel5 = new SystemOtherComps.PH_Panel();
+        pH_TextField5 = new SystemOtherComps.PH_TextField();
         pH_Label3 = new SystemOtherComps.PH_Label();
         pH_Label9 = new SystemOtherComps.PH_Label();
         pH_Button1 = new SystemOtherComps.PH_Button();
         pH_Panel9 = new SystemOtherComps.PH_Panel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jCalendar1 = new com.toedter.calendar.JCalendar();
+        pH_Panel5 = new SystemOtherComps.PH_Panel();
+        pH_TextField4 = new SystemOtherComps.PH_TextField();
         pH_Label1 = new SystemOtherComps.PH_Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -84,15 +90,26 @@ public class Request extends javax.swing.JFrame {
         pH_Panel6.setAA_BorderColor(new java.awt.Color(72, 53, 40));
         pH_Panel6.setAA_DrawBorder(true);
 
+        pH_TextField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_TextField1.setText("Enter Name...");
+        pH_TextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pH_TextField1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pH_Panel6Layout = new javax.swing.GroupLayout(pH_Panel6);
         pH_Panel6.setLayout(pH_Panel6Layout);
         pH_Panel6Layout.setHorizontalGroup(
             pH_Panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(pH_Panel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pH_TextField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         pH_Panel6Layout.setVerticalGroup(
             pH_Panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 41, Short.MAX_VALUE)
+            .addComponent(pH_TextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
         );
 
         pH_Label6.setForeground(new java.awt.Color(72, 53, 40));
@@ -114,15 +131,26 @@ public class Request extends javax.swing.JFrame {
         pH_Panel7.setAA_BorderColor(new java.awt.Color(72, 53, 40));
         pH_Panel7.setAA_DrawBorder(true);
 
+        pH_TextField2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_TextField2.setText("Enter Number...");
+        pH_TextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pH_TextField2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pH_Panel7Layout = new javax.swing.GroupLayout(pH_Panel7);
         pH_Panel7.setLayout(pH_Panel7Layout);
         pH_Panel7Layout.setHorizontalGroup(
             pH_Panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(pH_Panel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pH_TextField2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         pH_Panel7Layout.setVerticalGroup(
             pH_Panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 41, Short.MAX_VALUE)
+            .addComponent(pH_TextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
         );
 
         pH_Panel8.setBackground(new java.awt.Color(245, 240, 234));
@@ -135,15 +163,26 @@ public class Request extends javax.swing.JFrame {
         pH_Panel8.setAA_BorderColor(new java.awt.Color(72, 53, 40));
         pH_Panel8.setAA_DrawBorder(true);
 
+        pH_TextField3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_TextField3.setText("Enter Email...");
+        pH_TextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pH_TextField3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pH_Panel8Layout = new javax.swing.GroupLayout(pH_Panel8);
         pH_Panel8.setLayout(pH_Panel8Layout);
         pH_Panel8Layout.setHorizontalGroup(
             pH_Panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(pH_Panel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pH_TextField3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         pH_Panel8Layout.setVerticalGroup(
             pH_Panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 41, Short.MAX_VALUE)
+            .addComponent(pH_TextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
         );
 
         pH_Label8.setForeground(new java.awt.Color(72, 53, 40));
@@ -222,37 +261,18 @@ public class Request extends javax.swing.JFrame {
         pH_Panel4.setAA_DrawBorder(true);
         pH_Panel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
+        pH_TextField5.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_TextField5.setText("Set Amount...");
+
         javax.swing.GroupLayout pH_Panel4Layout = new javax.swing.GroupLayout(pH_Panel4);
         pH_Panel4.setLayout(pH_Panel4Layout);
         pH_Panel4Layout.setHorizontalGroup(
             pH_Panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
+            .addComponent(pH_TextField5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pH_Panel4Layout.setVerticalGroup(
             pH_Panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
-        );
-
-        pH_Panel5.setBackground(new java.awt.Color(245, 240, 234));
-        pH_Panel5.setAAA_ImageBoundArcSize(30);
-        pH_Panel5.setAAA_roundBottomLeft(30);
-        pH_Panel5.setAAA_roundBottomRight(30);
-        pH_Panel5.setAAA_roundTopLeft(30);
-        pH_Panel5.setAAA_roundTopRight(30);
-        pH_Panel5.setAA_ArcSize(30);
-        pH_Panel5.setAA_BorderColor(new java.awt.Color(137, 100, 71));
-        pH_Panel5.setAA_DrawBorder(true);
-        pH_Panel5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
-
-        javax.swing.GroupLayout pH_Panel5Layout = new javax.swing.GroupLayout(pH_Panel5);
-        pH_Panel5.setLayout(pH_Panel5Layout);
-        pH_Panel5Layout.setHorizontalGroup(
-            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
-        );
-        pH_Panel5Layout.setVerticalGroup(
-            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addComponent(pH_TextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
         );
 
         pH_Label3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -292,15 +312,24 @@ public class Request extends javax.swing.JFrame {
         pH_Panel9.setAA_DrawBorder(true);
         pH_Panel9.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
+        jComboBox1.setBackground(new java.awt.Color(245, 240, 234));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout pH_Panel9Layout = new javax.swing.GroupLayout(pH_Panel9);
         pH_Panel9.setLayout(pH_Panel9Layout);
         pH_Panel9Layout.setHorizontalGroup(
             pH_Panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
+            .addGroup(pH_Panel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         pH_Panel9Layout.setVerticalGroup(
             pH_Panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
+            .addGroup(pH_Panel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jCalendar1.setBackground(new java.awt.Color(137, 100, 71));
@@ -310,22 +339,50 @@ public class Request extends javax.swing.JFrame {
         jCalendar1.setSundayForeground(new java.awt.Color(137, 100, 71));
         jCalendar1.setWeekdayForeground(new java.awt.Color(137, 100, 71));
 
+        pH_Panel5.setBackground(new java.awt.Color(245, 240, 234));
+        pH_Panel5.setAAA_ImageBoundArcSize(30);
+        pH_Panel5.setAAA_roundBottomLeft(30);
+        pH_Panel5.setAAA_roundBottomRight(30);
+        pH_Panel5.setAAA_roundTopLeft(30);
+        pH_Panel5.setAAA_roundTopRight(30);
+        pH_Panel5.setAA_ArcSize(30);
+        pH_Panel5.setAA_BorderColor(new java.awt.Color(137, 100, 71));
+        pH_Panel5.setAA_DrawBorder(true);
+
+        pH_TextField4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_TextField4.setText("Enter Description...");
+
+        javax.swing.GroupLayout pH_Panel5Layout = new javax.swing.GroupLayout(pH_Panel5);
+        pH_Panel5.setLayout(pH_Panel5Layout);
+        pH_Panel5Layout.setHorizontalGroup(
+            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pH_TextField4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pH_Panel5Layout.setVerticalGroup(
+            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(pH_TextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout pH_Panel3Layout = new javax.swing.GroupLayout(pH_Panel3);
         pH_Panel3.setLayout(pH_Panel3Layout);
         pH_Panel3Layout.setHorizontalGroup(
             pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pH_Panel3Layout.createSequentialGroup()
-                .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(pH_Label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(pH_Panel5, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
-                        .addComponent(pH_Button1, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
-                        .addComponent(pH_Label2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(pH_Panel9, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
-                        .addComponent(pH_Panel4, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
-                        .addComponent(pH_Label9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(pH_Label5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(pH_Panel5, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                    .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(pH_Label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pH_Button1, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                            .addComponent(pH_Label2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pH_Panel9, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                            .addComponent(pH_Panel4, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                            .addComponent(pH_Label9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pH_Label5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
         pH_Panel3Layout.setVerticalGroup(
@@ -431,6 +488,18 @@ public class Request extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_pH_Button1ActionPerformed
 
+    private void pH_TextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_TextField1ActionPerformed
+
+    private void pH_TextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_TextField3ActionPerformed
+
+    private void pH_TextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_TextField2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -460,6 +529,7 @@ public class Request extends javax.swing.JFrame {
     private SystemOtherComps.PH_Panel ContentHolder;
     private javax.swing.JPanel RequestPage;
     private com.toedter.calendar.JCalendar jCalendar1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private SystemOtherComps.PH_Button pH_Button1;
     private SystemOtherComps.PH_Label pH_Label1;
     private SystemOtherComps.PH_Label pH_Label2;
@@ -479,5 +549,10 @@ public class Request extends javax.swing.JFrame {
     private SystemOtherComps.PH_Panel pH_Panel7;
     private SystemOtherComps.PH_Panel pH_Panel8;
     private SystemOtherComps.PH_Panel pH_Panel9;
+    private SystemOtherComps.PH_TextField pH_TextField1;
+    private SystemOtherComps.PH_TextField pH_TextField2;
+    private SystemOtherComps.PH_TextField pH_TextField3;
+    private SystemOtherComps.PH_TextField pH_TextField4;
+    private SystemOtherComps.PH_TextField pH_TextField5;
     // End of variables declaration//GEN-END:variables
 }
