@@ -29,6 +29,7 @@ public class DigitalArtPanel extends javax.swing.JPanel {
         Image = new SystemOtherComps.PH_Panel();
         Number = new SystemOtherComps.PH_Label();
         Title = new SystemOtherComps.PH_Label();
+        BG = new SystemOtherComps.PH_Label();
 
         Image.setBackground(new java.awt.Color(204, 255, 204));
         Image.setAAA_ImageBoundArcSize(10000);
@@ -37,6 +38,7 @@ public class DigitalArtPanel extends javax.swing.JPanel {
         Image.setAAA_roundTopLeft(50);
         Image.setAAA_roundTopRight(50);
         Image.setAA_ArcSize(1000000);
+        Image.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Number.setBackground(new java.awt.Color(0, 0, 0));
         Number.setForeground(new java.awt.Color(255, 255, 255));
@@ -50,34 +52,18 @@ public class DigitalArtPanel extends javax.swing.JPanel {
         Number.setAA_LabelColor(new java.awt.Color(255, 255, 255));
         Number.setAA_OpaqueBackground(false);
         Number.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Image.add(Number, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 15, 38, -1));
 
+        Title.setForeground(new java.awt.Color(255, 245, 234));
         Title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Title.setText("Digital Art");
-        Title.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Title.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Image.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 87, 100, -1));
 
-        javax.swing.GroupLayout ImageLayout = new javax.swing.GroupLayout(Image);
-        Image.setLayout(ImageLayout);
-        ImageLayout.setHorizontalGroup(
-            ImageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ImageLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(ImageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ImageLayout.createSequentialGroup()
-                        .addComponent(Number, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(ImageLayout.createSequentialGroup()
-                        .addComponent(Title, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                        .addGap(132, 132, 132))))
-        );
-        ImageLayout.setVerticalGroup(
-            ImageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ImageLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(Number, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
-        );
+        BG.setForeground(new java.awt.Color(255, 245, 234));
+        BG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/try image.png"))); // NOI18N
+        BG.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Image.add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 150));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -93,6 +79,7 @@ public class DigitalArtPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private SystemOtherComps.PH_Label BG;
     private SystemOtherComps.PH_Panel Image;
     private SystemOtherComps.PH_Label Number;
     private SystemOtherComps.PH_Label Title;
