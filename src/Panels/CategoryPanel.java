@@ -8,12 +8,12 @@ package Panels;
  *
  * @author iya
  */
-public class DigitalArtPanel extends javax.swing.JPanel {
+public class CategoryPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form jPanel
      */
-    public DigitalArtPanel() {
+    public CategoryPanel() {
         initComponents();
     }
 

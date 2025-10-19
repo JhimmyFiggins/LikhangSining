@@ -38,7 +38,14 @@ public class Main extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         Home = new javax.swing.JPanel();
-        ArtistPage = new javax.swing.JPanel();
+        User = new SystemOtherComps.PH_Label();
+        Search_icon = new SystemOtherComps.PH_Label();
+        SearchTF = new javax.swing.JTextField();
+        timelessPanel1 = new Panels.TimelessPanel();
+        paintingPanel1 = new Panels.PaintingPanel();
+        sculpture1 = new Panels.Sculpture();
+        digitalArtPanel1 = new Panels.DigitalArtPanel();
+        morePanel1 = new Panels.morePanel();
         RequestPage = new javax.swing.JPanel();
         ContentHolder = new SystemOtherComps.PH_Panel();
         PaymentPage = new javax.swing.JPanel();
@@ -60,13 +67,14 @@ public class Main extends javax.swing.JFrame {
         button2 = new java.awt.Button();
         panelTitle = new javax.swing.JPanel();
         PAYMENT = new javax.swing.JLabel();
+        ArtistPage = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 720));
         setResizable(false);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        Menu.setBackground(new java.awt.Color(247, 235, 221));
+        Menu.setBackground(new java.awt.Color(239, 231, 218));
         Menu.setPreferredSize(new java.awt.Dimension(63, 680));
 
         line.setPreferredSize(new java.awt.Dimension(1, 0));
@@ -157,10 +165,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Home_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
             .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
-                    .addGap(0, 52, Short.MAX_VALUE)
+                    .addGap(0, 61, Short.MAX_VALUE)
                     .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         MenuLayout.setVerticalGroup(
@@ -172,7 +180,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
                 .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(490, Short.MAX_VALUE))
+                .addContainerGap(500, Short.MAX_VALUE))
             .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -185,35 +193,32 @@ public class Main extends javax.swing.JFrame {
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(1055, 680));
         jLayeredPane1.setLayout(new java.awt.CardLayout());
 
+        Home.setBackground(new java.awt.Color(255, 245, 234));
         Home.setPreferredSize(new java.awt.Dimension(1001, 680));
+        Home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
-        Home.setLayout(HomeLayout);
-        HomeLayout.setHorizontalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 948, Short.MAX_VALUE)
-        );
-        HomeLayout.setVerticalGroup(
-            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 682, Short.MAX_VALUE)
-        );
+        User.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/login_icon.png"))); // NOI18N
+        Home.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, 33, 40));
 
-        jLayeredPane1.add(Home, "card2");
+        Search_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Search Icon.png"))); // NOI18N
+        Home.add(Search_icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 50, 20, 30));
 
-        ArtistPage.setPreferredSize(new java.awt.Dimension(1001, 680));
+        SearchTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SearchTF.setForeground(new java.awt.Color(153, 153, 153));
+        SearchTF.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        SearchTF.setText("   SEARCH");
+        SearchTF.setBorder(null);
+        Home.add(SearchTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, 185, 29));
+        Home.add(timelessPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
+        Home.add(paintingPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
+        Home.add(sculpture1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, -1, -1));
+        Home.add(digitalArtPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, -1, -1));
 
-        javax.swing.GroupLayout ArtistPageLayout = new javax.swing.GroupLayout(ArtistPage);
-        ArtistPage.setLayout(ArtistPageLayout);
-        ArtistPageLayout.setHorizontalGroup(
-            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 948, Short.MAX_VALUE)
-        );
-        ArtistPageLayout.setVerticalGroup(
-            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 682, Short.MAX_VALUE)
-        );
+        morePanel1.setMaximumSize(new java.awt.Dimension(250, 30));
+        morePanel1.setMinimumSize(new java.awt.Dimension(250, 30));
+        Home.add(morePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, 100, 30));
 
-        jLayeredPane1.add(ArtistPage, "card3");
+        jLayeredPane1.add(Home, "card5");
 
         RequestPage.setBackground(new java.awt.Color(239, 231, 218));
         RequestPage.setPreferredSize(new java.awt.Dimension(1001, 680));
@@ -232,7 +237,7 @@ public class Main extends javax.swing.JFrame {
         ContentHolder.setLayout(ContentHolderLayout);
         ContentHolderLayout.setHorizontalGroup(
             ContentHolderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 903, Short.MAX_VALUE)
+            .addGap(0, 996, Short.MAX_VALUE)
         );
         ContentHolderLayout.setVerticalGroup(
             ContentHolderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -245,7 +250,7 @@ public class Main extends javax.swing.JFrame {
             RequestPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RequestPageLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(ContentHolder, javax.swing.GroupLayout.DEFAULT_SIZE, 903, Short.MAX_VALUE)
+                .addComponent(ContentHolder, javax.swing.GroupLayout.DEFAULT_SIZE, 996, Short.MAX_VALUE)
                 .addGap(22, 22, 22))
         );
         RequestPageLayout.setVerticalGroup(
@@ -253,7 +258,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(RequestPageLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(ContentHolder, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         jLayeredPane1.add(RequestPage, "card4");
@@ -368,7 +373,7 @@ public class Main extends javax.swing.JFrame {
         panelArtQty.setLayout(panelArtQtyLayout);
         panelArtQtyLayout.setHorizontalGroup(
             panelArtQtyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 939, Short.MAX_VALUE)
         );
         panelArtQtyLayout.setVerticalGroup(
             panelArtQtyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -458,6 +463,22 @@ public class Main extends javax.swing.JFrame {
 
         jLayeredPane1.add(PaymentPage, "card5");
 
+        ArtistPage.setBackground(new java.awt.Color(255, 245, 234));
+        ArtistPage.setPreferredSize(new java.awt.Dimension(1001, 680));
+
+        javax.swing.GroupLayout ArtistPageLayout = new javax.swing.GroupLayout(ArtistPage);
+        ArtistPage.setLayout(ArtistPageLayout);
+        ArtistPageLayout.setHorizontalGroup(
+            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1041, Short.MAX_VALUE)
+        );
+        ArtistPageLayout.setVerticalGroup(
+            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 692, Short.MAX_VALUE)
+        );
+
+        jLayeredPane1.add(ArtistPage, "card3");
+
         getContentPane().add(jLayeredPane1);
 
         pack();
@@ -504,8 +525,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel PaymentPage;
     private javax.swing.JPanel RequestPage;
     private SystemOtherComps.PH_Panel Request_BTN;
+    private javax.swing.JTextField SearchTF;
+    private SystemOtherComps.PH_Label Search_icon;
+    private SystemOtherComps.PH_Label User;
     private java.awt.Button button1;
     private java.awt.Button button2;
+    private Panels.DigitalArtPanel digitalArtPanel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -514,6 +539,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel labelName;
     private javax.swing.JPanel line;
+    private Panels.morePanel morePanel1;
+    private Panels.PaintingPanel paintingPanel1;
     private javax.swing.JPanel panelArtQty;
     private javax.swing.JPanel panelCancel;
     private javax.swing.JPanel panelEmailInput;
@@ -522,8 +549,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel panelPaymentMethod;
     private javax.swing.JPanel panelTitle;
     private javax.swing.JPanel panelUserInfo;
+    private Panels.Sculpture sculpture1;
     private java.awt.TextField textField1;
     private java.awt.TextField textField2;
     private java.awt.TextField textField3;
+    private Panels.TimelessPanel timelessPanel1;
     // End of variables declaration//GEN-END:variables
 }
