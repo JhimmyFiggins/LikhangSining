@@ -26,19 +26,63 @@ public class PortfolioPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        pH_Panel5 = new SystemOtherComps.PH_Panel();
+        pH_TextField4 = new SystemOtherComps.PH_TextField();
+
+        pH_Panel5.setBackground(new java.awt.Color(245, 240, 234));
+        pH_Panel5.setAAA_ImageBoundArcSize(30);
+        pH_Panel5.setAAA_roundBottomLeft(30);
+        pH_Panel5.setAAA_roundBottomRight(30);
+        pH_Panel5.setAAA_roundTopLeft(30);
+        pH_Panel5.setAAA_roundTopRight(30);
+        pH_Panel5.setAA_ArcSize(30);
+        pH_Panel5.setAA_BorderColor(new java.awt.Color(137, 100, 71));
+        pH_Panel5.setAA_DrawBorder(true);
+
+        pH_TextField4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_TextField4.setText("Enter Description...");
+
+        javax.swing.GroupLayout pH_Panel5Layout = new javax.swing.GroupLayout(pH_Panel5);
+        pH_Panel5.setLayout(pH_Panel5Layout);
+        pH_Panel5Layout.setHorizontalGroup(
+            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel5Layout.createSequentialGroup()
+                .addContainerGap(176, Short.MAX_VALUE)
+                .addComponent(pH_TextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        pH_Panel5Layout.setVerticalGroup(
+            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel5Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(pH_TextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1174, Short.MAX_VALUE)
+            .addGap(0, 517, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(24, 24, 24)
+                    .addComponent(pH_Panel5, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 717, Short.MAX_VALUE)
+            .addGap(0, 283, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(52, 52, 52)
+                    .addComponent(pH_Panel5, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private SystemOtherComps.PH_Panel pH_Panel5;
+    private SystemOtherComps.PH_TextField pH_TextField4;
     // End of variables declaration//GEN-END:variables
 }
