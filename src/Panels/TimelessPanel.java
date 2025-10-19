@@ -27,60 +27,52 @@ public class TimelessPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         pH_Panel1 = new SystemOtherComps.PH_Panel();
-        pH_Label1 = new SystemOtherComps.PH_Label();
-        pH_Label2 = new SystemOtherComps.PH_Label();
-        pH_Label3 = new SystemOtherComps.PH_Label();
+        Title = new SystemOtherComps.PH_Label();
+        D1 = new SystemOtherComps.PH_Label();
+        D2 = new SystemOtherComps.PH_Label();
+        White_BG = new SystemOtherComps.PH_Label();
+        Background_image = new SystemOtherComps.PH_Label();
 
         pH_Panel1.setBackground(new java.awt.Color(153, 255, 153));
         pH_Panel1.setAAA_roundBottomLeft(50);
         pH_Panel1.setAAA_roundBottomRight(50);
         pH_Panel1.setAAA_roundTopLeft(50);
         pH_Panel1.setAAA_roundTopRight(50);
+        pH_Panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pH_Label1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        pH_Label1.setText("TIMELESS ART");
-        pH_Label1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        Title.setForeground(new java.awt.Color(72, 53, 40));
+        Title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Title.setText("TIMELESS ART");
+        Title.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        pH_Panel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 473, 81));
 
-        pH_Label2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        pH_Label2.setText("Whether you love modern minimalism,  timeless classics, ");
-        pH_Label2.setToolTipText("");
-        pH_Label2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        D1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        D1.setText("Whether you love modern minimalism,  timeless classics, ");
+        D1.setToolTipText("");
+        D1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        pH_Panel1.add(D1, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 179, 473, 18));
 
-        pH_Label3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        pH_Label3.setText("or bold statement pieces.");
-        pH_Label3.setToolTipText("");
-        pH_Label3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        D2.setForeground(new java.awt.Color(72, 53, 40));
+        D2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        D2.setText("or bold statement pieces.");
+        D2.setToolTipText("");
+        D2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        pH_Panel1.add(D2, new org.netbeans.lib.awtextra.AbsoluteConstraints(424, 203, 473, 18));
 
-        javax.swing.GroupLayout pH_Panel1Layout = new javax.swing.GroupLayout(pH_Panel1);
-        pH_Panel1.setLayout(pH_Panel1Layout);
-        pH_Panel1Layout.setHorizontalGroup(
-            pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel1Layout.createSequentialGroup()
-                .addContainerGap(424, Short.MAX_VALUE)
-                .addGroup(pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(pH_Label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(pH_Label2, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(pH_Label1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
-        pH_Panel1Layout.setVerticalGroup(
-            pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pH_Panel1Layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(pH_Label1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pH_Label2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pH_Label3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(129, Short.MAX_VALUE))
-        );
+        White_BG.setBackground(new java.awt.Color(255, 238, 219));
+        White_BG.setForeground(new java.awt.Color(0, 0, 0));
+        White_BG.setToolTipText("");
+        White_BG.setOpaque(true);
+        pH_Panel1.add(White_BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 500, 350));
+
+        Background_image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/try image.png"))); // NOI18N
+        pH_Panel1.add(Background_image, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 903, 350));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pH_Panel1, javax.swing.GroupLayout.DEFAULT_SIZE, 903, Short.MAX_VALUE)
+            .addComponent(pH_Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, 903, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,9 +82,11 @@ public class TimelessPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private SystemOtherComps.PH_Label pH_Label1;
-    private SystemOtherComps.PH_Label pH_Label2;
-    private SystemOtherComps.PH_Label pH_Label3;
+    private SystemOtherComps.PH_Label Background_image;
+    private SystemOtherComps.PH_Label D1;
+    private SystemOtherComps.PH_Label D2;
+    private SystemOtherComps.PH_Label Title;
+    private SystemOtherComps.PH_Label White_BG;
     private SystemOtherComps.PH_Panel pH_Panel1;
     // End of variables declaration//GEN-END:variables
 }
