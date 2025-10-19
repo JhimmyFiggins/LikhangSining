@@ -47,6 +47,8 @@ public class Request extends javax.swing.JFrame {
         pH_Label3 = new SystemOtherComps.PH_Label();
         pH_Label9 = new SystemOtherComps.PH_Label();
         pH_Button1 = new SystemOtherComps.PH_Button();
+        pH_Panel9 = new SystemOtherComps.PH_Panel();
+        jCalendar1 = new com.toedter.calendar.JCalendar();
         pH_Label1 = new SystemOtherComps.PH_Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,7 +72,7 @@ public class Request extends javax.swing.JFrame {
         pH_Label4.setForeground(new java.awt.Color(72, 53, 40));
         pH_Label4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label4.setText("REQUEST FORM");
-        pH_Label4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        pH_Label4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
 
         pH_Panel6.setBackground(new java.awt.Color(245, 240, 234));
         pH_Panel6.setAAA_ImageBoundArcSize(30);
@@ -96,9 +98,11 @@ public class Request extends javax.swing.JFrame {
         pH_Label6.setForeground(new java.awt.Color(72, 53, 40));
         pH_Label6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label6.setText("PHONE NUMBER :");
+        pH_Label6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         pH_Label7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label7.setText("EMAIL ADDRESS :");
+        pH_Label7.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         pH_Panel7.setBackground(new java.awt.Color(245, 240, 234));
         pH_Panel7.setAAA_ImageBoundArcSize(30);
@@ -145,21 +149,22 @@ public class Request extends javax.swing.JFrame {
         pH_Label8.setForeground(new java.awt.Color(72, 53, 40));
         pH_Label8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label8.setText("FULL NAME :");
+        pH_Label8.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout pH_Panel1Layout = new javax.swing.GroupLayout(pH_Panel1);
         pH_Panel1.setLayout(pH_Panel1Layout);
         pH_Panel1Layout.setHorizontalGroup(
             pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel1Layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
+                .addContainerGap(35, Short.MAX_VALUE)
                 .addGroup(pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pH_Panel8, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
-                    .addComponent(pH_Label7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
+                    .addComponent(pH_Panel8, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
+                    .addComponent(pH_Label7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
                     .addComponent(pH_Label6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pH_Panel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
+                    .addComponent(pH_Panel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
                     .addComponent(pH_Label8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pH_Label4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pH_Panel7, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE))
+                    .addComponent(pH_Panel7, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE))
                 .addContainerGap())
         );
         pH_Panel1Layout.setVerticalGroup(
@@ -200,11 +205,11 @@ public class Request extends javax.swing.JFrame {
 
         pH_Label2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label2.setText("ART STYLE (CATEGORY)");
-        pH_Label2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        pH_Label2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
         pH_Label5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label5.setText("DEADLINE");
-        pH_Label5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        pH_Label5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
         pH_Panel4.setBackground(new java.awt.Color(245, 240, 234));
         pH_Panel4.setAAA_ImageBoundArcSize(30);
@@ -215,6 +220,7 @@ public class Request extends javax.swing.JFrame {
         pH_Panel4.setAA_ArcSize(30);
         pH_Panel4.setAA_BorderColor(new java.awt.Color(137, 100, 71));
         pH_Panel4.setAA_DrawBorder(true);
+        pH_Panel4.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout pH_Panel4Layout = new javax.swing.GroupLayout(pH_Panel4);
         pH_Panel4.setLayout(pH_Panel4Layout);
@@ -236,6 +242,7 @@ public class Request extends javax.swing.JFrame {
         pH_Panel5.setAA_ArcSize(30);
         pH_Panel5.setAA_BorderColor(new java.awt.Color(137, 100, 71));
         pH_Panel5.setAA_DrawBorder(true);
+        pH_Panel5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout pH_Panel5Layout = new javax.swing.GroupLayout(pH_Panel5);
         pH_Panel5.setLayout(pH_Panel5Layout);
@@ -245,16 +252,17 @@ public class Request extends javax.swing.JFrame {
         );
         pH_Panel5Layout.setVerticalGroup(
             pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 110, Short.MAX_VALUE)
+            .addGap(0, 102, Short.MAX_VALUE)
         );
 
         pH_Label3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label3.setText("DESCRIPTION");
-        pH_Label3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        pH_Label3.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
         pH_Label9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pH_Label9.setText("BUDGET");
-        pH_Label9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        pH_Label9.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        pH_Label9.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
 
         pH_Button1.setBackground(new java.awt.Color(137, 100, 71));
         pH_Button1.setForeground(new java.awt.Color(255, 255, 255));
@@ -266,12 +274,41 @@ public class Request extends javax.swing.JFrame {
         pH_Button1.setAAA_roundTopLeft(30);
         pH_Button1.setAAA_roundTopRight(30);
         pH_Button1.setAA_ArcSize(30);
-        pH_Button1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        pH_Button1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
         pH_Button1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pH_Button1ActionPerformed(evt);
             }
         });
+
+        pH_Panel9.setBackground(new java.awt.Color(245, 240, 234));
+        pH_Panel9.setAAA_ImageBoundArcSize(30);
+        pH_Panel9.setAAA_roundBottomLeft(30);
+        pH_Panel9.setAAA_roundBottomRight(30);
+        pH_Panel9.setAAA_roundTopLeft(30);
+        pH_Panel9.setAAA_roundTopRight(30);
+        pH_Panel9.setAA_ArcSize(30);
+        pH_Panel9.setAA_BorderColor(new java.awt.Color(137, 100, 71));
+        pH_Panel9.setAA_DrawBorder(true);
+        pH_Panel9.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+
+        javax.swing.GroupLayout pH_Panel9Layout = new javax.swing.GroupLayout(pH_Panel9);
+        pH_Panel9.setLayout(pH_Panel9Layout);
+        pH_Panel9Layout.setHorizontalGroup(
+            pH_Panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 410, Short.MAX_VALUE)
+        );
+        pH_Panel9Layout.setVerticalGroup(
+            pH_Panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 56, Short.MAX_VALUE)
+        );
+
+        jCalendar1.setBackground(new java.awt.Color(137, 100, 71));
+        jCalendar1.setForeground(new java.awt.Color(137, 100, 71));
+        jCalendar1.setDecorationBackgroundColor(new java.awt.Color(137, 100, 71));
+        jCalendar1.setDecorationBackgroundVisible(false);
+        jCalendar1.setSundayForeground(new java.awt.Color(137, 100, 71));
+        jCalendar1.setWeekdayForeground(new java.awt.Color(137, 100, 71));
 
         javax.swing.GroupLayout pH_Panel3Layout = new javax.swing.GroupLayout(pH_Panel3);
         pH_Panel3.setLayout(pH_Panel3Layout);
@@ -279,39 +316,44 @@ public class Request extends javax.swing.JFrame {
             pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pH_Panel3Layout.createSequentialGroup()
                 .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pH_Label2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pH_Label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pH_Label5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(pH_Panel3Layout.createSequentialGroup()
-                        .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pH_Panel4, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pH_Panel5, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pH_Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 37, Short.MAX_VALUE))
-                    .addComponent(pH_Label9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addGroup(pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(pH_Label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pH_Panel5, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                        .addComponent(pH_Button1, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                        .addComponent(pH_Label2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pH_Panel9, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                        .addComponent(pH_Panel4, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+                        .addComponent(pH_Label9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pH_Label5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
         pH_Panel3Layout.setVerticalGroup(
             pH_Panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pH_Panel3Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(pH_Label2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(pH_Label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pH_Panel9, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pH_Label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pH_Panel5, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pH_Label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCalendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(pH_Label9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pH_Panel4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pH_Label3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pH_Panel5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pH_Label5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
-                .addComponent(pH_Label9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pH_Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pH_Button1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15))
         );
 
         pH_Label1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pH_Label1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Untitled design (41).png"))); // NOI18N
 
         javax.swing.GroupLayout ContentHolderLayout = new javax.swing.GroupLayout(ContentHolder);
         ContentHolder.setLayout(ContentHolderLayout);
@@ -319,10 +361,12 @@ public class Request extends javax.swing.JFrame {
             ContentHolderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ContentHolderLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ContentHolderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pH_Panel1, javax.swing.GroupLayout.DEFAULT_SIZE, 287, Short.MAX_VALUE)
-                    .addComponent(pH_Label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addGroup(ContentHolderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pH_Label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(ContentHolderLayout.createSequentialGroup()
+                        .addComponent(pH_Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 25, Short.MAX_VALUE)))
+                .addGap(18, 18, 18)
                 .addComponent(pH_Panel2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pH_Panel3, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -415,6 +459,7 @@ public class Request extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private SystemOtherComps.PH_Panel ContentHolder;
     private javax.swing.JPanel RequestPage;
+    private com.toedter.calendar.JCalendar jCalendar1;
     private SystemOtherComps.PH_Button pH_Button1;
     private SystemOtherComps.PH_Label pH_Label1;
     private SystemOtherComps.PH_Label pH_Label2;
@@ -433,5 +478,6 @@ public class Request extends javax.swing.JFrame {
     private SystemOtherComps.PH_Panel pH_Panel6;
     private SystemOtherComps.PH_Panel pH_Panel7;
     private SystemOtherComps.PH_Panel pH_Panel8;
+    private SystemOtherComps.PH_Panel pH_Panel9;
     // End of variables declaration//GEN-END:variables
 }

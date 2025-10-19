@@ -100,11 +100,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="pH_Panel1" alignment="0" pref="287" max="32767" attributes="0"/>
-                          <Component id="pH_Label1" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="pH_Label1" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="pH_Panel1" min="-2" pref="303" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace pref="59" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="pH_Panel2" min="-2" pref="139" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="pH_Panel3" min="-2" pref="453" max="-2" attributes="0"/>
@@ -143,15 +146,15 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="22" max="32767" attributes="0"/>
+                          <EmptySpace pref="35" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="pH_Panel8" alignment="0" pref="259" max="32767" attributes="0"/>
-                              <Component id="pH_Label7" alignment="1" pref="259" max="32767" attributes="0"/>
+                              <Component id="pH_Panel8" alignment="0" pref="262" max="32767" attributes="0"/>
+                              <Component id="pH_Label7" alignment="1" pref="262" max="32767" attributes="0"/>
                               <Component id="pH_Label6" alignment="1" max="32767" attributes="0"/>
-                              <Component id="pH_Panel6" alignment="1" pref="259" max="32767" attributes="0"/>
+                              <Component id="pH_Panel6" alignment="1" pref="262" max="32767" attributes="0"/>
                               <Component id="pH_Label8" alignment="1" max="32767" attributes="0"/>
                               <Component id="pH_Label4" alignment="1" max="32767" attributes="0"/>
-                              <Component id="pH_Panel7" alignment="0" pref="259" max="32767" attributes="0"/>
+                              <Component id="pH_Panel7" alignment="0" pref="262" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -187,7 +190,7 @@
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="REQUEST FORM"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="36" style="0"/>
+                      <Font name="Yu Gothic UI Semibold" size="36" style="0"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -228,12 +231,18 @@
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="PHONE NUMBER :"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                    </Property>
                   </Properties>
                 </Component>
                 <Component class="SystemOtherComps.PH_Label" name="pH_Label7">
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="EMAIL ADDRESS :"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                    </Property>
                   </Properties>
                 </Component>
                 <Container class="SystemOtherComps.PH_Panel" name="pH_Panel7">
@@ -303,6 +312,9 @@
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="FULL NAME :"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Yu Gothic UI Semibold" size="12" style="0"/>
+                    </Property>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -339,42 +351,45 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="pH_Label2" alignment="0" max="32767" attributes="0"/>
-                              <Component id="pH_Label3" alignment="0" max="32767" attributes="0"/>
-                              <Component id="pH_Label5" alignment="1" max="32767" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="pH_Panel4" alignment="0" min="-2" pref="410" max="-2" attributes="0"/>
-                                      <Component id="pH_Panel5" alignment="0" min="-2" pref="410" max="-2" attributes="0"/>
-                                      <Component id="pH_Button1" alignment="0" min="-2" pref="410" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="0" pref="37" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="pH_Label3" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="pH_Panel5" alignment="0" pref="410" max="32767" attributes="0"/>
+                                  <Component id="pH_Button1" alignment="0" pref="410" max="32767" attributes="0"/>
+                                  <Component id="pH_Label2" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="pH_Panel9" pref="410" max="32767" attributes="0"/>
+                                  <Component id="pH_Panel4" alignment="0" pref="410" max="32767" attributes="0"/>
+                                  <Component id="pH_Label9" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="pH_Label5" alignment="0" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="pH_Label9" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jCalendar1" min="-2" pref="228" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace pref="43" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          <Component id="pH_Label2" min="-2" pref="42" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="pH_Label2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="pH_Panel9" min="-2" pref="56" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="pH_Label3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="pH_Panel5" min="-2" pref="102" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="pH_Label5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jCalendar1" min="-2" pref="137" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="pH_Label9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="pH_Panel4" min="-2" pref="56" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="pH_Label3" min="-2" pref="48" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="pH_Panel5" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="pH_Label5" min="-2" pref="48" max="-2" attributes="0"/>
-                          <EmptySpace pref="135" max="32767" attributes="0"/>
-                          <Component id="pH_Label9" min="-2" pref="48" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="pH_Button1" min="-2" pref="69" max="-2" attributes="0"/>
+                          <Component id="pH_Button1" min="-2" pref="61" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -386,7 +401,7 @@
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="ART STYLE (CATEGORY)"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="18" style="0"/>
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -395,7 +410,7 @@
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="DEADLINE"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="18" style="0"/>
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -414,6 +429,9 @@
                       <Color blue="47" green="64" red="89" type="rgb"/>
                     </Property>
                     <Property name="AA_DrawBorder" type="boolean" value="true"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
+                    </Property>
                   </Properties>
 
                   <Layout>
@@ -444,6 +462,9 @@
                       <Color blue="47" green="64" red="89" type="rgb"/>
                     </Property>
                     <Property name="AA_DrawBorder" type="boolean" value="true"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
+                    </Property>
                   </Properties>
 
                   <Layout>
@@ -454,7 +475,7 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="110" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="102" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -464,7 +485,7 @@
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="DESCRIPTION"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="18" style="0"/>
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -472,8 +493,9 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="2"/>
                     <Property name="text" type="java.lang.String" value="BUDGET"/>
+                    <Property name="verticalAlignment" type="int" value="1"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="18" style="0"/>
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -494,18 +516,74 @@
                     <Property name="AAA_roundTopRight" type="int" value="30"/>
                     <Property name="AA_ArcSize" type="int" value="30"/>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Segoe UI" size="18" style="0"/>
+                      <Font name="Yu Gothic UI Semibold" size="24" style="0"/>
                     </Property>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pH_Button1ActionPerformed"/>
                   </Events>
                 </Component>
+                <Container class="SystemOtherComps.PH_Panel" name="pH_Panel9">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ea" green="f0" red="f5" type="rgb"/>
+                    </Property>
+                    <Property name="AAA_ImageBoundArcSize" type="int" value="30"/>
+                    <Property name="AAA_roundBottomLeft" type="int" value="30"/>
+                    <Property name="AAA_roundBottomRight" type="int" value="30"/>
+                    <Property name="AAA_roundTopLeft" type="int" value="30"/>
+                    <Property name="AAA_roundTopRight" type="int" value="30"/>
+                    <Property name="AA_ArcSize" type="int" value="30"/>
+                    <Property name="AA_BorderColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="47" green="64" red="89" type="rgb"/>
+                    </Property>
+                    <Property name="AA_DrawBorder" type="boolean" value="true"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Yu Gothic UI Semibold" size="18" style="0"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="410" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="56" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+                <Component class="com.toedter.calendar.JCalendar" name="jCalendar1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="47" green="64" red="89" type="rgb"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="47" green="64" red="89" type="rgb"/>
+                    </Property>
+                    <Property name="decorationBackgroundColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="47" green="64" red="89" type="rgb"/>
+                    </Property>
+                    <Property name="decorationBackgroundVisible" type="boolean" value="false"/>
+                    <Property name="sundayForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="47" green="64" red="89" type="rgb"/>
+                    </Property>
+                    <Property name="weekdayForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="47" green="64" red="89" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
             <Component class="SystemOtherComps.PH_Label" name="pH_Label1">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Images/Untitled design (41).png"/>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>
