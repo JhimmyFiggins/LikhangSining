@@ -6,7 +6,7 @@ package Frames;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import raven.toast.Notifications;
-
+import javax.swing.UIManager;
 
 
 /**
@@ -21,7 +21,6 @@ public class Login extends javax.swing.JFrame {
     
     public Login() {
         initComponents();
-        
         
     }
     
@@ -95,7 +94,6 @@ public class Login extends javax.swing.JFrame {
         pH_TextField1.setAAA_roundBottomRight(50);
         pH_TextField1.setAAA_roundTopLeft(50);
         pH_TextField1.setAAA_roundTopRight(50);
-        pH_TextField1.setAA_BorderSize(2);
         pH_TextField1.setAA_DrawLine(false);
         pH_TextField1.setAA_TextHint("Username");
         pH_TextField1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
@@ -196,7 +194,7 @@ public class Login extends javax.swing.JFrame {
         LoginBT.setAAA_roundTopRight(50);
         LoginBT.setAA_ArcSize(50);
         LoginBT.setAA_ButtonColor(new java.awt.Color(51, 51, 51));
-        LoginBT.setAA_HoverColor(new java.awt.Color(153, 153, 153));
+        LoginBT.setAA_HoverColor(new java.awt.Color(51, 51, 51));
         LoginBT.setAA_PressColor(new java.awt.Color(93, 184, 105));
         LoginBT.setAA_RippleColor(new java.awt.Color(21, 135, 46));
         LoginBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
@@ -242,7 +240,6 @@ public class Login extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
                 .addComponent(jLabel5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -252,14 +249,6 @@ public class Login extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void pH_TextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pH_TextField1ActionPerformed
-
-    private void pH_PasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_PasswordField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pH_PasswordField1ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
@@ -304,6 +293,14 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, ex);
         }
     }//GEN-LAST:event_LoginBTActionPerformed
+
+    private void pH_PasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_PasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_PasswordField1ActionPerformed
+
+    private void pH_TextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_TextField1ActionPerformed
 
     /**
      * @param args the command line arguments
