@@ -30,10 +30,24 @@ public class Main extends javax.swing.JFrame {
 
         Menu = new javax.swing.JPanel();
         line = new javax.swing.JPanel();
+        Home_BTN = new SystemOtherComps.PH_Panel();
+        Home_BT = new javax.swing.JLabel();
+        Artist_BTN = new SystemOtherComps.PH_Panel();
+        jLabel1 = new javax.swing.JLabel();
+        Request_BTN = new SystemOtherComps.PH_Panel();
+        jLabel2 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         Home = new javax.swing.JPanel();
+        User = new SystemOtherComps.PH_Label();
+        Search_icon = new SystemOtherComps.PH_Label();
         SearchTF = new javax.swing.JTextField();
+        timelessPanel1 = new Panels.TimelessPanel();
+        paintingPanel1 = new Panels.PaintingPanel();
+        sculpture1 = new Panels.Sculpture();
+        digitalArtPanel1 = new Panels.DigitalArtPanel();
+        morePanel1 = new Panels.morePanel();
         RequestPage = new javax.swing.JPanel();
+        ContentHolder = new SystemOtherComps.PH_Panel();
         PaymentPage = new javax.swing.JPanel();
         panelUserInfo = new javax.swing.JPanel();
         panelNameInput = new javax.swing.JPanel();
@@ -76,20 +90,102 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 668, Short.MAX_VALUE)
         );
 
+        Home_BTN.setBackground(new java.awt.Color(247, 235, 221));
+
+        Home_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Home.png"))); // NOI18N
+        Home_BT.setToolTipText("Home");
+
+        javax.swing.GroupLayout Home_BTNLayout = new javax.swing.GroupLayout(Home_BTN);
+        Home_BTN.setLayout(Home_BTNLayout);
+        Home_BTNLayout.setHorizontalGroup(
+            Home_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Home_BTNLayout.createSequentialGroup()
+                .addComponent(Home_BT)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Home_BTNLayout.setVerticalGroup(
+            Home_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Home_BT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 30, Short.MAX_VALUE)
+        );
+
+        Artist_BTN.setBackground(new java.awt.Color(247, 235, 221));
+
+        jLabel1.setBackground(new java.awt.Color(247, 235, 221));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mdi_paint-outline.png"))); // NOI18N
+        jLabel1.setToolTipText("Art_BT");
+
+        javax.swing.GroupLayout Artist_BTNLayout = new javax.swing.GroupLayout(Artist_BTN);
+        Artist_BTN.setLayout(Artist_BTNLayout);
+        Artist_BTNLayout.setHorizontalGroup(
+            Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Artist_BTNLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel1)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        Artist_BTNLayout.setVerticalGroup(
+            Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(Artist_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Artist_BTNLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel1)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        Request_BTN.setBackground(new java.awt.Color(247, 235, 221));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/clarity_form-line (1).png"))); // NOI18N
+        jLabel2.setToolTipText("Request_BTN");
+
+        javax.swing.GroupLayout Request_BTNLayout = new javax.swing.GroupLayout(Request_BTN);
+        Request_BTN.setLayout(Request_BTNLayout);
+        Request_BTNLayout.setHorizontalGroup(
+            Request_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Request_BTNLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2))
+        );
+        Request_BTNLayout.setVerticalGroup(
+            Request_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Request_BTNLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2))
+        );
+
         javax.swing.GroupLayout MenuLayout = new javax.swing.GroupLayout(Menu);
         Menu.setLayout(MenuLayout);
         MenuLayout.setHorizontalGroup(
             MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
-                .addGap(0, 57, Short.MAX_VALUE)
-                .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(MenuLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Home_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
+            .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
+                    .addGap(0, 61, Short.MAX_VALUE)
+                    .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         MenuLayout.setVerticalGroup(
             MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
-                .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(12, Short.MAX_VALUE))
+            .addGroup(MenuLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(Home_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41)
+                .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(500, Short.MAX_VALUE))
+            .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         getContentPane().add(Menu);
@@ -101,27 +197,65 @@ public class Main extends javax.swing.JFrame {
         Home.setPreferredSize(new java.awt.Dimension(1001, 680));
         Home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        User.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/login_icon.png"))); // NOI18N
+        Home.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, 33, 40));
+
+        Search_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Search Icon.png"))); // NOI18N
+        Home.add(Search_icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 50, 20, 30));
+
         SearchTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         SearchTF.setForeground(new java.awt.Color(153, 153, 153));
         SearchTF.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         SearchTF.setText("   SEARCH");
         SearchTF.setBorder(null);
         Home.add(SearchTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, 185, 29));
+        Home.add(timelessPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
+        Home.add(paintingPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
+        Home.add(sculpture1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, -1, -1));
+        Home.add(digitalArtPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, -1, -1));
+        Home.add(morePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, 100, 30));
 
         jLayeredPane1.add(Home, "card5");
 
         RequestPage.setBackground(new java.awt.Color(239, 231, 218));
         RequestPage.setPreferredSize(new java.awt.Dimension(1001, 680));
 
+        ContentHolder.setBackground(new java.awt.Color(245, 240, 234));
+        ContentHolder.setAAA_ImageBoundArcSize(40);
+        ContentHolder.setAAA_roundBottomLeft(40);
+        ContentHolder.setAAA_roundBottomRight(40);
+        ContentHolder.setAAA_roundTopLeft(40);
+        ContentHolder.setAAA_roundTopRight(40);
+        ContentHolder.setAA_ArcSize(40);
+        ContentHolder.setAA_BorderColor(new java.awt.Color(137, 100, 71));
+        ContentHolder.setAA_DrawBorder(true);
+
+        javax.swing.GroupLayout ContentHolderLayout = new javax.swing.GroupLayout(ContentHolder);
+        ContentHolder.setLayout(ContentHolderLayout);
+        ContentHolderLayout.setHorizontalGroup(
+            ContentHolderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 996, Short.MAX_VALUE)
+        );
+        ContentHolderLayout.setVerticalGroup(
+            ContentHolderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 625, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout RequestPageLayout = new javax.swing.GroupLayout(RequestPage);
         RequestPage.setLayout(RequestPageLayout);
         RequestPageLayout.setHorizontalGroup(
             RequestPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1045, Short.MAX_VALUE)
+            .addGroup(RequestPageLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(ContentHolder, javax.swing.GroupLayout.DEFAULT_SIZE, 996, Short.MAX_VALUE)
+                .addGap(22, 22, 22))
         );
         RequestPageLayout.setVerticalGroup(
             RequestPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 692, Short.MAX_VALUE)
+            .addGroup(RequestPageLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(ContentHolder, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         jLayeredPane1.add(RequestPage, "card4");
@@ -333,7 +467,7 @@ public class Main extends javax.swing.JFrame {
         ArtistPage.setLayout(ArtistPageLayout);
         ArtistPageLayout.setHorizontalGroup(
             ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1045, Short.MAX_VALUE)
+            .addGap(0, 1041, Short.MAX_VALUE)
         );
         ArtistPageLayout.setVerticalGroup(
             ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -378,20 +512,32 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ArtistPage;
+    private SystemOtherComps.PH_Panel Artist_BTN;
+    private SystemOtherComps.PH_Panel ContentHolder;
     private javax.swing.JPanel Home;
+    public javax.swing.JLabel Home_BT;
+    private SystemOtherComps.PH_Panel Home_BTN;
     private javax.swing.JPanel Menu;
     private javax.swing.JLabel PAYMENT;
     private javax.swing.JPanel PaymentPage;
     private javax.swing.JPanel RequestPage;
+    private SystemOtherComps.PH_Panel Request_BTN;
     private javax.swing.JTextField SearchTF;
+    private SystemOtherComps.PH_Label Search_icon;
+    private SystemOtherComps.PH_Label User;
     private java.awt.Button button1;
     private java.awt.Button button2;
+    private Panels.DigitalArtPanel digitalArtPanel1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel labelName;
     private javax.swing.JPanel line;
+    private Panels.morePanel morePanel1;
+    private Panels.PaintingPanel paintingPanel1;
     private javax.swing.JPanel panelArtQty;
     private javax.swing.JPanel panelCancel;
     private javax.swing.JPanel panelEmailInput;
@@ -400,8 +546,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel panelPaymentMethod;
     private javax.swing.JPanel panelTitle;
     private javax.swing.JPanel panelUserInfo;
+    private Panels.Sculpture sculpture1;
     private java.awt.TextField textField1;
     private java.awt.TextField textField2;
     private java.awt.TextField textField3;
+    private Panels.TimelessPanel timelessPanel1;
     // End of variables declaration//GEN-END:variables
 }
