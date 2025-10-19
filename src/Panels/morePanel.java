@@ -29,10 +29,15 @@ public class morePanel extends javax.swing.JPanel {
         pH_Panel1 = new SystemOtherComps.PH_Panel();
         more = new SystemOtherComps.PH_Label();
 
+        setMaximumSize(new java.awt.Dimension(250, 30));
+        setMinimumSize(new java.awt.Dimension(250, 30));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pH_Panel1.setBackground(new java.awt.Color(72, 53, 40));
+        pH_Panel1.setMaximumSize(new java.awt.Dimension(250, 30));
+        pH_Panel1.setMinimumSize(new java.awt.Dimension(250, 30));
         pH_Panel1.setOpaque(true);
+        pH_Panel1.setPreferredSize(new java.awt.Dimension(250, 30));
 
         more.setBackground(new java.awt.Color(255, 255, 255));
         more.setForeground(new java.awt.Color(255, 245, 234));
@@ -44,18 +49,17 @@ public class morePanel extends javax.swing.JPanel {
         pH_Panel1.setLayout(pH_Panel1Layout);
         pH_Panel1Layout.setHorizontalGroup(
             pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pH_Panel1Layout.createSequentialGroup()
-                .addComponent(more, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 95, Short.MAX_VALUE))
+            .addComponent(more, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
         );
         pH_Panel1Layout.setVerticalGroup(
             pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pH_Panel1Layout.createSequentialGroup()
                 .addComponent(more, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 90, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        add(pH_Panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 160, 120));
+        add(pH_Panel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, -1));
+        pH_Panel1.getAccessibleContext().setAccessibleDescription("");
     }// </editor-fold>//GEN-END:initComponents
 
 

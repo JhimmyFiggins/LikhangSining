@@ -6,7 +6,7 @@ package Frames;
 import java.sql.*;
 import javax.swing.JOptionPane;
 import raven.toast.Notifications;
-
+import javax.swing.UIManager;
 
 
 /**
@@ -21,7 +21,6 @@ public class Login extends javax.swing.JFrame {
     
     public Login() {
         initComponents();
-        
         
     }
     
@@ -40,11 +39,15 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         pH_TextField1 = new SystemOtherComps.PH_TextField();
+        pH_Panel1 = new SystemOtherComps.PH_Panel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
-        pH_PasswordField1 = new SystemOtherComps.PH_PasswordField();
+        pH_PasswordField2 = new SystemOtherComps.PH_PasswordField();
+        pH_Panel2 = new SystemOtherComps.PH_Panel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         LoginBT = new SystemOtherComps.PH_Button();
         jPanel2 = new javax.swing.JPanel();
@@ -53,6 +56,7 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 245, 234));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jPanel1.setPreferredSize(new java.awt.Dimension(450, 450));
         jPanel1.setRequestFocusEnabled(false);
 
@@ -86,40 +90,60 @@ public class Login extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 245, 234));
         jPanel3.setPreferredSize(new java.awt.Dimension(450, 100));
 
-        pH_TextField1.setEditable(false);
-        pH_TextField1.setBackground(new java.awt.Color(202, 196, 190));
-        pH_TextField1.setBorder(null);
-        pH_TextField1.setForeground(new java.awt.Color(143, 143, 143));
         pH_TextField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        pH_TextField1.setAAA_roundBottomLeft(50);
-        pH_TextField1.setAAA_roundBottomRight(50);
-        pH_TextField1.setAAA_roundTopLeft(50);
-        pH_TextField1.setAAA_roundTopRight(50);
-        pH_TextField1.setAA_BorderSize(2);
-        pH_TextField1.setAA_DrawLine(false);
         pH_TextField1.setAA_TextHint("Username");
-        pH_TextField1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         pH_TextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pH_TextField1ActionPerformed(evt);
             }
         });
 
+        pH_Panel1.setBackground(new java.awt.Color(255, 245, 234));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/User_2.png"))); // NOI18N
+
+        javax.swing.GroupLayout pH_Panel1Layout = new javax.swing.GroupLayout(pH_Panel1);
+        pH_Panel1.setLayout(pH_Panel1Layout);
+        pH_Panel1Layout.setHorizontalGroup(
+            pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pH_Panel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        pH_Panel1Layout.setVerticalGroup(
+            pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pH_Panel1Layout.createSequentialGroup()
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pH_Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pH_TextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
+                .addGap(48, 48, 48))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(pH_TextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 27, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(pH_TextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(pH_Panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24))))
         );
 
         jPanel1.add(jPanel3);
@@ -147,38 +171,59 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setText("Forget Password?");
         jPanel6.add(jLabel2, java.awt.BorderLayout.EAST);
 
-        pH_PasswordField1.setBackground(new java.awt.Color(202, 196, 190));
-        pH_PasswordField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        pH_PasswordField1.setAAA_roundBottomLeft(50);
-        pH_PasswordField1.setAAA_roundBottomRight(50);
-        pH_PasswordField1.setAAA_roundTopLeft(50);
-        pH_PasswordField1.setAAA_roundTopRight(50);
-        pH_PasswordField1.setAA_DrawLine(false);
-        pH_PasswordField1.setAA_TextHint("Password");
-        pH_PasswordField1.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        pH_PasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        pH_PasswordField2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_PasswordField2.setAA_TextHint("Password");
+        pH_PasswordField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pH_PasswordField1ActionPerformed(evt);
+                pH_PasswordField2ActionPerformed(evt);
             }
         });
+
+        pH_Panel2.setBackground(new java.awt.Color(255, 245, 234));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/material-symbols_lock.png"))); // NOI18N
+
+        javax.swing.GroupLayout pH_Panel2Layout = new javax.swing.GroupLayout(pH_Panel2);
+        pH_Panel2.setLayout(pH_Panel2Layout);
+        pH_Panel2Layout.setHorizontalGroup(
+            pH_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pH_Panel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pH_Panel2Layout.setVerticalGroup(
+            pH_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel2Layout.createSequentialGroup()
+                .addGap(0, 6, Short.MAX_VALUE)
+                .addComponent(jLabel4))
+        );
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(pH_PasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addComponent(pH_Panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pH_PasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(pH_PasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(pH_PasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(pH_Panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, 0)
+                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -188,7 +233,7 @@ public class Login extends javax.swing.JFrame {
 
         LoginBT.setBackground(new java.awt.Color(51, 51, 51));
         LoginBT.setForeground(new java.awt.Color(255, 255, 255));
-        LoginBT.setText("Login In");
+        LoginBT.setText("Login");
         LoginBT.setAAA_ImageBoundArcSize(50);
         LoginBT.setAAA_roundBottomLeft(50);
         LoginBT.setAAA_roundBottomRight(50);
@@ -196,7 +241,7 @@ public class Login extends javax.swing.JFrame {
         LoginBT.setAAA_roundTopRight(50);
         LoginBT.setAA_ArcSize(50);
         LoginBT.setAA_ButtonColor(new java.awt.Color(51, 51, 51));
-        LoginBT.setAA_HoverColor(new java.awt.Color(153, 153, 153));
+        LoginBT.setAA_HoverColor(new java.awt.Color(51, 51, 51));
         LoginBT.setAA_PressColor(new java.awt.Color(93, 184, 105));
         LoginBT.setAA_RippleColor(new java.awt.Color(21, 135, 46));
         LoginBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
@@ -210,16 +255,17 @@ public class Login extends javax.swing.JFrame {
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addGap(0, 32, Short.MAX_VALUE)
-                .addComponent(LoginBT, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(LoginBT, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(16, 16, 16)
                 .addComponent(LoginBT, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addGap(0, 32, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel7);
@@ -242,7 +288,6 @@ public class Login extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
                 .addComponent(jLabel5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -253,21 +298,13 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void pH_TextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pH_TextField1ActionPerformed
-
-    private void pH_PasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_PasswordField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pH_PasswordField1ActionPerformed
-
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void LoginBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBTActionPerformed
         String enteredUsername = pH_TextField1.getText().trim();
-        char[] enteredPasswordChars = pH_PasswordField1.getPassword();
+        char[] enteredPasswordChars = pH_PasswordField2.getPassword();
         String enteredPassword = new String(enteredPasswordChars);
 
         // Empty field check
@@ -305,6 +342,14 @@ public class Login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_LoginBTActionPerformed
 
+    private void pH_TextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_TextField1ActionPerformed
+
+    private void pH_PasswordField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_PasswordField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_PasswordField2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -335,6 +380,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -343,7 +390,9 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private SystemOtherComps.PH_PasswordField pH_PasswordField1;
+    private SystemOtherComps.PH_Panel pH_Panel1;
+    private SystemOtherComps.PH_Panel pH_Panel2;
+    private SystemOtherComps.PH_PasswordField pH_PasswordField2;
     private SystemOtherComps.PH_TextField pH_TextField1;
     // End of variables declaration//GEN-END:variables
 }
