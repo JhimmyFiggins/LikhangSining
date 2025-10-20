@@ -37,11 +37,27 @@ public class Main extends javax.swing.JFrame {
         Request_BTN = new SystemOtherComps.PH_Panel();
         jLabel2 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
+        ArtistPage = new javax.swing.JPanel();
+        SearchTF1 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         pH_Label10 = new SystemOtherComps.PH_Label();
         pH_Label11 = new SystemOtherComps.PH_Label();
         pH_Label12 = new SystemOtherComps.PH_Label();
+        pH_Panel10 = new SystemOtherComps.PH_Panel();
+        pH_TextField4 = new SystemOtherComps.PH_TextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
+        Home = new javax.swing.JPanel();
+        User = new SystemOtherComps.PH_Label();
+        Search_icon = new SystemOtherComps.PH_Label();
+        SearchTF = new javax.swing.JTextField();
+        timelessPanel1 = new Panels.TimelessPanel();
+        paintingPanel1 = new Panels.PaintingPanel();
+        sculpture1 = new Panels.Sculpture();
+        digitalArtPanel1 = new Panels.DigitalArtPanel();
+        morePanel1 = new Panels.morePanel();
         RequestPage = new javax.swing.JPanel();
         RequestPage1 = new javax.swing.JPanel();
         ContentHolder = new SystemOtherComps.PH_Panel();
@@ -65,15 +81,6 @@ public class Main extends javax.swing.JFrame {
         pH_Panel9 = new SystemOtherComps.PH_Panel();
         jCalendar1 = new com.toedter.calendar.JCalendar();
         pH_Label1 = new SystemOtherComps.PH_Label();
-        Home = new javax.swing.JPanel();
-        User = new SystemOtherComps.PH_Label();
-        Search_icon = new SystemOtherComps.PH_Label();
-        SearchTF = new javax.swing.JTextField();
-        timelessPanel1 = new Panels.TimelessPanel();
-        paintingPanel1 = new Panels.PaintingPanel();
-        sculpture1 = new Panels.Sculpture();
-        digitalArtPanel1 = new Panels.DigitalArtPanel();
-        morePanel1 = new Panels.morePanel();
         PaymentPage = new javax.swing.JPanel();
         panelUserInfo = new javax.swing.JPanel();
         panelNameInput = new javax.swing.JPanel();
@@ -93,7 +100,6 @@ public class Main extends javax.swing.JFrame {
         button2 = new java.awt.Button();
         panelTitle = new javax.swing.JPanel();
         PAYMENT = new javax.swing.JLabel();
-        ArtistPage = new javax.swing.JPanel();
         HistoryPage = new javax.swing.JPanel();
         History = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -234,23 +240,118 @@ public class Main extends javax.swing.JFrame {
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(1118, 680));
         jLayeredPane1.setLayout(new java.awt.CardLayout());
 
+        ArtistPage.setBackground(new java.awt.Color(255, 245, 234));
+        ArtistPage.setPreferredSize(new java.awt.Dimension(1001, 680));
+
+        SearchTF1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SearchTF1.setForeground(new java.awt.Color(153, 153, 153));
+        SearchTF1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        SearchTF1.setText("   SEARCH");
+        SearchTF1.setBorder(null);
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(72, 53, 40));
+        jLabel15.setText("DIGITAL ART");
+
+        javax.swing.GroupLayout ArtistPageLayout = new javax.swing.GroupLayout(ArtistPage);
+        ArtistPage.setLayout(ArtistPageLayout);
+        ArtistPageLayout.setHorizontalGroup(
+            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ArtistPageLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(SearchTF1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(58, 58, 58))
+            .addGroup(ArtistPageLayout.createSequentialGroup()
+                .addGap(370, 370, 370)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(401, Short.MAX_VALUE))
+        );
+        ArtistPageLayout.setVerticalGroup(
+            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ArtistPageLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(SearchTF1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel15)
+                .addContainerGap(549, Short.MAX_VALUE))
+        );
+
+        jLayeredPane1.add(ArtistPage, "card3");
+
         jPanel2.setMinimumSize(new java.awt.Dimension(1118, 680));
         jPanel2.setPreferredSize(new java.awt.Dimension(1118, 680));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pH_Label10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AristProfileImagePlaceholder2.png"))); // NOI18N
-        jPanel2.add(pH_Label10, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, 230, 180));
+        jPanel2.add(pH_Label10, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 230, 180));
 
         pH_Label11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ArtistProfileImagePlaceholder.png"))); // NOI18N
-        jPanel2.add(pH_Label11, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 160, 230, 180));
+        jPanel2.add(pH_Label11, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, 230, 180));
 
         pH_Label12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ArtistProfileImagePlaceholder3.png"))); // NOI18N
         jPanel2.add(pH_Label12, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 180, 230, 180));
+
+        pH_Panel10.setBackground(new java.awt.Color(245, 240, 234));
+        pH_Panel10.setAAA_ImageBoundArcSize(30);
+        pH_Panel10.setAAA_roundBottomLeft(30);
+        pH_Panel10.setAAA_roundBottomRight(30);
+        pH_Panel10.setAAA_roundTopLeft(30);
+        pH_Panel10.setAAA_roundTopRight(30);
+        pH_Panel10.setAA_ArcSize(30);
+        pH_Panel10.setAA_BorderColor(new java.awt.Color(137, 100, 71));
+        pH_Panel10.setAA_DrawBorder(true);
+        pH_Panel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pH_TextField4.setEditable(false);
+        pH_TextField4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        pH_TextField4.setText("ELAIZA O. BUGAYONG ");
+        pH_TextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pH_TextField4ActionPerformed(evt);
+            }
+        });
+        pH_Panel10.add(pH_TextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 36, 285, 68));
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(247, 235, 221));
+        jTextArea1.setColumns(20);
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare enim sed lectus pulvinar venenatis. Vestibulum in dolor ullamcorper, mollis tortor ut, suscipit purus.");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        pH_Panel10.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 122, 425, -1));
+
+        jPanel2.add(pH_Panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 487, 225));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ArtisanProfileBG.png"))); // NOI18N
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1250, -1));
 
         jLayeredPane1.add(jPanel2, "card7");
+
+        Home.setBackground(new java.awt.Color(255, 245, 234));
+        Home.setPreferredSize(new java.awt.Dimension(1001, 680));
+        Home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        User.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/login_icon.png"))); // NOI18N
+        Home.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, 33, 40));
+
+        Search_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Search Icon.png"))); // NOI18N
+        Home.add(Search_icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 50, 20, 30));
+
+        SearchTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        SearchTF.setForeground(new java.awt.Color(153, 153, 153));
+        SearchTF.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        SearchTF.setText("   SEARCH");
+        SearchTF.setBorder(null);
+        Home.add(SearchTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, 185, 29));
+        Home.add(timelessPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
+        Home.add(paintingPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
+        Home.add(sculpture1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, -1, -1));
+        Home.add(digitalArtPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, -1, -1));
+        Home.add(morePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, 100, 30));
+
+        jLayeredPane1.add(Home, "card5");
 
         RequestPage.setBackground(new java.awt.Color(239, 231, 218));
         RequestPage.setPreferredSize(new java.awt.Dimension(1001, 680));
@@ -628,30 +729,6 @@ public class Main extends javax.swing.JFrame {
 
         jLayeredPane1.add(RequestPage, "card4");
 
-        Home.setBackground(new java.awt.Color(255, 245, 234));
-        Home.setPreferredSize(new java.awt.Dimension(1001, 680));
-        Home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        User.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/login_icon.png"))); // NOI18N
-        Home.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, 33, 40));
-
-        Search_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Search Icon.png"))); // NOI18N
-        Home.add(Search_icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 50, 20, 30));
-
-        SearchTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        SearchTF.setForeground(new java.awt.Color(153, 153, 153));
-        SearchTF.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        SearchTF.setText("   SEARCH");
-        SearchTF.setBorder(null);
-        Home.add(SearchTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, 185, 29));
-        Home.add(timelessPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
-        Home.add(paintingPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
-        Home.add(sculpture1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, -1, -1));
-        Home.add(digitalArtPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, -1, -1));
-        Home.add(morePanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, 100, 30));
-
-        jLayeredPane1.add(Home, "card5");
-
         PaymentPage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelUserInfo.setPreferredSize(new java.awt.Dimension(939, 150));
@@ -851,22 +928,6 @@ public class Main extends javax.swing.JFrame {
         PaymentPage.add(panelTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLayeredPane1.add(PaymentPage, "card5");
-
-        ArtistPage.setBackground(new java.awt.Color(255, 245, 234));
-        ArtistPage.setPreferredSize(new java.awt.Dimension(1001, 680));
-
-        javax.swing.GroupLayout ArtistPageLayout = new javax.swing.GroupLayout(ArtistPage);
-        ArtistPage.setLayout(ArtistPageLayout);
-        ArtistPageLayout.setHorizontalGroup(
-            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1238, Short.MAX_VALUE)
-        );
-        ArtistPageLayout.setVerticalGroup(
-            ArtistPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
-        );
-
-        jLayeredPane1.add(ArtistPage, "card3");
 
         History.setPreferredSize(new java.awt.Dimension(1001, 680));
 
@@ -1080,6 +1141,10 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void pH_TextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_TextField4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1123,6 +1188,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel RequestPage1;
     private SystemOtherComps.PH_Panel Request_BTN;
     private javax.swing.JTextField SearchTF;
+    private javax.swing.JTextField SearchTF1;
     private SystemOtherComps.PH_Label Search_icon;
     private SystemOtherComps.PH_Label User;
     private java.awt.Button button1;
@@ -1135,6 +1201,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1147,6 +1214,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
@@ -1167,6 +1236,7 @@ public class Main extends javax.swing.JFrame {
     private SystemOtherComps.PH_Label pH_Label8;
     private SystemOtherComps.PH_Label pH_Label9;
     private SystemOtherComps.PH_Panel pH_Panel1;
+    private SystemOtherComps.PH_Panel pH_Panel10;
     private SystemOtherComps.PH_Panel pH_Panel2;
     private SystemOtherComps.PH_Panel pH_Panel3;
     private SystemOtherComps.PH_Panel pH_Panel4;
@@ -1175,6 +1245,7 @@ public class Main extends javax.swing.JFrame {
     private SystemOtherComps.PH_Panel pH_Panel7;
     private SystemOtherComps.PH_Panel pH_Panel8;
     private SystemOtherComps.PH_Panel pH_Panel9;
+    private SystemOtherComps.PH_TextField pH_TextField4;
     private Panels.PaintingPanel paintingPanel1;
     private javax.swing.JPanel panelArtQty;
     private javax.swing.JPanel panelCancel;
