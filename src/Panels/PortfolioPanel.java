@@ -28,6 +28,10 @@ public class PortfolioPanel extends javax.swing.JPanel {
 
         pH_Panel5 = new SystemOtherComps.PH_Panel();
         pH_TextField4 = new SystemOtherComps.PH_TextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pH_Panel5.setBackground(new java.awt.Color(245, 240, 234));
         pH_Panel5.setAAA_ImageBoundArcSize(30);
@@ -38,50 +42,39 @@ public class PortfolioPanel extends javax.swing.JPanel {
         pH_Panel5.setAA_ArcSize(30);
         pH_Panel5.setAA_BorderColor(new java.awt.Color(137, 100, 71));
         pH_Panel5.setAA_DrawBorder(true);
+        pH_Panel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        pH_TextField4.setEditable(false);
         pH_TextField4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        pH_TextField4.setText("Enter Description...");
+        pH_TextField4.setText("ELAIZA O. BUGAYONG ");
+        pH_TextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pH_TextField4ActionPerformed(evt);
+            }
+        });
+        pH_Panel5.add(pH_TextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 36, 285, 68));
 
-        javax.swing.GroupLayout pH_Panel5Layout = new javax.swing.GroupLayout(pH_Panel5);
-        pH_Panel5.setLayout(pH_Panel5Layout);
-        pH_Panel5Layout.setHorizontalGroup(
-            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel5Layout.createSequentialGroup()
-                .addContainerGap(176, Short.MAX_VALUE)
-                .addComponent(pH_TextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        pH_Panel5Layout.setVerticalGroup(
-            pH_Panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel5Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(pH_TextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(247, 235, 221));
+        jTextArea1.setColumns(20);
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare enim sed lectus pulvinar venenatis. Vestibulum in dolor ullamcorper, mollis tortor ut, suscipit purus.");
+        jScrollPane1.setViewportView(jTextArea1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 517, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(24, 24, 24)
-                    .addComponent(pH_Panel5, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 283, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(52, 52, 52)
-                    .addComponent(pH_Panel5, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
+        pH_Panel5.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 122, 425, -1));
+
+        add(pH_Panel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 52, 487, 225));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void pH_TextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pH_TextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pH_TextField4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private SystemOtherComps.PH_Panel pH_Panel5;
     private SystemOtherComps.PH_TextField pH_TextField4;
     // End of variables declaration//GEN-END:variables
