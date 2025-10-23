@@ -156,9 +156,8 @@ private void openMainApplicationFrame() {
         LoginBT.setAAA_roundTopRight(10);
         LoginBT.setAA_ArcSize(10);
         LoginBT.setAA_ButtonColor(new java.awt.Color(51, 51, 51));
-        LoginBT.setAA_HoverColor(new java.awt.Color(153, 153, 153));
-        LoginBT.setAA_PressColor(new java.awt.Color(93, 184, 105));
-        LoginBT.setAA_RippleColor(new java.awt.Color(21, 135, 46));
+        LoginBT.setAA_HoverColor(new java.awt.Color(137, 100, 71));
+        LoginBT.setAA_PressColor(new java.awt.Color(137, 100, 71));
         LoginBT.setAA_RippleColor(new java.awt.Color(176, 129, 91));
         LoginBT.setAA_RippleColor(new java.awt.Color(176, 129, 91));
         LoginBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
