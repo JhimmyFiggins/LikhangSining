@@ -141,7 +141,7 @@ public class Items extends javax.swing.JPanel {
         LPASS = new javax.swing.JLabel();
         ImageTXT = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(247, 235, 221));
+        setBackground(new java.awt.Color(230, 220, 209));
         setMaximumSize(new java.awt.Dimension(232, 395));
         setMinimumSize(new java.awt.Dimension(232, 395));
         setPreferredSize(new java.awt.Dimension(232, 395));
@@ -172,9 +172,9 @@ public class Items extends javax.swing.JPanel {
         AddCartBT.setAAA_roundTopRight(20);
         AddCartBT.setAA_ArcSize(20);
         AddCartBT.setAA_ButtonColor(new java.awt.Color(24, 23, 23));
-        AddCartBT.setAA_HoverColor(new java.awt.Color(38, 38, 38));
-        AddCartBT.setAA_PressColor(new java.awt.Color(54, 53, 53));
-        AddCartBT.setAA_RippleColor(new java.awt.Color(31, 211, 71));
+        AddCartBT.setAA_HoverColor(new java.awt.Color(242, 197, 160));
+        AddCartBT.setAA_PressColor(new java.awt.Color(242, 197, 160));
+        AddCartBT.setAA_RippleColor(new java.awt.Color(242, 197, 160));
         AddCartBT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddCartBTActionPerformed(evt);

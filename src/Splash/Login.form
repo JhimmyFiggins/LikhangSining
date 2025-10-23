@@ -139,14 +139,14 @@
             <Property name="AA_ButtonColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="33" red="33" type="rgb"/>
             </Property>
-            <Property name="AA_HoverColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="99" red="99" type="rgb"/>
+            <Property name="AA_HoverColor" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new java.awt.Color(137, 100, 71)" type="code"/>
             </Property>
-            <Property name="AA_PressColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="69" green="b8" red="5d" type="rgb"/>
+            <Property name="AA_PressColor" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="LoginBT.setAA_RippleColor(new java.awt.Color(176, 129, 91));">
+              <Connection code="new java.awt.Color(137, 100, 71)" type="code"/>
             </Property>
-            <Property name="AA_RippleColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="2e" green="87" red="15" type="rgb"/>
+            <Property name="AA_RippleColor" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new java.awt.Color(176, 129, 91)" type="code"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Franklin Gothic Heavy" size="12" style="0"/>
