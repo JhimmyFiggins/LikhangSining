@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Classes;
 
-/**
- *
- * @author Anthony
- */
+package Classes;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
 public class Functions {
     
+    public void MenuClicked(boolean HomeClicked, JPanel Home_BTN)
+    {
+        if(HomeClicked == true)
+        {
+            Home_BTN.setBackground(Color.red);
+        }
+        else 
+        {
+            Home_BTN.setBackground(Color.yellow);
+        }
+    }
 }
