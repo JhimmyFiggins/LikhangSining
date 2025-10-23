@@ -36,7 +36,6 @@ public class ProductImage {
             }
 
             while (rs.next()) {
-                
                 int productId = rs.getInt("id");
                 byte[] imageData = rs.getBytes("imageFile");
 
@@ -109,45 +108,4 @@ public class ProductImage {
             ex.printStackTrace();
         }
     }
-    
-    
-    public static void loadHistoryImageAndSetToLabel(int id, JLabel label, Connection con) {
-        if (imageCache.containsKey(id)) {
-            label.setIcon(imageCache.get(id));
-            label.setText("");
-            return;
-        }
-
-        String sql = "SELECT imageFile FROM history WHERE id = ?";
-
-        try (PreparedStatement pst = con.prepareStatement(sql)) {
-            pst.setInt(1, id);
-            try (ResultSet rs = pst.executeQuery()) {
-                if (rs.next()) {
-                    byte[] imgBytes = rs.getBytes("imageFile");
-
-                    if (imgBytes != null && imgBytes.length > 0) {
-                        ImageIcon icon = new ImageIcon(imgBytes);
-                        Image img = icon.getImage().getScaledInstance(213, 207, Image.SCALE_SMOOTH);
-                        ImageIcon scaledIcon = new ImageIcon(img);
-                        imageCache.put(id, scaledIcon);
-                        label.setIcon(scaledIcon);
-                        label.setText("");
-                    } else {
-                        label.setIcon(null);
-                        label.setText("No Image");
-                    }
-                } else {
-                    label.setIcon(null);
-                    label.setText("No Image Found");
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            label.setIcon(null);
-            label.setText("Error loading image");
-        }
-    }
-
-
 }

@@ -5,7 +5,6 @@ import Classes.Run;
 import Classes.serverCredentials;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import org.sqlite.SQLiteDataSource;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,7 +13,6 @@ import java.sql.SQLException;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import Frames.Main;
-import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.management.Notification;
@@ -30,26 +28,38 @@ import raven.toast.Notifications;
 public class Login extends javax.swing.JFrame {
         
         private Main mainApp; 
+        public String url= "localhost";
+        public String user = "root";
+        public String pass= "";
         Connection con = null;
         PreparedStatement pst;
 
+  
+// USED IF INPUTTING MY OWN SERVER CONNECTION        
+//        public void forConnection(Connection conn, String serverIP,String userID ,String passwordID){
+//        this.con = conn;
+//        this.url = serverIP;
+//        this.user = userID;
+//        this.pass = passwordID;
+//    }
+        
         
         public void connection (){
-        //MYSQL CODE-----------------------------------------------
-        try 
-        {
-            Class.forName("org.sqlite.JDBC");
-            String dbPath = "database/hazebyteLITE.db";
-            File dbFile = new File(dbPath);
-            System.out.println("Using database at: " + dbFile.getAbsolutePath());
-            con = DriverManager.getConnection("jdbc:sqlite:" + dbPath);
-            
-            
+         serverCredentials sv = new serverCredentials(url,user,pass);
 
-        } catch (ClassNotFoundException | SQLException ex) {
-            ex.printStackTrace();
-        }
-        //MYSQL CODE-----------------------------------------------
+      
+         //MYSQL CODE-----------------------------------------------
+
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                con = DriverManager.getConnection("jdbc:mysql://"+sv.getServerIP() +"/likhangsining", sv.getUserID(), sv.getPassword());
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Run.class.getName()).log(Level.SEVERE, null, ex);
+            }catch (SQLException ex) {
+            Logger.getLogger(Run.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            //MYSQL CODE-----------------------------------------------
 
         }
     

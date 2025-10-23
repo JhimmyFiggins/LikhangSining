@@ -37,7 +37,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -79,7 +78,8 @@ public class Main extends javax.swing.JFrame {
     private ChangeUsername ChangeUser;
     public HistoryPreview preview;
     public HistoryTotal historytotal;
-    private receipt_info Receipt;
+    
+    
     
     
     //variables for detecting if a menu button is clicked
@@ -113,13 +113,13 @@ public class Main extends javax.swing.JFrame {
     public Main(Connection con) {
         initComponents();
         GlassPanePopup.install(this);
-        ProductImage.preloadAllImages(con);
         
         this.con = con;
 
     
         startup();
         ClearCart();
+        processlist();
         wrapLabelText(AboutQuote);
 
         if (CartTable.getRowCount() == 0) {
@@ -251,10 +251,6 @@ public class Main extends javax.swing.JFrame {
         AboutDesc = new javax.swing.JLabel();
         AboutHeading = new javax.swing.JLabel();
         Settings_BT3 = new javax.swing.JLabel();
-        ReceiptPN = new SystemOtherComps.PH_Panel();
-        ReceiptDesc = new javax.swing.JLabel();
-        ReceiptHeading = new javax.swing.JLabel();
-        Settings_BT4 = new javax.swing.JLabel();
         Cart = new javax.swing.JPanel();
         CartBar = new javax.swing.JPanel();
         Cart_txt = new javax.swing.JLabel();
@@ -1121,7 +1117,7 @@ public class Main extends javax.swing.JFrame {
         ChangeUsernamePNLayout.setVerticalGroup(
             ChangeUsernamePNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ChangeUsernamePNLayout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
+                .addContainerGap(11, Short.MAX_VALUE)
                 .addGroup(ChangeUsernamePNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ChangeUsernameHeading)
                     .addComponent(Settings_BT1))
@@ -1178,7 +1174,7 @@ public class Main extends javax.swing.JFrame {
         ChangePassPNLayout.setVerticalGroup(
             ChangePassPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ChangePassPNLayout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
+                .addContainerGap(11, Short.MAX_VALUE)
                 .addGroup(ChangePassPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ChangePassHeading1)
                     .addComponent(Settings_BT2))
@@ -1235,69 +1231,12 @@ public class Main extends javax.swing.JFrame {
         AboutPNLayout.setVerticalGroup(
             AboutPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AboutPNLayout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
+                .addContainerGap(11, Short.MAX_VALUE)
                 .addGroup(AboutPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AboutHeading)
                     .addComponent(Settings_BT3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AboutDesc)
-                .addGap(14, 14, 14))
-        );
-
-        ReceiptPN.setBackground(new java.awt.Color(24, 23, 23));
-        ReceiptPN.setForeground(new java.awt.Color(24, 23, 23));
-        ReceiptPN.setAAA_ImageBoundArcSize(30);
-        ReceiptPN.setAAA_roundBottomLeft(30);
-        ReceiptPN.setAAA_roundBottomRight(30);
-        ReceiptPN.setAAA_roundTopLeft(30);
-        ReceiptPN.setAAA_roundTopRight(30);
-        ReceiptPN.setAA_ArcSize(30);
-        ReceiptPN.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ReceiptPNMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ReceiptPNMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ReceiptPNMouseExited(evt);
-            }
-        });
-
-        ReceiptDesc.setBackground(new java.awt.Color(102, 102, 102));
-        ReceiptDesc.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        ReceiptDesc.setForeground(new java.awt.Color(102, 102, 102));
-        ReceiptDesc.setText("Modify your receipt information.");
-
-        ReceiptHeading.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        ReceiptHeading.setForeground(new java.awt.Color(255, 255, 255));
-        ReceiptHeading.setText("Receipt Info");
-
-        Settings_BT4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/receipt.png"))); // NOI18N
-        Settings_BT4.setToolTipText("Developer Info");
-
-        javax.swing.GroupLayout ReceiptPNLayout = new javax.swing.GroupLayout(ReceiptPN);
-        ReceiptPN.setLayout(ReceiptPNLayout);
-        ReceiptPNLayout.setHorizontalGroup(
-            ReceiptPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReceiptPNLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(Settings_BT4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(ReceiptPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ReceiptDesc)
-                    .addComponent(ReceiptHeading))
-                .addContainerGap(175, Short.MAX_VALUE))
-        );
-        ReceiptPNLayout.setVerticalGroup(
-            ReceiptPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReceiptPNLayout.createSequentialGroup()
-                .addContainerGap(10, Short.MAX_VALUE)
-                .addGroup(ReceiptPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ReceiptHeading)
-                    .addComponent(Settings_BT4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ReceiptDesc)
                 .addGap(14, 14, 14))
         );
 
@@ -1311,8 +1250,7 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
                     .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(ReceiptPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
@@ -1324,11 +1262,9 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ChangePassPN, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
-                .addComponent(ReceiptPN, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AboutPN, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         layers.add(Settings, "card5");
@@ -1733,7 +1669,7 @@ public class Main extends javax.swing.JFrame {
                         .addGap(20, 20, 20))
                     .addGroup(CartLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
+                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 467, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CartLayout.createSequentialGroup()
                         .addContainerGap()
@@ -1972,7 +1908,6 @@ public class Main extends javax.swing.JFrame {
         );
 
         layers.add(Home, "card2");
-        Home.getAccessibleContext().setAccessibleName("");
 
         Add.setBackground(new java.awt.Color(24, 23, 23));
         Add.setPreferredSize(new java.awt.Dimension(783, 594));
@@ -2858,7 +2793,6 @@ public class Main extends javax.swing.JFrame {
        SelectEditProduct();
         LoadImageID();
         edit_remove_image=0;
-       
     }//GEN-LAST:event_EditTableMouseClicked
 
     private void EditDeleteBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditDeleteBTActionPerformed
@@ -3109,19 +3043,6 @@ public class Main extends javax.swing.JFrame {
     private void GameSearchTXTCaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_GameSearchTXTCaretUpdate
         searching();
     }//GEN-LAST:event_GameSearchTXTCaretUpdate
-
-    private void ReceiptPNMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReceiptPNMouseClicked
-        Receipt = new receipt_info(this);
-        Receipt.setVisible(true);
-    }//GEN-LAST:event_ReceiptPNMouseClicked
-
-    private void ReceiptPNMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReceiptPNMouseEntered
-        function.SettingsHoverIn(ReceiptPN);
-    }//GEN-LAST:event_ReceiptPNMouseEntered
-
-    private void ReceiptPNMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReceiptPNMouseExited
-        function.SettingsHoverOut(ReceiptPN);
-    }//GEN-LAST:event_ReceiptPNMouseExited
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -3236,9 +3157,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel Option_BT;
     public javax.swing.JLabel PASS;
     private javax.swing.JLabel PaymentHeading;
-    public javax.swing.JLabel ReceiptDesc;
-    public javax.swing.JLabel ReceiptHeading;
-    private SystemOtherComps.PH_Panel ReceiptPN;
     private javax.swing.JPanel Settings;
     private javax.swing.JPanel SettingsBar;
     private javax.swing.JPanel SettingsBar1;
@@ -3249,7 +3167,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel Settings_BT1;
     private javax.swing.JLabel Settings_BT2;
     private javax.swing.JLabel Settings_BT3;
-    private javax.swing.JLabel Settings_BT4;
     private javax.swing.JLabel SubtotalHeading;
     private javax.swing.JLabel TotalCostHeading;
     private javax.swing.JLabel TotalDiscountHeading;
@@ -3411,7 +3328,6 @@ public class Main extends javax.swing.JFrame {
     loading.setUndecorated(true);
     loading.setSize(350, 200);
     loading.setLocationRelativeTo(null);
-
 
     // Get cache directory location
     String userHome = System.getProperty("user.home");
@@ -4079,10 +3995,22 @@ public void emptyBlobFile(String id) {
     
     public void LoadImageID() {
         try {
-            int productId = Integer.parseInt(EditID.getText());
-            ProductImage.loadImageAndSetToLabel(productId, EditImage, con);
-        } catch (NumberFormatException e) {
-            setDefaultImage(); // If ID is not a valid number
+            String ID = EditID.getText();
+            pst = con.prepareStatement("SELECT imageFile FROM product WHERE id = ?");
+            pst.setString(1, ID);
+
+            rs = pst.executeQuery();
+
+            if (rs.next()) {
+                LoadImage();
+            } else {
+                // Set default image if no imageFile found
+                setDefaultImage();
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            setDefaultImage();
         }
     }
 
@@ -4601,8 +4529,34 @@ public void SelectCartItem() {
             discountTXT.setVisible(false);
         }
         
-        ProductImage.loadImageAndSetToLabel(id, CartImageTXT, con);
-        
+        // Now fetch the image from the database using the ID
+        try {
+            String sql = "SELECT imageFile FROM product WHERE id = ?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setInt(1, id);
+            ResultSet rs = pst.executeQuery();
+
+            if (rs.next()) {
+                byte[] imgBytes = rs.getBytes("imageFile");
+
+                if (imgBytes != null) {
+                    ImageIcon icon = new ImageIcon(imgBytes);
+                    Image img = icon.getImage().getScaledInstance(211, 211, Image.SCALE_SMOOTH);
+                    CartImageTXT.setIcon(new ImageIcon(img));
+                    CartImageTXT.setText("");
+                } else {
+                    CartImageTXT.setIcon(null);
+                    CartImageTXT.setText("No Image");
+                }
+            }
+
+            rs.close();
+            pst.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            CartImageTXT.setIcon(null);
+            CartImageTXT.setText("Error loading image");
+        }
     } 
 }
 
@@ -4792,11 +4746,6 @@ public void BuyCart() {
                 }
             }
             
-            String receipt_warranty = getWarranty();
-            String receipt_company = getCompany();
-            String receipt_address = getAddress();
-            
-            
             String info = 
                     "[ HAZEBYTE ]\n"
                    +"Receipt number: " + receiptnum +"\n"
@@ -4806,10 +4755,8 @@ public void BuyCart() {
                    +"Discount: " + receipt.r_tax.getText().replace("-", "").replace("₱", "") + "\n"
                    +"Total: " + receipt.r_total.getText().replace("-", "").replace("₱", "")  +"\n\n"
                    +"Payment: " + receipt.r_payment.getText().replace("-", "").replace("₱", "")  +"\n"
-                   +"Change: " + receipt.r_change.getText().replace("-", "").replace("₱", "")  +"\n\n"
-                   + receipt_company +"\n"
-                   + receipt_address +"\n"
-                   + receipt_warranty +" day/s warranty!"
+                   +"Change: " + receipt.r_change.getText().replace("-", "").replace("₱", "")  +"\n"
+                   +"\n 14 days warranty!"
                     ;
             
             receipt.r_date.setText(formattedDate);
@@ -5179,7 +5126,6 @@ public static String getFormattedDate() {
                 // Show preview
                 preview = new HistoryPreview(this);
                 preview.prevID = dbId;
-                //ProductImage.loadHistoryImageAndSetToLabel(dbId, preview.PreviewImage, con);
                 PreviewLoadImageID(dbId,preview.PreviewImage);
                 preview.receipt.setText(receipt);
                 preview.Title.setText(name);
@@ -5345,62 +5291,35 @@ public static String getFormattedDate() {
 }
    
    
-   
-   public String getWarranty() {
-        String sql = "SELECT warranty FROM receipts WHERE id = 1";
-        String warranty = "";
+   public void processlist(){
+   String query = "SHOW PROCESSLIST;";
+try {
+    pst = con.prepareStatement(query);
+    rs = pst.executeQuery(); // Execute the query
 
-        try (
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(sql)
-        ) {
-            if (rs.next()) {
-                warranty = rs.getString("warranty");
-            }
-        } catch (SQLException e) {
-            System.out.println("Failed to fetch warranty: " + e.getMessage());
-        }
+    // Loop through the result and print each process
+    while (rs.next()) {
+        int id = rs.getInt("Id");
+        String user = rs.getString("User");
+        String host = rs.getString("Host");
+        String db = rs.getString("db");
+        String command = rs.getString("Command");
+        int time = rs.getInt("Time");
+        String state = rs.getString("State");
+        String info = rs.getString("Info");
 
-        return warranty;
+        System.out.println("ID: " + id + ", User: " + user + ", Host: " + host +
+                           ", DB: " + db + ", Command: " + command + ", Time: " + time +
+                           ", State: " + state + ", Info: " + info);
     }
-   
-   public String getCompany() {
-        String sql = "SELECT company FROM receipts WHERE id = 1";
-        String Company = "";
 
-        try (
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(sql)
-        ) {
-            if (rs.next()) {
-                Company = rs.getString("company");
-            }
-        } catch (SQLException e) {
-            System.out.println("Failed to fetch company: " + e.getMessage());
-        }
+    rs.close();
+    pst.close(); // Good practice to close your resources
+} catch (SQLException ex) {
+    ex.printStackTrace(); // Handle or log the exception
+}
+   }
 
-        return Company;
-    }
-   
-   public String getAddress() {
-        String sql = "SELECT address FROM receipts WHERE id = 1";
-        String Address = "";
-
-        try (
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(sql)
-        ) {
-            if (rs.next()) {
-                Address = rs.getString("address");
-            }
-        } catch (SQLException e) {
-            System.out.println("Failed to fetch Address: " + e.getMessage());
-        }
-
-        return Address;
-    }
-   
-   
-
+ //System.out.println("SAMUEL"); 
         
 }
