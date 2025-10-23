@@ -14,6 +14,8 @@ public class Main extends javax.swing.JFrame {
     Functions function = new Functions();
     boolean HomeClicked = true;
     boolean ArtistClicked = false;
+    boolean RequestClicked = false;
+    boolean SettingsClicked = false;
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Main.class.getName());
 
     /**
@@ -40,6 +42,8 @@ public class Main extends javax.swing.JFrame {
         Artist_BT = new javax.swing.JLabel();
         Request_BTN = new SystemOtherComps.PH_Panel();
         Request_BT = new javax.swing.JLabel();
+        Settings_BTN = new SystemOtherComps.PH_Panel();
+        Settings_BT = new javax.swing.JLabel();
         layers = new javax.swing.JLayeredPane();
         Artist = new javax.swing.JPanel();
         SearchTF1 = new javax.swing.JTextField();
@@ -121,6 +125,8 @@ public class Main extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        Settings = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 720));
@@ -242,6 +248,30 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(Request_BT))
         );
 
+        javax.swing.GroupLayout Settings_BTNLayout = new javax.swing.GroupLayout(Settings_BTN);
+        Settings_BTN.setLayout(Settings_BTNLayout);
+        Settings_BTNLayout.setHorizontalGroup(
+            Settings_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+        Settings_BTNLayout.setVerticalGroup(
+            Settings_BTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+
+        Settings_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/settings.png"))); // NOI18N
+        Settings_BT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Settings_BTMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Settings_BTMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Settings_BTMouseExited(evt);
+            }
+        });
+
         javax.swing.GroupLayout MenuLayout = new javax.swing.GroupLayout(Menu);
         Menu.setLayout(MenuLayout);
         MenuLayout.setHorizontalGroup(
@@ -249,13 +279,17 @@ public class Main extends javax.swing.JFrame {
             .addGroup(MenuLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MenuLayout.createSequentialGroup()
+                        .addComponent(Settings_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Settings_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Home_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MenuLayout.createSequentialGroup()
-                    .addGap(0, 63, Short.MAX_VALUE)
+                    .addGap(0, 95, Short.MAX_VALUE)
                     .addComponent(line, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         MenuLayout.setVerticalGroup(
@@ -267,7 +301,11 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(Artist_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
                 .addComponent(Request_BTN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(608, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 527, Short.MAX_VALUE)
+                .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Settings_BTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Settings_BT, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(49, 49, 49))
             .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(line, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE))
         );
@@ -301,7 +339,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(ArtistLayout.createSequentialGroup()
                 .addGap(370, 370, 370)
                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(401, Short.MAX_VALUE))
+                .addContainerGap(638, Short.MAX_VALUE))
         );
         ArtistLayout.setVerticalGroup(
             ArtistLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -310,7 +348,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(SearchTF1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel15)
-                .addContainerGap(549, Short.MAX_VALUE))
+                .addContainerGap(669, Short.MAX_VALUE))
         );
 
         layers.add(Artist, "card3");
@@ -496,15 +534,15 @@ public class Main extends javax.swing.JFrame {
         pH_Panel1Layout.setHorizontalGroup(
             pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pH_Panel1Layout.createSequentialGroup()
-                .addContainerGap(35, Short.MAX_VALUE)
+                .addContainerGap(34, Short.MAX_VALUE)
                 .addGroup(pH_Panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pH_Panel8, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
-                    .addComponent(pH_Label7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
+                    .addComponent(pH_Panel8, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
+                    .addComponent(pH_Label7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
                     .addComponent(pH_Label6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pH_Panel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
+                    .addComponent(pH_Panel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
                     .addComponent(pH_Label8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pH_Label4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pH_Panel7, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE))
+                    .addComponent(pH_Panel7, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE))
                 .addContainerGap())
         );
         pH_Panel1Layout.setVerticalGroup(
@@ -1153,6 +1191,36 @@ public class Main extends javax.swing.JFrame {
 
         layers.add(Commission, "card6");
 
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout SettingsLayout = new javax.swing.GroupLayout(Settings);
+        Settings.setLayout(SettingsLayout);
+        SettingsLayout.setHorizontalGroup(
+            SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SettingsLayout.createSequentialGroup()
+                .addGap(216, 216, 216)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(922, Short.MAX_VALUE))
+        );
+        SettingsLayout.setVerticalGroup(
+            SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsLayout.createSequentialGroup()
+                .addContainerGap(545, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(155, 155, 155))
+        );
+
+        layers.add(Settings, "card8");
+
         getContentPane().add(layers);
 
         pack();
@@ -1184,8 +1252,8 @@ public class Main extends javax.swing.JFrame {
 
     // MENU BUTTONS
     private void Home_BTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Home_BTMouseClicked
-       showcase(true, false, false, false, false, false);
-       function.MenuClicked(HomeClicked, Home_BTN, ArtistClicked, Artist_BTN);
+       showcase(true, false, false, false, false, false, false);
+       function.MenuClicked(HomeClicked, Home_BTN, ArtistClicked, Artist_BTN, RequestClicked, Request_BTN, SettingsClicked, Settings_BTN);
     }//GEN-LAST:event_Home_BTMouseClicked
 
     private void Home_BTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Home_BTMouseEntered
@@ -1197,8 +1265,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_Home_BTMouseExited
 
     private void Artist_BTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Artist_BTMouseClicked
-        showcase(false, true, false, false, false, false);
-       function.MenuClicked(HomeClicked, Home_BTN, ArtistClicked, Artist_BTN);
+        showcase(false, true, false, false, false, false, false);
+       function.MenuClicked(HomeClicked, Home_BTN, ArtistClicked, Artist_BTN, RequestClicked, Request_BTN, SettingsClicked, Settings_BTN);
     }//GEN-LAST:event_Artist_BTMouseClicked
 
     // Artist Menu
@@ -1220,8 +1288,22 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_Request_BTMouseExited
 
     private void Request_BTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Request_BTMouseClicked
-        // TODO add your handling code here:
+        showcase(false, false, false, true, false, false, false);
+        function.MenuClicked(HomeClicked, Home_BTN, ArtistClicked, Artist_BTN, RequestClicked, Request_BTN, SettingsClicked, Settings_BTN);
     }//GEN-LAST:event_Request_BTMouseClicked
+
+    private void Settings_BTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Settings_BTMouseClicked
+        showcase(false, false, false, false, false, false, true);
+        function.MenuClicked(HomeClicked, Home_BTN, ArtistClicked, Artist_BTN, RequestClicked, Request_BTN, SettingsClicked, Settings_BTN);
+    }//GEN-LAST:event_Settings_BTMouseClicked
+
+    private void Settings_BTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Settings_BTMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Settings_BTMouseEntered
+
+    private void Settings_BTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Settings_BTMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Settings_BTMouseExited
 
     /**
      * @param args the command line arguments
@@ -1271,6 +1353,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField SearchTF;
     private javax.swing.JTextField SearchTF1;
     private SystemOtherComps.PH_Label Search_icon;
+    private javax.swing.JPanel Settings;
+    private javax.swing.JLabel Settings_BT;
+    private SystemOtherComps.PH_Panel Settings_BTN;
     private SystemOtherComps.PH_Label User;
     private java.awt.Button button1;
     private java.awt.Button button2;
@@ -1290,6 +1375,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
@@ -1340,7 +1426,7 @@ public class Main extends javax.swing.JFrame {
     private Panels.TimelessPanel timelessPanel1;
     // End of variables declaration//GEN-END:variables
 
-    public void showcase(boolean Home_, boolean Artist_, boolean Portfolio_, boolean RequestForm_, boolean Payment_, boolean Commision_)
+    public void showcase(boolean Home_, boolean Artist_, boolean Portfolio_, boolean RequestForm_, boolean Payment_, boolean Commision_, boolean Settings_)
     {
         Home.setVisible(Home_);
         Artist.setVisible(Artist_);
@@ -1348,5 +1434,6 @@ public class Main extends javax.swing.JFrame {
         RequestForm.setVisible(RequestForm_);
         Payment.setVisible(Payment_);
         Commission.setVisible(Commision_);
+        Settings.setVisible(Settings_);
     }
 }
