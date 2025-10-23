@@ -293,7 +293,6 @@ public class Main extends javax.swing.JFrame {
         GameSearchTXT = new SystemOtherComps.PH_TextField();
         HomeSearchIcon = new javax.swing.JLabel();
         HomeCategoryIconTXT = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         GameScroll = new SystemOtherComps.PH_ScrollPane();
         GameList = new SystemOtherComps.PH_BettterFlowLayoutPanel();
         Add = new javax.swing.JPanel();
@@ -351,10 +350,11 @@ public class Main extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(200, 200, 205));
         setMinimumSize(new java.awt.Dimension(800, 720));
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        menu.setBackground(new java.awt.Color(24, 23, 23));
+        menu.setBackground(new java.awt.Color(247, 235, 221));
 
         line.setBackground(new java.awt.Color(51, 51, 51));
         line.setPreferredSize(new java.awt.Dimension(1, 0));
@@ -558,15 +558,16 @@ public class Main extends javax.swing.JFrame {
 
         getContentPane().add(menu);
 
+        layers.setBackground(new java.awt.Color(247, 235, 221));
         layers.setLayout(new java.awt.CardLayout());
 
-        About.setBackground(new java.awt.Color(24, 23, 23));
+        About.setBackground(new java.awt.Color(247, 235, 221));
 
         AboutScroll.setBackground(new java.awt.Color(51, 51, 51));
         AboutScroll.setForeground(new java.awt.Color(0, 204, 255));
         AboutScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        AboutFlow.setBackground(new java.awt.Color(24, 23, 23));
+        AboutFlow.setBackground(new java.awt.Color(247, 235, 221));
         AboutFlow.setForeground(new java.awt.Color(255, 255, 255));
         AboutFlow.add(samPanel5);
         AboutFlow.add(tonyPanel1);
@@ -576,10 +577,10 @@ public class Main extends javax.swing.JFrame {
 
         AboutScroll.setViewportView(AboutFlow);
 
-        SettingsBar1.setBackground(new java.awt.Color(24, 23, 23));
+        SettingsBar1.setBackground(new java.awt.Color(247, 235, 221));
 
         SettingsText1.setFont(new java.awt.Font("Arial Black", 0, 28)); // NOI18N
-        SettingsText1.setForeground(new java.awt.Color(255, 255, 255));
+        SettingsText1.setForeground(new java.awt.Color(60, 63, 65));
         SettingsText1.setText("About us");
 
         AboutBackBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/back.png"))); // NOI18N
@@ -851,10 +852,11 @@ public class Main extends javax.swing.JFrame {
 
         layers.add(Hidden, "card8");
 
-        History.setBackground(new java.awt.Color(24, 23, 23));
+        History.setBackground(new java.awt.Color(247, 235, 221));
 
-        HistoryBar.setBackground(new java.awt.Color(24, 23, 23));
+        HistoryBar.setBackground(new java.awt.Color(247, 235, 221));
 
+        HistoryText.setBackground(new java.awt.Color(24, 23, 23));
         HistoryText.setFont(new java.awt.Font("Arial Black", 0, 28)); // NOI18N
         HistoryText.setForeground(new java.awt.Color(255, 255, 255));
         HistoryText.setText("Transaction History");
@@ -969,9 +971,11 @@ public class Main extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
-        HistoryTable.setBackground(new java.awt.Color(24, 23, 23));
+        HistoryTableScroll.setBackground(new java.awt.Color(247, 235, 221));
+
+        HistoryTable.setBackground(new java.awt.Color(247, 235, 221));
         HistoryTable.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        HistoryTable.setForeground(new java.awt.Color(255, 255, 255));
+        HistoryTable.setForeground(new java.awt.Color(247, 235, 221));
         HistoryTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1117,7 +1121,7 @@ public class Main extends javax.swing.JFrame {
         ChangeUsernamePNLayout.setVerticalGroup(
             ChangeUsernamePNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ChangeUsernamePNLayout.createSequentialGroup()
-                .addContainerGap(11, Short.MAX_VALUE)
+                .addContainerGap(10, Short.MAX_VALUE)
                 .addGroup(ChangeUsernamePNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ChangeUsernameHeading)
                     .addComponent(Settings_BT1))
@@ -1174,7 +1178,7 @@ public class Main extends javax.swing.JFrame {
         ChangePassPNLayout.setVerticalGroup(
             ChangePassPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ChangePassPNLayout.createSequentialGroup()
-                .addContainerGap(11, Short.MAX_VALUE)
+                .addContainerGap(10, Short.MAX_VALUE)
                 .addGroup(ChangePassPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ChangePassHeading1)
                     .addComponent(Settings_BT2))
@@ -1231,7 +1235,7 @@ public class Main extends javax.swing.JFrame {
         AboutPNLayout.setVerticalGroup(
             AboutPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AboutPNLayout.createSequentialGroup()
-                .addContainerGap(11, Short.MAX_VALUE)
+                .addContainerGap(10, Short.MAX_VALUE)
                 .addGroup(AboutPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AboutHeading)
                     .addComponent(Settings_BT3))
@@ -1248,9 +1252,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
@@ -1669,7 +1673,7 @@ public class Main extends javax.swing.JFrame {
                         .addGap(20, 20, 20))
                     .addGroup(CartLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 467, Short.MAX_VALUE)
+                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CartLayout.createSequentialGroup()
                         .addContainerGap()
@@ -1732,14 +1736,14 @@ public class Main extends javax.swing.JFrame {
 
         layers.add(Cart, "card2");
 
-        Home.setBackground(new java.awt.Color(24, 23, 23));
+        Home.setBackground(new java.awt.Color(247, 235, 221));
         Home.setPreferredSize(new java.awt.Dimension(783, 594));
 
-        GameBar.setBackground(new java.awt.Color(24, 23, 23));
+        GameBar.setBackground(new java.awt.Color(247, 235, 221));
 
         Games_txt.setFont(new java.awt.Font("Arial Black", 0, 28)); // NOI18N
-        Games_txt.setForeground(new java.awt.Color(255, 255, 255));
-        Games_txt.setText("Games");
+        Games_txt.setForeground(new java.awt.Color(24, 23, 23));
+        Games_txt.setText("LikhangSining");
 
         CartPN.setBackground(new java.awt.Color(24, 23, 23));
         CartPN.setAAA_ImageBoundArcSize(20);
@@ -1821,18 +1825,14 @@ public class Main extends javax.swing.JFrame {
 
         HomeCategoryIconTXT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/category.png"))); // NOI18N
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/transparentHB.jpg"))); // NOI18N
-
         javax.swing.GroupLayout GameBarLayout = new javax.swing.GroupLayout(GameBar);
         GameBar.setLayout(GameBarLayout);
         GameBarLayout.setHorizontalGroup(
             GameBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GameBarLayout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Games_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
+                .addGap(32, 32, 32)
+                .addComponent(Games_txt)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addComponent(HomeCategoryIconTXT)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(categories, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1874,9 +1874,7 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(9, 9, 9))))
                     .addGroup(GameBarLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(GameBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Games_txt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(Games_txt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -1884,7 +1882,7 @@ public class Main extends javax.swing.JFrame {
         GameScroll.setForeground(new java.awt.Color(0, 204, 255));
         GameScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        GameList.setBackground(new java.awt.Color(24, 23, 23));
+        GameList.setBackground(new java.awt.Color(247, 235, 221));
         GameList.setForeground(new java.awt.Color(255, 255, 255));
         GameScroll.setViewportView(GameList);
 
@@ -2161,13 +2159,13 @@ public class Main extends javax.swing.JFrame {
 
         layers.add(Add, "card2");
 
-        Edit.setBackground(new java.awt.Color(24, 23, 23));
+        Edit.setBackground(new java.awt.Color(247, 235, 221));
         Edit.setPreferredSize(new java.awt.Dimension(783, 594));
 
-        EditBar.setBackground(new java.awt.Color(24, 23, 23));
+        EditBar.setBackground(new java.awt.Color(247, 235, 221));
 
         EditBT.setFont(new java.awt.Font("Arial Black", 0, 28)); // NOI18N
-        EditBT.setForeground(new java.awt.Color(255, 255, 255));
+        EditBT.setForeground(new java.awt.Color(24, 23, 23));
         EditBT.setText("Inventory");
         EditBT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -2192,7 +2190,7 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        EditSideBar.setBackground(new java.awt.Color(24, 23, 23));
+        EditSideBar.setBackground(new java.awt.Color(247, 235, 221));
 
         EditSearch.setForeground(new java.awt.Color(255, 255, 255));
         EditSearch.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -2211,7 +2209,9 @@ public class Main extends javax.swing.JFrame {
 
         EditSearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search.png"))); // NOI18N
 
-        EditTable.setBackground(new java.awt.Color(24, 23, 23));
+        EditTableScroll.setBackground(new java.awt.Color(72, 53, 40));
+
+        EditTable.setBackground(new java.awt.Color(72, 53, 40));
         EditTable.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         EditTable.setForeground(new java.awt.Color(255, 255, 255));
         EditTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -2254,6 +2254,7 @@ public class Main extends javax.swing.JFrame {
             EditTable.getColumnModel().getColumn(3).setMaxWidth(0);
         }
 
+        EditCategorySort.setBackground(new java.awt.Color(72, 53, 40));
         EditCategorySort.setForeground(new java.awt.Color(255, 255, 255));
         EditCategorySort.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
         EditCategorySort.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
@@ -2351,6 +2352,7 @@ public class Main extends javax.swing.JFrame {
         });
 
         EditDeleteBT.setBackground(new java.awt.Color(24, 23, 23));
+        EditDeleteBT.setForeground(new java.awt.Color(255, 255, 255));
         EditDeleteBT.setText("Delete");
         EditDeleteBT.setAAA_ImageBoundArcSize(10);
         EditDeleteBT.setAAA_roundBottomLeft(10);
@@ -2374,11 +2376,12 @@ public class Main extends javax.swing.JFrame {
         EditDescriptionText.setForeground(new java.awt.Color(255, 255, 255));
         EditDescriptionText.setText("Description:");
 
+        EditDescriptionScroll.setBackground(new java.awt.Color(247, 235, 221));
         EditDescriptionScroll.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
         EditDescriptionScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         EditDescriptionScroll.setToolTipText("");
 
-        EditDescription.setBackground(new java.awt.Color(24, 23, 23));
+        EditDescription.setBackground(new java.awt.Color(247, 235, 221));
         EditDescription.setColumns(20);
         EditDescription.setRows(5);
         EditDescription.setText("\n");
@@ -2393,7 +2396,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        EditCost.setBackground(new java.awt.Color(24, 23, 23));
+        EditCost.setBackground(new java.awt.Color(72, 53, 40));
         EditCost.setForeground(new java.awt.Color(255, 255, 255));
         EditCost.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         EditCost.setAAA_roundBottomLeft(20);
@@ -2408,9 +2411,10 @@ public class Main extends javax.swing.JFrame {
         EditCost.setAA_DrawRightBorder(true);
         EditCost.setAA_DrawTopBorder(true);
         EditCost.setAA_TextHint("   Enter Cost");
+        EditCost.setAB_HintColor(new java.awt.Color(255, 255, 255));
         EditCost.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
 
-        EditName.setBackground(new java.awt.Color(24, 23, 23));
+        EditName.setBackground(new java.awt.Color(72, 53, 40));
         EditName.setForeground(new java.awt.Color(255, 255, 255));
         EditName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         EditName.setAAA_roundBottomLeft(20);
@@ -2425,16 +2429,19 @@ public class Main extends javax.swing.JFrame {
         EditName.setAA_DrawRightBorder(true);
         EditName.setAA_DrawTopBorder(true);
         EditName.setAA_TextHint("   Enter Name");
+        EditName.setAB_HintColor(new java.awt.Color(255, 255, 255));
         EditName.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
 
         EditNameText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        EditNameText.setForeground(new java.awt.Color(24, 23, 23));
         EditNameText.setText(" Name:");
 
         EditCostText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        EditCostText.setForeground(new java.awt.Color(24, 23, 23));
         EditCostText.setText("Cost:");
 
         EditDiscount.setEditable(false);
-        EditDiscount.setBackground(new java.awt.Color(24, 23, 23));
+        EditDiscount.setBackground(new java.awt.Color(72, 53, 40));
         EditDiscount.setForeground(new java.awt.Color(255, 255, 255));
         EditDiscount.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         EditDiscount.setAAA_roundBottomLeft(20);
@@ -2452,11 +2459,14 @@ public class Main extends javax.swing.JFrame {
         EditDiscount.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
 
         EditDiscountText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        EditDiscountText.setForeground(new java.awt.Color(24, 23, 23));
         EditDiscountText.setText("Discount:");
 
         EditCategoryText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        EditCategoryText.setForeground(new java.awt.Color(24, 23, 23));
         EditCategoryText.setText("Category:");
 
+        EditCategory.setBackground(new java.awt.Color(72, 53, 40));
         EditCategory.setForeground(new java.awt.Color(255, 255, 255));
         EditCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
         EditCategory.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
@@ -2479,7 +2489,8 @@ public class Main extends javax.swing.JFrame {
 
         saving.setText("saving...");
 
-        decrementBT.setBackground(new java.awt.Color(38, 38, 38));
+        decrementBT.setBackground(new java.awt.Color(72, 53, 40));
+        decrementBT.setBorder(javax.swing.BorderFactory.createEmptyBorder(9, 1, 9, 1));
         decrementBT.setForeground(new java.awt.Color(255, 255, 255));
         decrementBT.setText("-");
         decrementBT.setAA_ButtonColor(new java.awt.Color(38, 38, 38));
@@ -2500,7 +2511,8 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        incrementBT.setBackground(new java.awt.Color(38, 38, 38));
+        incrementBT.setBackground(new java.awt.Color(72, 53, 40));
+        incrementBT.setBorder(javax.swing.BorderFactory.createEmptyBorder(9, 1, 9, 1));
         incrementBT.setForeground(new java.awt.Color(255, 255, 255));
         incrementBT.setText("+");
         incrementBT.setAA_ButtonColor(new java.awt.Color(38, 38, 38));
@@ -3192,7 +3204,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel imagepathdesc1;
     private SystemOtherComps.PH_Button incrementBT;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
