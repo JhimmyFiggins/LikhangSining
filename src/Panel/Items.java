@@ -141,7 +141,7 @@ public class Items extends javax.swing.JPanel {
         LPASS = new javax.swing.JLabel();
         ImageTXT = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(247, 235, 221));
+        setBackground(new java.awt.Color(230, 220, 209));
         setMaximumSize(new java.awt.Dimension(232, 395));
         setMinimumSize(new java.awt.Dimension(232, 395));
         setPreferredSize(new java.awt.Dimension(232, 395));
