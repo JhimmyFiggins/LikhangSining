@@ -603,7 +603,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(AboutBackBT)
                 .addGap(18, 18, 18)
                 .addComponent(SettingsText1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(2658, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SettingsBar1Layout.setVerticalGroup(
             SettingsBar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -634,7 +634,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(AboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(AboutLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(AboutScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 2988, Short.MAX_VALUE)
+                    .addComponent(AboutScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         AboutLayout.setVerticalGroup(
@@ -829,7 +829,7 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(HiddenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(addimagetool1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(691, Short.MAX_VALUE))
+                .addContainerGap(721, Short.MAX_VALUE))
         );
         HiddenLayout.setVerticalGroup(
             HiddenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1030,7 +1030,7 @@ public class Main extends javax.swing.JFrame {
             .addComponent(HistoryBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(HistoryLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(HistoryTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 1043, Short.MAX_VALUE)
+                .addComponent(HistoryTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
                 .addContainerGap())
         );
         HistoryLayout.setVerticalGroup(
@@ -1071,7 +1071,7 @@ public class Main extends javax.swing.JFrame {
         );
 
         ChangeUsernamePN.setBackground(new java.awt.Color(72, 53, 40));
-        ChangeUsernamePN.setForeground(new java.awt.Color(24, 23, 23));
+        ChangeUsernamePN.setForeground(new java.awt.Color(72, 53, 40));
         ChangeUsernamePN.setAAA_ImageBoundArcSize(30);
         ChangeUsernamePN.setAAA_roundBottomLeft(30);
         ChangeUsernamePN.setAAA_roundBottomRight(30);
@@ -1249,9 +1249,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
@@ -1670,7 +1670,7 @@ public class Main extends javax.swing.JFrame {
                         .addGap(20, 20, 20))
                     .addGroup(CartLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 692, Short.MAX_VALUE)
+                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 722, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CartLayout.createSequentialGroup()
                         .addContainerGap()
@@ -1829,7 +1829,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GameBarLayout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addComponent(Games_txt)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 256, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 286, Short.MAX_VALUE)
                 .addComponent(HomeCategoryIconTXT)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(categories, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2570,7 +2570,7 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EditLayout.createSequentialGroup()
                                 .addGroup(EditLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(EditName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE)
+                                    .addComponent(EditName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                                     .addComponent(EditCost, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(EditCategory, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(102, 102, 102))))
@@ -2930,12 +2930,12 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_AboutBackBTMouseClicked
 
     private void AboutBackBTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AboutBackBTMouseEntered
-        ImageIcon image = new ImageIcon(getClass().getResource("/Images/back2.png"));
+        ImageIcon image = new ImageIcon(getClass().getResource("/Images/ion_chevron-back.png"));
         AboutBackBT.setIcon(image);
     }//GEN-LAST:event_AboutBackBTMouseEntered
 
     private void AboutBackBTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AboutBackBTMouseExited
-        ImageIcon image = new ImageIcon(getClass().getResource("/Images/back.png"));
+        ImageIcon image = new ImageIcon(getClass().getResource("/Images/ion_chevron-back.png"));
         AboutBackBT.setIcon(image);
     }//GEN-LAST:event_AboutBackBTMouseExited
 
