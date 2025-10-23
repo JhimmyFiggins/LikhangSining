@@ -377,7 +377,7 @@ public class Main extends javax.swing.JFrame {
         HomePN.setAAA_roundTopLeft(20);
         HomePN.setAAA_roundTopRight(20);
 
-        Home_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ep_home-filled.png"))); // NOI18N
+        Home_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ic_sharp-home.png"))); // NOI18N
         Home_BT.setToolTipText("Games");
         Home_BT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -491,7 +491,7 @@ public class Main extends javax.swing.JFrame {
         SettingsPN.setAAA_roundTopLeft(20);
         SettingsPN.setAAA_roundTopRight(20);
 
-        Settings_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (1).png"))); // NOI18N
+        Settings_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/settings.png"))); // NOI18N
         Settings_BT.setToolTipText("Developer Info");
         Settings_BT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -510,7 +510,7 @@ public class Main extends javax.swing.JFrame {
         SettingsPNLayout.setHorizontalGroup(
             SettingsPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsPNLayout.createSequentialGroup()
-                .addContainerGap(9, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Settings_BT)
                 .addContainerGap())
         );
@@ -858,7 +858,6 @@ public class Main extends javax.swing.JFrame {
         HistoryText.setForeground(new java.awt.Color(24, 23, 23));
         HistoryText.setText("Transaction History");
 
-        HistoryCategorySort.setBackground(new java.awt.Color(72, 53, 40));
         HistoryCategorySort.setForeground(new java.awt.Color(255, 255, 255));
         HistoryCategorySort.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
         HistoryCategorySort.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
@@ -888,9 +887,9 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        HistorySearchIconTXT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search.png"))); // NOI18N
+        HistorySearchIconTXT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (6).png"))); // NOI18N
 
-        HistoryCategoryIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (3).png"))); // NOI18N
+        HistoryCategoryIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (5).png"))); // NOI18N
 
         TransactionNumber.setForeground(new java.awt.Color(24, 23, 23));
         TransactionNumber.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1750,7 +1749,7 @@ public class Main extends javax.swing.JFrame {
         CartPN.setAAA_roundTopLeft(20);
         CartPN.setAAA_roundTopRight(20);
 
-        CartBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cart.png"))); // NOI18N
+        CartBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add to cart.png"))); // NOI18N
         CartBT.setToolTipText("Cart");
         CartBT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1769,15 +1768,15 @@ public class Main extends javax.swing.JFrame {
         CartPNLayout.setHorizontalGroup(
             CartPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CartPNLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CartBT)
+                .addContainerGap()
+                .addComponent(CartBT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         CartPNLayout.setVerticalGroup(
             CartPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CartPNLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CartBT)
+                .addContainerGap()
+                .addComponent(CartBT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1798,7 +1797,7 @@ public class Main extends javax.swing.JFrame {
         categories.setForeground(new java.awt.Color(255, 255, 255));
         categories.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
         categories.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
-        categories.setAA_lineColor(new java.awt.Color(45, 187, 63));
+        categories.setAA_lineColor(new java.awt.Color(72, 53, 40));
         categories.setFocusable(false);
         categories.setLabeText("   Categories ");
         categories.setRequestFocusEnabled(false);
@@ -1819,9 +1818,9 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        HomeSearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search.png"))); // NOI18N
+        HomeSearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (6).png"))); // NOI18N
 
-        HomeCategoryIconTXT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/category.png"))); // NOI18N
+        HomeCategoryIconTXT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (5).png"))); // NOI18N
 
         javax.swing.GroupLayout GameBarLayout = new javax.swing.GroupLayout(GameBar);
         GameBar.setLayout(GameBarLayout);
@@ -1830,7 +1829,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GameBarLayout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addComponent(Games_txt)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(HomeCategoryIconTXT)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(categories, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1899,7 +1898,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(HomeLayout.createSequentialGroup()
                 .addComponent(GameBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(GameScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
+                .addComponent(GameScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 518, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -2205,7 +2204,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        EditSearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search.png"))); // NOI18N
+        EditSearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (6).png"))); // NOI18N
 
         EditTableScroll.setBackground(new java.awt.Color(72, 53, 40));
 
@@ -2267,11 +2266,11 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        EditSearchIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/category.png"))); // NOI18N
+        EditSearchIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (5).png"))); // NOI18N
 
         AddBT1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
         AddBT1.setForeground(new java.awt.Color(102, 102, 102));
-        AddBT1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add2.png"))); // NOI18N
+        AddBT1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (7).png"))); // NOI18N
         AddBT1.setToolTipText("Add Product");
         AddBT1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -2571,7 +2570,7 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EditLayout.createSequentialGroup()
                                 .addGroup(EditLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(EditName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(EditName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
                                     .addComponent(EditCost, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(EditCategory, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(102, 102, 102))))

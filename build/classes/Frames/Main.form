@@ -158,7 +158,7 @@
             <Component class="javax.swing.JLabel" name="Home_BT">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Images/ep_home-filled.png"/>
+                  <Image iconType="3" name="/Images/ic_sharp-home.png"/>
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value="Games"/>
               </Properties>
@@ -285,7 +285,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="9" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="Settings_BT" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -301,7 +301,7 @@
             <Component class="javax.swing.JLabel" name="Settings_BT">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Images/Vector (1).png"/>
+                  <Image iconType="3" name="/Images/settings.png"/>
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value="Developer Info"/>
               </Properties>
@@ -961,9 +961,6 @@
                 </Component>
                 <Component class="SystemShadowedComp.PH_ComboBox" name="HistoryCategorySort">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="28" green="35" red="48" type="rgb"/>
-                    </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
@@ -1019,14 +1016,14 @@
                 <Component class="javax.swing.JLabel" name="HistorySearchIconTXT">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/search.png"/>
+                      <Image iconType="3" name="/Images/Vector (6).png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="HistoryCategoryIcon">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/Vector (3).png"/>
+                      <Image iconType="3" name="/Images/Vector (5).png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -2397,7 +2394,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="GameBar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="GameScroll" pref="604" max="32767" attributes="0"/>
+                      <Component id="GameScroll" pref="518" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -2417,7 +2414,7 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="Games_txt" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="250" max="32767" attributes="0"/>
+                          <EmptySpace pref="38" max="32767" attributes="0"/>
                           <Component id="HomeCategoryIconTXT" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="categories" min="-2" pref="163" max="-2" attributes="0"/>
@@ -2510,17 +2507,17 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="CartBT" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="CartBT" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="CartBT" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="CartBT" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -2530,7 +2527,7 @@
                     <Component class="javax.swing.JLabel" name="CartBT">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Images/cart.png"/>
+                          <Image iconType="3" name="/Images/add to cart.png"/>
                         </Property>
                         <Property name="toolTipText" type="java.lang.String" value="Cart"/>
                       </Properties>
@@ -2589,7 +2586,7 @@
                       <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
                     <Property name="AA_lineColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="3f" green="bb" red="2d" type="rgb"/>
+                      <Color blue="28" green="35" red="48" type="rgb"/>
                     </Property>
                     <Property name="focusable" type="boolean" value="false"/>
                     <Property name="labeText" type="java.lang.String" value="   Categories "/>
@@ -2621,14 +2618,14 @@
                 <Component class="javax.swing.JLabel" name="HomeSearchIcon">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/search.png"/>
+                      <Image iconType="3" name="/Images/Vector (6).png"/>
                     </Property>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="HomeCategoryIconTXT">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/category.png"/>
+                      <Image iconType="3" name="/Images/Vector (5).png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -3170,7 +3167,7 @@
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="EditName" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="EditName" alignment="0" pref="380" max="32767" attributes="0"/>
                                           <Component id="EditCost" alignment="0" max="32767" attributes="0"/>
                                           <Component id="EditCategory" alignment="0" min="-2" pref="247" max="-2" attributes="0"/>
                                       </Group>
@@ -3380,7 +3377,7 @@
                 <Component class="javax.swing.JLabel" name="EditSearchIcon">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/search.png"/>
+                      <Image iconType="3" name="/Images/Vector (6).png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -3501,7 +3498,7 @@
                 <Component class="javax.swing.JLabel" name="EditSearchIcon1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/category.png"/>
+                      <Image iconType="3" name="/Images/Vector (5).png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -3514,7 +3511,7 @@
                       <Color blue="66" green="66" red="66" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/add2.png"/>
+                      <Image iconType="3" name="/Images/Vector (7).png"/>
                     </Property>
                     <Property name="toolTipText" type="java.lang.String" value="Add Product"/>
                   </Properties>

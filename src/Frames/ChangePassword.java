@@ -79,9 +79,9 @@ public class ChangePassword extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(24, 23, 23));
 
-        jPanel1.setBackground(new java.awt.Color(24, 23, 23));
+        jPanel1.setBackground(new java.awt.Color(247, 235, 221));
 
-        ChangePassBT.setBackground(new java.awt.Color(51, 51, 51));
+        ChangePassBT.setBackground(new java.awt.Color(72, 53, 40));
         ChangePassBT.setForeground(new java.awt.Color(251, 251, 251));
         ChangePassBT.setText("Save");
         ChangePassBT.setAAA_ImageBoundArcSize(10);
@@ -100,26 +100,26 @@ public class ChangePassword extends javax.swing.JFrame {
             }
         });
 
-        ReNewPass.setForeground(new java.awt.Color(255, 255, 255));
+        ReNewPass.setForeground(new java.awt.Color(24, 23, 23));
         ReNewPass.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         ReNewPass.setAA_TextHint(" Re-type new password");
-        ReNewPass.setAB_HintColor(new java.awt.Color(153, 153, 153));
-        ReNewPass.setAB_LineColor(new java.awt.Color(102, 102, 102));
+        ReNewPass.setAB_HintColor(new java.awt.Color(24, 23, 23));
+        ReNewPass.setAB_LineColor(new java.awt.Color(24, 23, 23));
 
-        NewPass.setForeground(new java.awt.Color(255, 255, 255));
+        NewPass.setForeground(new java.awt.Color(24, 23, 23));
         NewPass.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         NewPass.setAA_TextHint("New password");
-        NewPass.setAB_HintColor(new java.awt.Color(153, 153, 153));
-        NewPass.setAB_LineColor(new java.awt.Color(102, 102, 102));
+        NewPass.setAB_HintColor(new java.awt.Color(24, 23, 23));
+        NewPass.setAB_LineColor(new java.awt.Color(24, 23, 23));
 
-        OldPass.setForeground(new java.awt.Color(255, 255, 255));
+        OldPass.setForeground(new java.awt.Color(24, 23, 23));
         OldPass.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         OldPass.setAA_TextHint("Current password");
-        OldPass.setAB_HintColor(new java.awt.Color(153, 153, 153));
-        OldPass.setAB_LineColor(new java.awt.Color(102, 102, 102));
+        OldPass.setAB_HintColor(new java.awt.Color(24, 23, 23));
+        OldPass.setAB_LineColor(new java.awt.Color(24, 23, 23));
 
         changepasswordtext1.setFont(new java.awt.Font("Arial Black", 0, 30)); // NOI18N
-        changepasswordtext1.setForeground(new java.awt.Color(255, 255, 255));
+        changepasswordtext1.setForeground(new java.awt.Color(24, 23, 23));
         changepasswordtext1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         changepasswordtext1.setText("Change Password");
         changepasswordtext1.setMaximumSize(new java.awt.Dimension(125, 43));
