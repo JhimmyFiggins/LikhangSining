@@ -77,7 +77,7 @@
         <Property name="AAA_roundTopRight" type="int" value="40"/>
         <Property name="AA_ArcSize" type="int" value="40"/>
         <Property name="AA_CompImage" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/ina.jpg"/>
+          <Image iconType="3" name="/Images/tony.png"/>
         </Property>
         <Property name="AA_DrawImage" type="boolean" value="true"/>
       </Properties>
@@ -104,7 +104,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="99" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Assistant Programmer"/>
+        <Property name="text" type="java.lang.String" value="Programmer"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

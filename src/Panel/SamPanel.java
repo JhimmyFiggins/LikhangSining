@@ -32,16 +32,16 @@ public class SamPanel extends javax.swing.JPanel {
         pH_Label1.setAAA_roundTopLeft(40);
         pH_Label1.setAAA_roundTopRight(40);
         pH_Label1.setAA_ArcSize(40);
-        pH_Label1.setAA_CompImage(new javax.swing.ImageIcon(getClass().getResource("/Images/hare.jpg"))); // NOI18N
+        pH_Label1.setAA_CompImage(new javax.swing.ImageIcon(getClass().getResource("/Images/Reuel.jpg"))); // NOI18N
         pH_Label1.setAA_DrawImage(true);
 
         name.setFont(new java.awt.Font("OCR A Extended", 1, 18)); // NOI18N
         name.setForeground(new java.awt.Color(255, 255, 255));
-        name.setText("Samuel James Cinco");
+        name.setText("Carlos, Reuel, L ");
 
         title.setFont(new java.awt.Font("OCR A Extended", 0, 14)); // NOI18N
         title.setForeground(new java.awt.Color(153, 153, 153));
-        title.setText("Lead Programmer");
+        title.setText("Programmer");
 
         contactme.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
         contactme.setForeground(new java.awt.Color(153, 153, 153));

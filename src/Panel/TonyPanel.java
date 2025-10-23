@@ -31,7 +31,7 @@ public class TonyPanel extends javax.swing.JPanel {
         pH_Label1.setAAA_roundTopLeft(40);
         pH_Label1.setAAA_roundTopRight(40);
         pH_Label1.setAA_ArcSize(40);
-        pH_Label1.setAA_CompImage(new javax.swing.ImageIcon(getClass().getResource("/Images/ina.jpg"))); // NOI18N
+        pH_Label1.setAA_CompImage(new javax.swing.ImageIcon(getClass().getResource("/Images/tony.png"))); // NOI18N
         pH_Label1.setAA_DrawImage(true);
 
         name.setFont(new java.awt.Font("OCR A Extended", 1, 18)); // NOI18N
@@ -40,7 +40,7 @@ public class TonyPanel extends javax.swing.JPanel {
 
         title.setFont(new java.awt.Font("OCR A Extended", 0, 14)); // NOI18N
         title.setForeground(new java.awt.Color(153, 153, 153));
-        title.setText("Assistant Programmer");
+        title.setText("Programmer");
 
         contactme.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
         contactme.setForeground(new java.awt.Color(153, 153, 153));
