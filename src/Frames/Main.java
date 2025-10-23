@@ -377,7 +377,7 @@ public class Main extends javax.swing.JFrame {
         HomePN.setAAA_roundTopLeft(20);
         HomePN.setAAA_roundTopRight(20);
 
-        Home_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/home.png"))); // NOI18N
+        Home_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ep_home-filled.png"))); // NOI18N
         Home_BT.setToolTipText("Games");
         Home_BT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -491,7 +491,7 @@ public class Main extends javax.swing.JFrame {
         SettingsPN.setAAA_roundTopLeft(20);
         SettingsPN.setAAA_roundTopRight(20);
 
-        Settings_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/settings.png"))); // NOI18N
+        Settings_BT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (1).png"))); // NOI18N
         Settings_BT.setToolTipText("Developer Info");
         Settings_BT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -510,16 +510,13 @@ public class Main extends javax.swing.JFrame {
         SettingsPNLayout.setHorizontalGroup(
             SettingsPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsPNLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(9, Short.MAX_VALUE)
                 .addComponent(Settings_BT)
                 .addContainerGap())
         );
         SettingsPNLayout.setVerticalGroup(
             SettingsPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SettingsPNLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Settings_BT)
-                .addContainerGap())
+            .addComponent(Settings_BT, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout menuLayout = new javax.swing.GroupLayout(menu);
@@ -893,7 +890,7 @@ public class Main extends javax.swing.JFrame {
 
         HistorySearchIconTXT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search.png"))); // NOI18N
 
-        HistoryCategoryIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/category.png"))); // NOI18N
+        HistoryCategoryIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (3).png"))); // NOI18N
 
         TransactionNumber.setForeground(new java.awt.Color(24, 23, 23));
         TransactionNumber.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -908,7 +905,7 @@ public class Main extends javax.swing.JFrame {
         TransactionNumber.setAA_BorderColor(new java.awt.Color(51, 51, 51));
         TransactionNumber.setAA_DrawBorder(true);
 
-        HistoryCalculate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/total.png"))); // NOI18N
+        HistoryCalculate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (4).png"))); // NOI18N
         HistoryCalculate.setToolTipText("Total Earnings");
         HistoryCalculate.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1253,9 +1250,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
