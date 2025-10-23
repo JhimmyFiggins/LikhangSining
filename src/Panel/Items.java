@@ -172,9 +172,9 @@ public class Items extends javax.swing.JPanel {
         AddCartBT.setAAA_roundTopRight(20);
         AddCartBT.setAA_ArcSize(20);
         AddCartBT.setAA_ButtonColor(new java.awt.Color(24, 23, 23));
-        AddCartBT.setAA_HoverColor(new java.awt.Color(38, 38, 38));
-        AddCartBT.setAA_PressColor(new java.awt.Color(54, 53, 53));
-        AddCartBT.setAA_RippleColor(new java.awt.Color(31, 211, 71));
+        AddCartBT.setAA_HoverColor(new java.awt.Color(242, 197, 160));
+        AddCartBT.setAA_PressColor(new java.awt.Color(242, 197, 160));
+        AddCartBT.setAA_RippleColor(new java.awt.Color(242, 197, 160));
         AddCartBT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddCartBTActionPerformed(evt);

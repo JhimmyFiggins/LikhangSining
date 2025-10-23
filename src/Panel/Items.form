@@ -96,14 +96,14 @@
         <Property name="AA_ButtonColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="17" green="17" red="18" type="rgb"/>
         </Property>
-        <Property name="AA_HoverColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="26" green="26" red="26" type="rgb"/>
+        <Property name="AA_HoverColor" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new java.awt.Color(242, 197, 160)" type="code"/>
         </Property>
-        <Property name="AA_PressColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="35" green="35" red="36" type="rgb"/>
+        <Property name="AA_PressColor" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new java.awt.Color(242, 197, 160)" type="code"/>
         </Property>
-        <Property name="AA_RippleColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="47" green="d3" red="1f" type="rgb"/>
+        <Property name="AA_RippleColor" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new java.awt.Color(242, 197, 160)" type="code"/>
         </Property>
       </Properties>
       <Events>

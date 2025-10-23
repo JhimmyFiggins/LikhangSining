@@ -68,7 +68,7 @@ public class SplashScreen extends javax.swing.JDialog {
         );
 
         hareIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        hareIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/small hare.jpg"))); // NOI18N
+        hareIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo sm.png"))); // NOI18N
 
         javax.swing.GroupLayout SplashPanelLayout = new javax.swing.GroupLayout(SplashPanel);
         SplashPanel.setLayout(SplashPanelLayout);

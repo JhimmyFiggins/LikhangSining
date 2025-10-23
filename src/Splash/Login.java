@@ -73,7 +73,7 @@ public class Login extends javax.swing.JFrame {
         mainApp.setVisible(false);
         
         cacheloading();
-        ImageIcon logo = new ImageIcon(getClass().getResource("/Images/smol icon.png"));
+        ImageIcon logo = new ImageIcon(getClass().getResource("/Images/LS Icon.png"));
         setIconImage(logo.getImage());
         setTitle("Likhang Sining");
         setResizable(false);
@@ -159,6 +159,8 @@ private void openMainApplicationFrame() {
         LoginBT.setAA_HoverColor(new java.awt.Color(153, 153, 153));
         LoginBT.setAA_PressColor(new java.awt.Color(93, 184, 105));
         LoginBT.setAA_RippleColor(new java.awt.Color(21, 135, 46));
+        LoginBT.setAA_RippleColor(new java.awt.Color(176, 129, 91));
+        LoginBT.setAA_RippleColor(new java.awt.Color(176, 129, 91));
         LoginBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         LoginBT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

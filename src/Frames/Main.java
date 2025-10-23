@@ -3227,9 +3227,9 @@ public class Main extends javax.swing.JFrame {
     
     public void startup(){
         //icon and title
-        ImageIcon Mainicon = new ImageIcon(getClass().getResource("/Images/HB icon.png"));
+        ImageIcon Mainicon = new ImageIcon(getClass().getResource("/Images/LS Icon.png"));
         setIconImage(Mainicon.getImage());
-        setTitle("HazeByte");
+        setTitle("Likhang Sining");
         setResizable(true);
         setExtendedState(MAXIMIZED_BOTH);
         
