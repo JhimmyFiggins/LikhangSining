@@ -36,7 +36,7 @@ public class CurvesPanel extends GradientPanel {
     }
 //434343 000000 24,23,23
     public CurvesPanel() {
-        super(Color.decode("#181717"), Color.decode("#181717"));
+        super(Color.decode("#f7ebdd"), Color.decode("#f7ebdd"));
         hints = new RenderingHints(RenderingHints.KEY_ALPHA_INTERPOLATION,
                 RenderingHints.VALUE_ALPHA_INTERPOLATION_QUALITY);
         hints.put(RenderingHints.KEY_ANTIALIASING,
@@ -126,7 +126,7 @@ public class CurvesPanel extends GradientPanel {
         path.transform(translation);
         thickCurve.subtract(new Area(path));
 
-        Color start = new Color(33,188,54,  200);
+        Color start = new Color(247, 235, 221);
         Color end = new Color(0,0,0, 0);
 
         Rectangle bounds = thickCurve.getBounds();

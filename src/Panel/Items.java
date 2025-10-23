@@ -141,28 +141,29 @@ public class Items extends javax.swing.JPanel {
         LPASS = new javax.swing.JLabel();
         ImageTXT = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(24, 23, 23));
+        setBackground(new java.awt.Color(247, 235, 221));
         setMaximumSize(new java.awt.Dimension(232, 395));
         setMinimumSize(new java.awt.Dimension(232, 395));
         setPreferredSize(new java.awt.Dimension(232, 395));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CategoryTXT.setForeground(new java.awt.Color(102, 102, 102));
+        CategoryTXT.setForeground(new java.awt.Color(86, 67, 55));
         CategoryTXT.setText("Gacha Game");
         add(CategoryTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 231, 222, -1));
 
         TitleTXT.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        TitleTXT.setForeground(new java.awt.Color(72, 53, 40));
         TitleTXT.setText("MiSide");
         TitleTXT.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         add(TitleTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 253, 216, 40));
 
         CostTXT.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        CostTXT.setForeground(new java.awt.Color(25, 167, 56));
+        CostTXT.setForeground(new java.awt.Color(86, 67, 55));
         CostTXT.setText("456$");
         add(CostTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 299, 216, -1));
 
-        AddCartBT.setBackground(new java.awt.Color(24, 23, 23));
-        AddCartBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/add to cart.png"))); // NOI18N
+        AddCartBT.setBackground(new java.awt.Color(72, 53, 40));
+        AddCartBT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cart_1.png"))); // NOI18N
         AddCartBT.setToolTipText("add to cart");
         AddCartBT.setAAA_ImageBoundArcSize(20);
         AddCartBT.setAAA_roundBottomLeft(20);
@@ -179,7 +180,7 @@ public class Items extends javax.swing.JPanel {
                 AddCartBTActionPerformed(evt);
             }
         });
-        add(AddCartBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 48, 42));
+        add(AddCartBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 50, 40));
 
         quantityTXT.setForeground(new java.awt.Color(255, 255, 255));
         quantityTXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -188,7 +189,7 @@ public class Items extends javax.swing.JPanel {
         quantityTXT.setFocusable(false);
         add(quantityTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 351, 50, 32));
 
-        incrementBT.setBackground(new java.awt.Color(38, 38, 38));
+        incrementBT.setBackground(new java.awt.Color(72, 53, 40));
         incrementBT.setForeground(new java.awt.Color(255, 255, 255));
         incrementBT.setText("+");
         incrementBT.setAA_ButtonColor(new java.awt.Color(38, 38, 38));
@@ -207,7 +208,7 @@ public class Items extends javax.swing.JPanel {
         });
         add(incrementBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 351, 25, 13));
 
-        decrementBT.setBackground(new java.awt.Color(38, 38, 38));
+        decrementBT.setBackground(new java.awt.Color(72, 53, 40));
         decrementBT.setForeground(new java.awt.Color(255, 255, 255));
         decrementBT.setText("-");
         decrementBT.setAA_ButtonColor(new java.awt.Color(38, 38, 38));
@@ -230,7 +231,7 @@ public class Items extends javax.swing.JPanel {
         add(decrementBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 370, 25, 13));
 
         discountTXT.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        discountTXT.setForeground(new java.awt.Color(153, 201, 75));
+        discountTXT.setForeground(new java.awt.Color(86, 67, 55));
         discountTXT.setText("10% Discount!");
         add(discountTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 321, 216, -1));
 
