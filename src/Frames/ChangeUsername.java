@@ -60,9 +60,9 @@ public class ChangeUsername extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(24, 23, 23));
 
-        jPanel1.setBackground(new java.awt.Color(24, 23, 23));
+        jPanel1.setBackground(new java.awt.Color(247, 235, 221));
 
-        ChangeUsernameBT.setBackground(new java.awt.Color(51, 51, 51));
+        ChangeUsernameBT.setBackground(new java.awt.Color(72, 53, 40));
         ChangeUsernameBT.setForeground(new java.awt.Color(251, 251, 251));
         ChangeUsernameBT.setText("Save");
         ChangeUsernameBT.setAAA_ImageBoundArcSize(10);
@@ -84,11 +84,11 @@ public class ChangeUsername extends javax.swing.JFrame {
         ChangeUsernameTXT.setForeground(new java.awt.Color(255, 255, 255));
         ChangeUsernameTXT.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         ChangeUsernameTXT.setAA_TextHint("New Username");
-        ChangeUsernameTXT.setAB_HintColor(new java.awt.Color(153, 153, 153));
-        ChangeUsernameTXT.setAB_LineColor(new java.awt.Color(102, 102, 102));
+        ChangeUsernameTXT.setAB_HintColor(new java.awt.Color(24, 23, 23));
+        ChangeUsernameTXT.setAB_LineColor(new java.awt.Color(24, 23, 23));
 
         changepusernametext.setFont(new java.awt.Font("Arial Black", 0, 30)); // NOI18N
-        changepusernametext.setForeground(new java.awt.Color(255, 255, 255));
+        changepusernametext.setForeground(new java.awt.Color(24, 23, 23));
         changepusernametext.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         changepusernametext.setText("Change Username");
         changepusernametext.setMaximumSize(new java.awt.Dimension(125, 43));

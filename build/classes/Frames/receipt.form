@@ -245,7 +245,8 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;Haze Corp &lt;br&gt; 16th avenue Kivotos Main St. &lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;Likhang Sining&lt;br&gt; 16th avenue Kivotos Main St. &lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="r_date">

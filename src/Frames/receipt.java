@@ -130,7 +130,8 @@ public class receipt extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("<html>Haze Corp <br> 16th avenue Kivotos Main St. </html>");
+        jLabel2.setText("<html>Likhang Sining<br> 16th avenue Kivotos Main St. </html>");
+        jLabel2.setToolTipText("");
 
         r_date.setFont(new java.awt.Font("Berlin Sans FB", 0, 14)); // NOI18N
         r_date.setForeground(new java.awt.Color(0, 0, 0));

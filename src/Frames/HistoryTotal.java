@@ -65,32 +65,35 @@ public class HistoryTotal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        totalpanel.setBackground(new java.awt.Color(24, 23, 23));
+        totalpanel.setBackground(new java.awt.Color(247, 235, 221));
 
         TotalSold.setFont(new java.awt.Font("Consolas", 0, 24)); // NOI18N
+        TotalSold.setForeground(new java.awt.Color(24, 23, 23));
         TotalSold.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TotalSold.setText("0000");
 
         salestxt.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        salestxt.setForeground(new java.awt.Color(153, 153, 153));
+        salestxt.setForeground(new java.awt.Color(24, 23, 23));
         salestxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         salestxt.setText("Total Sales:");
 
         TotalQuantity.setFont(new java.awt.Font("Consolas", 0, 24)); // NOI18N
+        TotalQuantity.setForeground(new java.awt.Color(24, 23, 23));
         TotalQuantity.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TotalQuantity.setText("0000");
 
         itemstxt.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        itemstxt.setForeground(new java.awt.Color(153, 153, 153));
+        itemstxt.setForeground(new java.awt.Color(24, 23, 23));
         itemstxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         itemstxt.setText("Total Items Sold:");
 
         refundstxt.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        refundstxt.setForeground(new java.awt.Color(153, 153, 153));
+        refundstxt.setForeground(new java.awt.Color(24, 23, 23));
         refundstxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         refundstxt.setText("Total Refunds:");
 
         TotalRefund.setFont(new java.awt.Font("Consolas", 0, 24)); // NOI18N
+        TotalRefund.setForeground(new java.awt.Color(24, 23, 23));
         TotalRefund.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TotalRefund.setText("0000");
 

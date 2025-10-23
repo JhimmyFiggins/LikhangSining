@@ -102,36 +102,35 @@ public class HistoryPreview extends javax.swing.JFrame {
         status = new SystemShadowedComp.PH_ComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(700, 412));
         setMinimumSize(new java.awt.Dimension(542, 412));
         setResizable(false);
 
-        PreviewPN.setBackground(new java.awt.Color(24, 23, 23));
+        PreviewPN.setBackground(new java.awt.Color(247, 235, 221));
         PreviewPN.setForeground(new java.awt.Color(102, 102, 102));
 
-        PreviewPanel.setBackground(new java.awt.Color(24, 23, 23));
+        PreviewPanel.setBackground(new java.awt.Color(247, 235, 221));
         PreviewPanel.setPreferredSize(new java.awt.Dimension(500, 594));
 
         DescriptionText.setBackground(new java.awt.Color(102, 102, 102));
-        DescriptionText.setForeground(new java.awt.Color(102, 102, 102));
+        DescriptionText.setForeground(new java.awt.Color(24, 23, 23));
         DescriptionText.setText("Description:");
 
         DescriptionScroll.setBorder(null);
         DescriptionScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         DescriptionScroll.setToolTipText("");
 
-        Description.setEditable(false);
-        Description.setBackground(new java.awt.Color(24, 23, 23));
+        Description.setBackground(new java.awt.Color(247, 235, 221));
         Description.setColumns(20);
         Description.setRows(5);
         Description.setText("\n");
         Description.setBorder(null);
         DescriptionScroll.setViewportView(Description);
 
-        Category.setForeground(new java.awt.Color(102, 102, 102));
+        Category.setForeground(new java.awt.Color(24, 23, 23));
         Category.setText("Category");
 
         Title.setFont(new java.awt.Font("Arial Black", 0, 20)); // NOI18N
+        Title.setForeground(new java.awt.Color(24, 23, 23));
         Title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Title.setText("Name");
         Title.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -150,7 +149,7 @@ public class HistoryPreview extends javax.swing.JFrame {
         );
 
         receipttxt.setBackground(new java.awt.Color(102, 102, 102));
-        receipttxt.setForeground(new java.awt.Color(255, 255, 255));
+        receipttxt.setForeground(new java.awt.Color(24, 23, 23));
         receipttxt.setText("Receipt No:");
 
         receipt.setBackground(new java.awt.Color(102, 102, 102));
@@ -199,39 +198,46 @@ public class HistoryPreview extends javax.swing.JFrame {
                     .addComponent(line, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        InfoPanel.setBackground(new java.awt.Color(24, 23, 23));
+        InfoPanel.setBackground(new java.awt.Color(247, 235, 221));
 
         PreviewCost.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        PreviewCost.setForeground(new java.awt.Color(24, 23, 23));
         PreviewCost.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         PreviewCost.setText("Cost:");
 
         PreviewQuantity.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        PreviewQuantity.setForeground(new java.awt.Color(24, 23, 23));
         PreviewQuantity.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         PreviewQuantity.setText("Quantity:");
 
         DiscountPercentage.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        DiscountPercentage.setForeground(new java.awt.Color(24, 23, 23));
         DiscountPercentage.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         DiscountPercentage.setText("Discount %:");
 
         PreviewDiscount.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        PreviewDiscount.setForeground(new java.awt.Color(24, 23, 23));
         PreviewDiscount.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         PreviewDiscount.setText("Total Discount:");
 
         PreviewSubtotal.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        PreviewSubtotal.setForeground(new java.awt.Color(24, 23, 23));
         PreviewSubtotal.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         PreviewSubtotal.setText("Subtotal:");
 
         PreviewTotal.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        PreviewTotal.setForeground(new java.awt.Color(24, 23, 23));
         PreviewTotal.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         PreviewTotal.setText("Total:");
 
         PreviewStatus.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        PreviewStatus.setForeground(new java.awt.Color(24, 23, 23));
         PreviewStatus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         PreviewStatus.setText("Status:");
 
         PreviewReason.setBackground(new java.awt.Color(102, 102, 102));
         PreviewReason.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        PreviewReason.setForeground(new java.awt.Color(102, 102, 102));
+        PreviewReason.setForeground(new java.awt.Color(24, 23, 23));
         PreviewReason.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         PreviewReason.setText("Issues:");
 
@@ -239,7 +245,7 @@ public class HistoryPreview extends javax.swing.JFrame {
         issuescroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         issuescroll.setToolTipText("");
 
-        Issues.setBackground(new java.awt.Color(24, 23, 23));
+        Issues.setBackground(new java.awt.Color(247, 235, 221));
         Issues.setColumns(20);
         Issues.setRows(5);
         Issues.setText("\n");
