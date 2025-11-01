@@ -3,16 +3,32 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Frames/Main.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Classes/Run.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Classes/Functions.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Frames/receipt.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Frames/HistoryTotal.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Frames/HistoryPreview.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Frames/ChangeUsername.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Frames/ChangePassword.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Frames/AddProduct.java</file>
-            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/HazeByte/src/Panel/Items.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Frames/Main.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/Popup.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/TonyPanel.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/SamPanel.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/ConfirmationPopup.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/ClarkPanel.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Frames/receipt.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Frames/HistoryTotal.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/Items.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Splash/Login.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Splash/LoadingAnimation.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Splash/SplashScreen.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Splash/GradientPanel.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Classes/Run.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Classes/Trash.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Classes/UIcolors.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Classes/Functions.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Classes/ProductImage.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Classes/serverCredentials.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Classes/CustomCellRenderer.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Frames/HistoryPreview.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/JmPanel.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Frames/ChangeUsername.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Frames/ChangePassword.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Frames/AddProduct.java</file>
+            <file>file:/C:/Users/Anthony/OneDrive/Documents/GitHub/LikhangSining/src/Panel/ElaizaPanel.java</file>
         </group>
     </open-files>
 </project-private>
