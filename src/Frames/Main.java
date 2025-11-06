@@ -2270,7 +2270,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
         EditTable.setFocusable(false);
-        EditTable.setGridColor(new java.awt.Color(247, 235, 221));
+        EditTable.setGridColor(new java.awt.Color(255, 255, 255));
         EditTable.setRowHeight(40);
         EditTable.setSelectionBackground(new java.awt.Color(72, 53, 40));
         EditTable.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2616,7 +2616,7 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EditLayout.createSequentialGroup()
                                 .addGroup(EditLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(EditName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(EditName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE)
                                     .addComponent(EditCost, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(EditCategory, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(102, 102, 102))))
@@ -2798,12 +2798,12 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_EditBT2MouseExited
 
     private void AddBT1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBT1MouseEntered
-        ImageIcon image = new ImageIcon(getClass().getResource("/Images/add.png"));
+        ImageIcon image = new ImageIcon(getClass().getResource("/Images/Vector (7).png"));
         AddBT1.setIcon(image);
     }//GEN-LAST:event_AddBT1MouseEntered
 
     private void AddBT1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBT1MouseExited
-        ImageIcon image = new ImageIcon(getClass().getResource("/Images/add2.png"));
+        ImageIcon image = new ImageIcon(getClass().getResource("/Images/Vector (7).png"));
         AddBT1.setIcon(image);
     }//GEN-LAST:event_AddBT1MouseExited
 
