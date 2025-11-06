@@ -348,7 +348,7 @@
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="AboutScroll" pref="1019" max="32767" attributes="0"/>
+                          <Component id="AboutScroll" pref="989" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -518,7 +518,7 @@
                               <Component id="addimagetool1" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="721" max="32767" attributes="0"/>
+                      <EmptySpace pref="691" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -856,7 +856,7 @@
                   <Component id="HistoryBar" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="HistoryTableScroll" pref="1019" max="32767" attributes="0"/>
+                      <Component id="HistoryTableScroll" pref="989" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -966,18 +966,12 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="11">
+                      <StringArray count="5">
                         <StringItem index="0" value="All"/>
-                        <StringItem index="1" value="Action"/>
-                        <StringItem index="2" value="Adventure"/>
-                        <StringItem index="3" value="Shooter"/>
-                        <StringItem index="4" value="Strategy"/>
-                        <StringItem index="5" value="Horror"/>
-                        <StringItem index="6" value="Sports"/>
-                        <StringItem index="7" value="RPG"/>
-                        <StringItem index="8" value="Visual Novel"/>
-                        <StringItem index="9" value="Gacha"/>
-                        <StringItem index="10" value="Rythm"/>
+                        <StringItem index="1" value="Painting"/>
+                        <StringItem index="2" value="Digital Art"/>
+                        <StringItem index="3" value="Sculpture"/>
+                        <StringItem index="4" value="Craft"/>
                       </StringArray>
                     </Property>
                     <Property name="AA_WordLinerColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1220,9 +1214,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ChangeUsernamePN" alignment="0" pref="1019" max="32767" attributes="0"/>
-                          <Component id="ChangePassPN" alignment="1" pref="1019" max="32767" attributes="0"/>
-                          <Component id="AboutPN" alignment="1" pref="1019" max="32767" attributes="0"/>
+                          <Component id="ChangeUsernamePN" alignment="0" pref="989" max="32767" attributes="0"/>
+                          <Component id="ChangePassPN" alignment="1" pref="989" max="32767" attributes="0"/>
+                          <Component id="AboutPN" alignment="1" pref="989" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1414,7 +1408,7 @@
                               <Component id="ChangepassDesc1" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="ChangePassHeading1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="107" max="32767" attributes="0"/>
+                          <EmptySpace pref="690" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1600,7 +1594,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="CartTableScroll" pref="474" max="32767" attributes="0"/>
+                              <Component id="CartTableScroll" pref="692" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -2437,7 +2431,7 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           <Component id="Games_txt" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="38" max="32767" attributes="0"/>
+                          <EmptySpace pref="256" max="32767" attributes="0"/>
                           <Component id="HomeCategoryIconTXT" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="categories" min="-2" pref="163" max="-2" attributes="0"/>
@@ -2594,18 +2588,12 @@
                       <Color blue="17" green="17" red="18" type="rgb"/>
                     </Property>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="11">
+                      <StringArray count="5">
                         <StringItem index="0" value="All"/>
-                        <StringItem index="1" value="Action"/>
-                        <StringItem index="2" value="Adventure"/>
-                        <StringItem index="3" value="Shooter"/>
-                        <StringItem index="4" value="Strategy"/>
-                        <StringItem index="5" value="Horror"/>
-                        <StringItem index="6" value="Sports"/>
-                        <StringItem index="7" value="RPG"/>
-                        <StringItem index="8" value="Visual Novel"/>
-                        <StringItem index="9" value="Gacha"/>
-                        <StringItem index="10" value="Rythm"/>
+                        <StringItem index="1" value="Painting"/>
+                        <StringItem index="2" value="Digital Art"/>
+                        <StringItem index="3" value="Sculpture"/>
+                        <StringItem index="4" value="Craft"/>
                       </StringArray>
                     </Property>
                     <Property name="AAA_ComboBoxScrollColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -3039,17 +3027,12 @@
                   <Color blue="17" green="17" red="18" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="10">
-                    <StringItem index="0" value="Action"/>
-                    <StringItem index="1" value="Adventure"/>
-                    <StringItem index="2" value="Shooter"/>
-                    <StringItem index="3" value="Strategy"/>
-                    <StringItem index="4" value="Horror"/>
-                    <StringItem index="5" value="Sports"/>
-                    <StringItem index="6" value="RPG"/>
-                    <StringItem index="7" value="Visual Novel"/>
-                    <StringItem index="8" value="Gacha"/>
-                    <StringItem index="9" value="Rythm"/>
+                  <StringArray count="5">
+                    <StringItem index="0" value="Painting"/>
+                    <StringItem index="1" value="Digital Art"/>
+                    <StringItem index="2" value="Sculpture"/>
+                    <StringItem index="3" value="Craft"/>
+                    <StringItem index="4" value=" "/>
                   </StringArray>
                 </Property>
                 <Property name="AA_WordLinerColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -3515,18 +3498,13 @@
                       <Color blue="17" green="17" red="18" type="rgb"/>
                     </Property>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="11">
+                      <StringArray count="6">
                         <StringItem index="0" value="All"/>
-                        <StringItem index="1" value="Action"/>
-                        <StringItem index="2" value="Adventure"/>
-                        <StringItem index="3" value="Shooter"/>
-                        <StringItem index="4" value="Strategy"/>
-                        <StringItem index="5" value="Horror"/>
-                        <StringItem index="6" value="Sports"/>
-                        <StringItem index="7" value="RPG"/>
-                        <StringItem index="8" value="Visual Novel"/>
-                        <StringItem index="9" value="Gacha"/>
-                        <StringItem index="10" value="Rythm"/>
+                        <StringItem index="1" value="Painting"/>
+                        <StringItem index="2" value="Digital Art"/>
+                        <StringItem index="3" value="Sculpture"/>
+                        <StringItem index="4" value="Craft"/>
+                        <StringItem index="5" value=" "/>
                       </StringArray>
                     </Property>
                     <Property name="AA_WordLinerColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -3652,7 +3630,7 @@
             <Component class="javax.swing.JLabel" name="EditDescriptionText">
               <Properties>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                  <Color blue="17" green="17" red="18" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Description:"/>
               </Properties>
@@ -3681,9 +3659,12 @@
                 <Component class="javax.swing.JTextArea" name="EditDescription">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="dd" green="eb" red="f7" type="rgb"/>
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="17" green="17" red="18" type="rgb"/>
+                    </Property>
                     <Property name="rows" type="int" value="5"/>
                     <Property name="text" type="java.lang.String" value="&#xa;"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -3710,7 +3691,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                  <Color blue="17" green="17" red="18" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="AAA_roundBottomLeft" type="int" value="20"/>
@@ -3795,7 +3776,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                  <Color blue="17" green="17" red="18" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="AAA_roundBottomLeft" type="int" value="20"/>
@@ -3848,17 +3829,11 @@
                   <Color blue="17" green="17" red="18" type="rgb"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="10">
-                    <StringItem index="0" value="Action"/>
-                    <StringItem index="1" value="Adventure"/>
-                    <StringItem index="2" value="Shooter"/>
-                    <StringItem index="3" value="Strategy"/>
-                    <StringItem index="4" value="Horror"/>
-                    <StringItem index="5" value="Sports"/>
-                    <StringItem index="6" value="RPG"/>
-                    <StringItem index="7" value="Visual Novel"/>
-                    <StringItem index="8" value="Gacha"/>
-                    <StringItem index="9" value="Rythm"/>
+                  <StringArray count="4">
+                    <StringItem index="0" value="Painting"/>
+                    <StringItem index="1" value="Digital Art"/>
+                    <StringItem index="2" value="Sculpture"/>
+                    <StringItem index="3" value="Craft"/>
                   </StringArray>
                 </Property>
                 <Property name="AA_HintForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">

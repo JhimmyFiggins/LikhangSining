@@ -107,9 +107,7 @@ public class AddProduct extends javax.swing.JFrame {
         decrementBT = new SystemOtherComps.PH_Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(650, 640));
         setMinimumSize(new java.awt.Dimension(650, 640));
-        setPreferredSize(new java.awt.Dimension(650, 640));
         getContentPane().setLayout(new java.awt.CardLayout());
 
         hidden.setPreferredSize(new java.awt.Dimension(400, 594));
@@ -190,13 +188,13 @@ public class AddProduct extends javax.swing.JFrame {
 
         getContentPane().add(hidden, "card3");
 
-        Add.setBackground(new java.awt.Color(24, 23, 23));
+        Add.setBackground(new java.awt.Color(247, 235, 221));
         Add.setPreferredSize(new java.awt.Dimension(500, 594));
 
-        AddBar.setBackground(new java.awt.Color(24, 23, 23));
+        AddBar.setBackground(new java.awt.Color(247, 235, 221));
 
         AddBT2.setFont(new java.awt.Font("Arial Black", 0, 28)); // NOI18N
-        AddBT2.setForeground(new java.awt.Color(255, 255, 255));
+        AddBT2.setForeground(new java.awt.Color(24, 23, 23));
         AddBT2.setText("Add Product");
 
         javax.swing.GroupLayout AddBarLayout = new javax.swing.GroupLayout(AddBar);
@@ -216,8 +214,8 @@ public class AddProduct extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        AddCost.setBackground(new java.awt.Color(24, 23, 23));
-        AddCost.setForeground(new java.awt.Color(255, 255, 255));
+        AddCost.setBackground(new java.awt.Color(255, 255, 255));
+        AddCost.setForeground(new java.awt.Color(24, 23, 23));
         AddCost.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         AddCost.setAAA_roundBottomLeft(20);
         AddCost.setAAA_roundBottomRight(20);
@@ -234,6 +232,7 @@ public class AddProduct extends javax.swing.JFrame {
         AddCost.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
 
         AddNameText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        AddNameText.setForeground(new java.awt.Color(24, 23, 23));
         AddNameText.setText(" Name:");
 
         AddBT.setBackground(new java.awt.Color(32, 180, 52));
@@ -278,10 +277,11 @@ public class AddProduct extends javax.swing.JFrame {
         });
 
         AddCostText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        AddCostText.setForeground(new java.awt.Color(24, 23, 23));
         AddCostText.setText("Cost:");
 
-        AddName.setBackground(new java.awt.Color(24, 23, 23));
-        AddName.setForeground(new java.awt.Color(255, 255, 255));
+        AddName.setBackground(new java.awt.Color(255, 255, 255));
+        AddName.setForeground(new java.awt.Color(24, 23, 23));
         AddName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         AddName.setAAA_roundBottomLeft(20);
         AddName.setAAA_roundBottomRight(20);
@@ -298,10 +298,12 @@ public class AddProduct extends javax.swing.JFrame {
         AddName.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
 
         AddCategoryText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        AddCategoryText.setForeground(new java.awt.Color(24, 23, 23));
         AddCategoryText.setText("Category:");
 
-        AddCategory.setForeground(new java.awt.Color(255, 255, 255));
-        AddCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
+        AddCategory.setBackground(new java.awt.Color(255, 255, 255));
+        AddCategory.setForeground(new java.awt.Color(24, 23, 23));
+        AddCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Painting", "Digital Art", "Sculpture", "Craft" }));
         AddCategory.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
         AddCategory.setAA_lineColor(new java.awt.Color(45, 187, 63));
         AddCategory.setFocusable(false);
@@ -316,16 +318,17 @@ public class AddProduct extends javax.swing.JFrame {
         AddDescriptionScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         AddDescriptionScroll.setToolTipText("");
 
-        AddDescription.setBackground(new java.awt.Color(24, 23, 23));
+        AddDescription.setBackground(new java.awt.Color(255, 255, 255));
         AddDescription.setColumns(20);
+        AddDescription.setForeground(new java.awt.Color(24, 23, 23));
         AddDescription.setRows(5);
         AddDescription.setText("\n");
         AddDescription.setBorder(null);
         AddDescriptionScroll.setViewportView(AddDescription);
 
         AddDiscount.setEditable(false);
-        AddDiscount.setBackground(new java.awt.Color(24, 23, 23));
-        AddDiscount.setForeground(new java.awt.Color(255, 255, 255));
+        AddDiscount.setBackground(new java.awt.Color(255, 255, 255));
+        AddDiscount.setForeground(new java.awt.Color(24, 23, 23));
         AddDiscount.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         AddDiscount.setText("0%");
         AddDiscount.setAAA_roundBottomLeft(20);
@@ -343,6 +346,7 @@ public class AddProduct extends javax.swing.JFrame {
         AddDiscount.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
 
         AddDiscountText.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        AddDiscountText.setForeground(new java.awt.Color(24, 23, 23));
         AddDiscountText.setText("Discount:");
 
         AddImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/insertimage.jpg"))); // NOI18N
@@ -436,7 +440,7 @@ public class AddProduct extends javax.swing.JFrame {
                                                     .addComponent(incrementBT, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(decrementBT, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                     .addComponent(AddDescriptionText))))
-                        .addGap(0, 41, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(AddBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );

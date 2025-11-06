@@ -634,7 +634,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(AboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(AboutLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(AboutScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
+                    .addComponent(AboutScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         AboutLayout.setVerticalGroup(
@@ -829,7 +829,7 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(HiddenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(addimagetool1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(721, Short.MAX_VALUE))
+                .addContainerGap(691, Short.MAX_VALUE))
         );
         HiddenLayout.setVerticalGroup(
             HiddenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -859,7 +859,7 @@ public class Main extends javax.swing.JFrame {
         HistoryText.setText("Transaction History");
 
         HistoryCategorySort.setForeground(new java.awt.Color(255, 255, 255));
-        HistoryCategorySort.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
+        HistoryCategorySort.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Painting", "Digital Art", "Sculpture", "Craft" }));
         HistoryCategorySort.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
         HistoryCategorySort.setAA_lineColor(new java.awt.Color(45, 187, 63));
         HistoryCategorySort.setFocusable(false);
@@ -1030,7 +1030,7 @@ public class Main extends javax.swing.JFrame {
             .addComponent(HistoryBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(HistoryLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(HistoryTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
+                .addComponent(HistoryTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
                 .addContainerGap())
         );
         HistoryLayout.setVerticalGroup(
@@ -1170,7 +1170,7 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(ChangePassPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ChangepassDesc1)
                     .addComponent(ChangePassHeading1))
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addContainerGap(690, Short.MAX_VALUE))
         );
         ChangePassPNLayout.setVerticalGroup(
             ChangePassPNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1249,9 +1249,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
@@ -1678,7 +1678,7 @@ public class Main extends javax.swing.JFrame {
                         .addGap(20, 20, 20))
                     .addGroup(CartLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
+                        .addComponent(CartTableScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 692, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CartLayout.createSequentialGroup()
                         .addContainerGap()
@@ -1804,7 +1804,7 @@ public class Main extends javax.swing.JFrame {
 
         categories.setBackground(new java.awt.Color(255, 255, 255));
         categories.setForeground(new java.awt.Color(24, 23, 23));
-        categories.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
+        categories.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Painting", "Digital Art", "Sculpture", "Craft" }));
         categories.setAAA_ComboBoxScrollColor(new java.awt.Color(255, 255, 255));
         categories.setAA_BorderColor(new java.awt.Color(255, 255, 255));
         categories.setAA_ComboBoxColor(new java.awt.Color(255, 255, 255));
@@ -1841,7 +1841,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, GameBarLayout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addComponent(Games_txt)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 256, Short.MAX_VALUE)
                 .addComponent(HomeCategoryIconTXT)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(categories, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2051,7 +2051,7 @@ public class Main extends javax.swing.JFrame {
 
         AddCategory.setBackground(new java.awt.Color(255, 255, 255));
         AddCategory.setForeground(new java.awt.Color(24, 23, 23));
-        AddCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
+        AddCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Painting", "Digital Art", "Sculpture", "Craft", " " }));
         AddCategory.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
         AddCategory.setAA_lineColor(new java.awt.Color(45, 187, 63));
         AddCategory.setFocusable(false);
@@ -2270,7 +2270,7 @@ public class Main extends javax.swing.JFrame {
 
         EditCategorySort.setBackground(new java.awt.Color(255, 255, 255));
         EditCategorySort.setForeground(new java.awt.Color(24, 23, 23));
-        EditCategorySort.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
+        EditCategorySort.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Painting", "Digital Art", "Sculpture", "Craft", " " }));
         EditCategorySort.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
         EditCategorySort.setAA_lineColor(new java.awt.Color(45, 187, 63));
         EditCategorySort.setFocusable(false);
@@ -2387,7 +2387,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        EditDescriptionText.setForeground(new java.awt.Color(255, 255, 255));
+        EditDescriptionText.setForeground(new java.awt.Color(24, 23, 23));
         EditDescriptionText.setText("Description:");
 
         EditDescriptionScroll.setBackground(new java.awt.Color(247, 235, 221));
@@ -2395,8 +2395,9 @@ public class Main extends javax.swing.JFrame {
         EditDescriptionScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         EditDescriptionScroll.setToolTipText("");
 
-        EditDescription.setBackground(new java.awt.Color(247, 235, 221));
+        EditDescription.setBackground(new java.awt.Color(255, 255, 255));
         EditDescription.setColumns(20);
+        EditDescription.setForeground(new java.awt.Color(24, 23, 23));
         EditDescription.setRows(5);
         EditDescription.setText("\n");
         EditDescription.setBorder(null);
@@ -2411,7 +2412,7 @@ public class Main extends javax.swing.JFrame {
         });
 
         EditCost.setBackground(new java.awt.Color(255, 255, 255));
-        EditCost.setForeground(new java.awt.Color(255, 255, 255));
+        EditCost.setForeground(new java.awt.Color(24, 23, 23));
         EditCost.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         EditCost.setAAA_roundBottomLeft(20);
         EditCost.setAAA_roundBottomRight(20);
@@ -2456,7 +2457,7 @@ public class Main extends javax.swing.JFrame {
 
         EditDiscount.setEditable(false);
         EditDiscount.setBackground(new java.awt.Color(255, 255, 255));
-        EditDiscount.setForeground(new java.awt.Color(255, 255, 255));
+        EditDiscount.setForeground(new java.awt.Color(24, 23, 23));
         EditDiscount.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         EditDiscount.setAAA_roundBottomLeft(20);
         EditDiscount.setAAA_roundBottomRight(20);
@@ -2482,7 +2483,7 @@ public class Main extends javax.swing.JFrame {
 
         EditCategory.setBackground(new java.awt.Color(255, 255, 255));
         EditCategory.setForeground(new java.awt.Color(24, 23, 23));
-        EditCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Action", "Adventure", "Shooter", "Strategy", "Horror", "Sports", "RPG", "Visual Novel", "Gacha", "Rythm" }));
+        EditCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Painting", "Digital Art", "Sculpture", "Craft" }));
         EditCategory.setAA_HintForeground(new java.awt.Color(24, 23, 23));
         EditCategory.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
         EditCategory.setAA_lineColor(new java.awt.Color(45, 187, 63));
