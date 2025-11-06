@@ -247,6 +247,7 @@ public class HistoryPreview extends javax.swing.JFrame {
 
         Issues.setBackground(new java.awt.Color(247, 235, 221));
         Issues.setColumns(20);
+        Issues.setForeground(new java.awt.Color(24, 23, 23));
         Issues.setRows(5);
         Issues.setText("\n");
         Issues.setBorder(null);
@@ -293,7 +294,8 @@ public class HistoryPreview extends javax.swing.JFrame {
         total.setAA_TextHint("");
         total.setAB_LineColor(new java.awt.Color(51, 51, 51));
 
-        status.setForeground(new java.awt.Color(255, 255, 255));
+        status.setBackground(new java.awt.Color(247, 235, 221));
+        status.setForeground(new java.awt.Color(24, 23, 23));
         status.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Sold", "Refunded" }));
         status.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
         status.setAA_lineColor(new java.awt.Color(45, 187, 63));

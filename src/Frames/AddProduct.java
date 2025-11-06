@@ -301,7 +301,7 @@ public class AddProduct extends javax.swing.JFrame {
         AddCategoryText.setForeground(new java.awt.Color(24, 23, 23));
         AddCategoryText.setText("Category:");
 
-        AddCategory.setBackground(new java.awt.Color(255, 255, 255));
+        AddCategory.setBackground(new java.awt.Color(247, 235, 221));
         AddCategory.setForeground(new java.awt.Color(24, 23, 23));
         AddCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Painting", "Digital Art", "Sculpture", "Craft" }));
         AddCategory.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
