@@ -5,9 +5,9 @@ import java.awt.Desktop;
 import java.net.URL;
 import javax.swing.ImageIcon;
 
-public class SamPanel extends javax.swing.JPanel {
+public class CarlosPanel extends javax.swing.JPanel {
 
-    public SamPanel() {
+    public CarlosPanel() {
         initComponents();
     }
 

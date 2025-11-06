@@ -192,11 +192,11 @@ public class Main extends javax.swing.JFrame {
         About = new javax.swing.JPanel();
         AboutScroll = new SystemOtherComps.PH_ScrollPane();
         AboutFlow = new SystemOtherComps.PH_BettterFlowLayoutPanel();
-        samPanel5 = new Panel.SamPanel();
+        samPanel5 = new Panel.CarlosPanel();
         tonyPanel1 = new Panel.TonyPanel();
         elaizaPanel1 = new Panel.ElaizaPanel();
         jmPanel1 = new Panel.JmPanel();
-        clarkPanel1 = new Panel.ClarkPanel();
+        clarkPanel1 = new Panel.ObedientePanel();
         SettingsBar1 = new javax.swing.JPanel();
         SettingsText1 = new javax.swing.JLabel();
         AboutBackBT = new javax.swing.JLabel();
@@ -1255,9 +1255,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
@@ -1363,10 +1363,10 @@ public class Main extends javax.swing.JFrame {
         CartRemoveBT.setAAA_roundTopRight(10);
         CartRemoveBT.setAA_ArcSize(10);
         CartRemoveBT.setAA_BorderColor(new java.awt.Color(51, 51, 51));
-        CartRemoveBT.setAA_ButtonColor(new java.awt.Color(24, 23, 23));
+        CartRemoveBT.setAA_ButtonColor(new java.awt.Color(255, 255, 255));
         CartRemoveBT.setAA_DrawBorder(true);
-        CartRemoveBT.setAA_HoverColor(new java.awt.Color(38, 38, 38));
-        CartRemoveBT.setAA_PressColor(new java.awt.Color(54, 53, 53));
+        CartRemoveBT.setAA_HoverColor(new java.awt.Color(204, 204, 204));
+        CartRemoveBT.setAA_PressColor(new java.awt.Color(204, 204, 204));
         CartRemoveBT.setAA_RippleColor(new java.awt.Color(215, 54, 54));
         CartRemoveBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         CartRemoveBT.addActionListener(new java.awt.event.ActionListener() {
@@ -1377,7 +1377,7 @@ public class Main extends javax.swing.JFrame {
 
         CartQuantityTXT.setEditable(false);
         CartQuantityTXT.setBackground(new java.awt.Color(255, 255, 255));
-        CartQuantityTXT.setForeground(new java.awt.Color(204, 204, 204));
+        CartQuantityTXT.setForeground(new java.awt.Color(24, 23, 23));
         CartQuantityTXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         CartQuantityTXT.setToolTipText("quantity");
         CartQuantityTXT.setAAA_roundBottomLeft(20);
@@ -1503,12 +1503,14 @@ public class Main extends javax.swing.JFrame {
 
         totalTXT.setEditable(false);
         totalTXT.setBackground(new java.awt.Color(255, 255, 255));
-        totalTXT.setForeground(new java.awt.Color(204, 204, 204));
+        totalTXT.setForeground(new java.awt.Color(24, 23, 23));
         totalTXT.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         totalTXT.setAAA_roundBottomLeft(20);
         totalTXT.setAAA_roundBottomRight(20);
         totalTXT.setAAA_roundTopLeft(20);
         totalTXT.setAAA_roundTopRight(20);
+        totalTXT.setAA_BorderColor(new java.awt.Color(24, 23, 23));
+        totalTXT.setAA_DrawBorder(true);
         totalTXT.setAA_DrawLine(false);
         totalTXT.setAA_TextHint("   0.00");
         totalTXT.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -1521,6 +1523,8 @@ public class Main extends javax.swing.JFrame {
         changeTXT.setAAA_roundBottomRight(20);
         changeTXT.setAAA_roundTopLeft(20);
         changeTXT.setAAA_roundTopRight(20);
+        changeTXT.setAA_BorderColor(new java.awt.Color(24, 23, 23));
+        changeTXT.setAA_DrawBorder(true);
         changeTXT.setAA_DrawLine(false);
         changeTXT.setAA_TextHint("   0.00");
         changeTXT.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -1569,10 +1573,10 @@ public class Main extends javax.swing.JFrame {
         CancelAllBT.setAAA_roundTopRight(10);
         CancelAllBT.setAA_ArcSize(10);
         CancelAllBT.setAA_BorderColor(new java.awt.Color(51, 51, 51));
-        CancelAllBT.setAA_ButtonColor(new java.awt.Color(24, 23, 23));
+        CancelAllBT.setAA_ButtonColor(new java.awt.Color(255, 255, 255));
         CancelAllBT.setAA_DrawBorder(true);
-        CancelAllBT.setAA_HoverColor(new java.awt.Color(38, 38, 38));
-        CancelAllBT.setAA_PressColor(new java.awt.Color(54, 53, 53));
+        CancelAllBT.setAA_HoverColor(new java.awt.Color(204, 204, 204));
+        CancelAllBT.setAA_PressColor(new java.awt.Color(204, 204, 204));
         CancelAllBT.setAA_RippleColor(new java.awt.Color(215, 54, 54));
         CancelAllBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         CancelAllBT.addActionListener(new java.awt.event.ActionListener() {
@@ -1583,14 +1587,17 @@ public class Main extends javax.swing.JFrame {
 
         subtotalTXT.setEditable(false);
         subtotalTXT.setBackground(new java.awt.Color(255, 255, 255));
-        subtotalTXT.setForeground(new java.awt.Color(204, 204, 204));
+        subtotalTXT.setForeground(new java.awt.Color(24, 23, 23));
         subtotalTXT.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         subtotalTXT.setAAA_roundBottomLeft(20);
         subtotalTXT.setAAA_roundBottomRight(20);
         subtotalTXT.setAAA_roundTopLeft(20);
         subtotalTXT.setAAA_roundTopRight(20);
+        subtotalTXT.setAA_BorderColor(new java.awt.Color(24, 23, 23));
+        subtotalTXT.setAA_DrawBorder(true);
         subtotalTXT.setAA_DrawLine(false);
         subtotalTXT.setAA_TextHint("   0.00");
+        subtotalTXT.setAB_HintColor(new java.awt.Color(24, 23, 23));
         subtotalTXT.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
         SubtotalHeading.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
@@ -1606,6 +1613,7 @@ public class Main extends javax.swing.JFrame {
         totaldiscountTXT.setAAA_roundTopLeft(20);
         totaldiscountTXT.setAAA_roundTopRight(20);
         totaldiscountTXT.setAA_BorderColor(new java.awt.Color(51, 51, 51));
+        totaldiscountTXT.setAA_DrawBorder(true);
         totaldiscountTXT.setAA_DrawLine(false);
         totaldiscountTXT.setAA_TextHint("   0.00");
         totaldiscountTXT.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -2065,7 +2073,7 @@ public class Main extends javax.swing.JFrame {
         AddCategoryText.setForeground(new java.awt.Color(24, 23, 23));
         AddCategoryText.setText("Category:");
 
-        AddCategory.setBackground(new java.awt.Color(255, 255, 255));
+        AddCategory.setBackground(new java.awt.Color(247, 235, 221));
         AddCategory.setForeground(new java.awt.Color(24, 23, 23));
         AddCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Painting", "Digital Art", "Sculpture", "Craft", " " }));
         AddCategory.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
@@ -2074,7 +2082,7 @@ public class Main extends javax.swing.JFrame {
         AddCategory.setLabeText("    ");
         AddCategory.setVerifyInputWhenFocusTarget(false);
 
-        AddDescriptionText.setForeground(new java.awt.Color(255, 255, 255));
+        AddDescriptionText.setForeground(new java.awt.Color(24, 23, 23));
         AddDescriptionText.setText("Description:");
 
         AddDescriptionScroll.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
@@ -2240,10 +2248,11 @@ public class Main extends javax.swing.JFrame {
         EditSearchIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (6).png"))); // NOI18N
 
         EditTableScroll.setBackground(new java.awt.Color(72, 53, 40));
+        EditTableScroll.setForeground(new java.awt.Color(24, 23, 23));
 
         EditTable.setBackground(new java.awt.Color(255, 255, 255));
         EditTable.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        EditTable.setForeground(new java.awt.Color(255, 255, 255));
+        EditTable.setForeground(new java.awt.Color(24, 23, 23));
         EditTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -2263,7 +2272,7 @@ public class Main extends javax.swing.JFrame {
         EditTable.setFocusable(false);
         EditTable.setGridColor(new java.awt.Color(247, 235, 221));
         EditTable.setRowHeight(40);
-        EditTable.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        EditTable.setSelectionBackground(new java.awt.Color(72, 53, 40));
         EditTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EditTableMouseClicked(evt);
@@ -2391,10 +2400,10 @@ public class Main extends javax.swing.JFrame {
         EditDeleteBT.setAAA_roundTopRight(10);
         EditDeleteBT.setAA_ArcSize(10);
         EditDeleteBT.setAA_BorderColor(new java.awt.Color(51, 51, 51));
-        EditDeleteBT.setAA_ButtonColor(new java.awt.Color(24, 23, 23));
+        EditDeleteBT.setAA_ButtonColor(new java.awt.Color(255, 255, 255));
         EditDeleteBT.setAA_DrawBorder(true);
-        EditDeleteBT.setAA_HoverColor(new java.awt.Color(38, 38, 38));
-        EditDeleteBT.setAA_PressColor(new java.awt.Color(54, 53, 53));
+        EditDeleteBT.setAA_HoverColor(new java.awt.Color(204, 204, 204));
+        EditDeleteBT.setAA_PressColor(new java.awt.Color(204, 204, 204));
         EditDeleteBT.setAA_RippleColor(new java.awt.Color(215, 54, 54));
         EditDeleteBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         EditDeleteBT.addActionListener(new java.awt.event.ActionListener() {
@@ -3228,7 +3237,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel addimagetool1;
     public SystemShadowedComp.PH_ComboBox categories;
     private SystemOtherComps.PH_TextField changeTXT;
-    private Panel.ClarkPanel clarkPanel1;
+    private Panel.ObedientePanel clarkPanel1;
     private SystemOtherComps.PH_Button decrementBT;
     private javax.swing.JLabel discountTXT;
     private javax.swing.JLabel edit_imageName;
@@ -3256,7 +3265,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel menu;
     private SystemOtherComps.PH_TextField paymentTXT;
     private javax.swing.JLabel quantityIcon;
-    private Panel.SamPanel samPanel5;
+    private Panel.CarlosPanel samPanel5;
     private Splash.LoadingAnimation saveloading;
     private javax.swing.JLabel saving;
     private SystemOtherComps.PH_TextField subtotalTXT;

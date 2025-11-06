@@ -59,9 +59,11 @@ public class receipt extends javax.swing.JFrame {
     
     
     setResizable(false);
-    ImageIcon RecieptIcon = new ImageIcon(getClass().getResource("/Images/transparentHB.jpg"));
-    setIconImage(RecieptIcon.getImage());
-    setTitle("receipt");
+    ImageIcon logo = new ImageIcon(getClass().getResource("/Images/LS Icon.png"));
+    setIconImage(logo.getImage());
+    setTitle("Likhang Sining");
+    
+
 
     format_JTable();
     receiptInfo();

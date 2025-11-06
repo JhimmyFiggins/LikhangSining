@@ -409,7 +409,7 @@
         <Component class="SystemOtherComps.PH_Button" name="CancelBT">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="17" green="17" red="18" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cancel"/>
             <Property name="AAA_ImageBoundArcSize" type="int" value="10"/>
@@ -422,14 +422,14 @@
               <Color blue="33" green="33" red="33" type="rgb"/>
             </Property>
             <Property name="AA_ButtonColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="17" green="17" red="18" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="AA_DrawBorder" type="boolean" value="true"/>
             <Property name="AA_HoverColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="26" green="26" red="26" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="AA_PressColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="35" green="35" red="36" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="AA_RippleColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="36" green="36" red="d7" type="rgb"/>
@@ -508,8 +508,29 @@
                 <StringItem index="3" value="Craft"/>
               </StringArray>
             </Property>
+            <Property name="AAA_ComboBoxScrollColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="17" green="17" red="18" type="rgb"/>
+            </Property>
+            <Property name="AA_ArrowColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="17" green="17" red="18" type="rgb"/>
+            </Property>
+            <Property name="AA_CellSelectedColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="17" green="17" red="18" type="rgb"/>
+            </Property>
+            <Property name="AA_HintForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="17" green="17" red="18" type="rgb"/>
+            </Property>
+            <Property name="AA_PopForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="17" green="17" red="18" type="rgb"/>
+            </Property>
+            <Property name="AA_SelectedArrowColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="17" green="17" red="18" type="rgb"/>
+            </Property>
+            <Property name="AA_UnSelectedArrowColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="17" green="17" red="18" type="rgb"/>
+            </Property>
             <Property name="AA_WordLinerColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="33" type="rgb"/>
+              <Color blue="17" green="17" red="18" type="rgb"/>
             </Property>
             <Property name="AA_lineColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="3f" green="bb" red="2d" type="rgb"/>
@@ -520,13 +541,14 @@
             <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="AddProduct_AddCategory"/>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="AddDescriptionText">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+              <Color blue="17" green="17" red="18" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Description:"/>
           </Properties>

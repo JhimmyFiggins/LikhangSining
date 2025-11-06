@@ -58,9 +58,9 @@ public class HistoryPreview extends javax.swing.JFrame {
         PreviewPanel.setVisible(true);
         status.setForeground(new Color(118, 199, 102));
         color.UIcolor();
-        ImageIcon HistoryIcon = new ImageIcon(getClass().getResource("/Images/transparentHB.jpg"));
-        setIconImage(HistoryIcon.getImage());
-        setTitle("Preview");
+        ImageIcon logo = new ImageIcon(getClass().getResource("/Images/LS Icon.png"));
+        setIconImage(logo.getImage());
+        setTitle("Likhang Sining");
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
@@ -109,6 +109,7 @@ public class HistoryPreview extends javax.swing.JFrame {
         PreviewPN.setForeground(new java.awt.Color(102, 102, 102));
 
         PreviewPanel.setBackground(new java.awt.Color(247, 235, 221));
+        PreviewPanel.setForeground(new java.awt.Color(24, 23, 23));
         PreviewPanel.setPreferredSize(new java.awt.Dimension(500, 594));
 
         DescriptionText.setBackground(new java.awt.Color(102, 102, 102));
@@ -121,6 +122,7 @@ public class HistoryPreview extends javax.swing.JFrame {
 
         Description.setBackground(new java.awt.Color(247, 235, 221));
         Description.setColumns(20);
+        Description.setForeground(new java.awt.Color(24, 23, 23));
         Description.setRows(5);
         Description.setText("\n");
         Description.setBorder(null);
@@ -153,7 +155,7 @@ public class HistoryPreview extends javax.swing.JFrame {
         receipttxt.setText("Receipt No:");
 
         receipt.setBackground(new java.awt.Color(102, 102, 102));
-        receipt.setForeground(new java.awt.Color(255, 255, 255));
+        receipt.setForeground(new java.awt.Color(24, 23, 23));
 
         javax.swing.GroupLayout PreviewPanelLayout = new javax.swing.GroupLayout(PreviewPanel);
         PreviewPanel.setLayout(PreviewPanelLayout);
@@ -259,37 +261,37 @@ public class HistoryPreview extends javax.swing.JFrame {
         issuescroll.setViewportView(Issues);
 
         cost.setEditable(false);
-        cost.setForeground(new java.awt.Color(255, 255, 255));
+        cost.setForeground(new java.awt.Color(24, 23, 23));
         cost.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         cost.setAA_TextHint("");
         cost.setAB_LineColor(new java.awt.Color(51, 51, 51));
 
         quantity.setEditable(false);
-        quantity.setForeground(new java.awt.Color(255, 255, 255));
+        quantity.setForeground(new java.awt.Color(24, 23, 23));
         quantity.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         quantity.setAA_TextHint("");
         quantity.setAB_LineColor(new java.awt.Color(51, 51, 51));
 
         discountper.setEditable(false);
-        discountper.setForeground(new java.awt.Color(255, 255, 255));
+        discountper.setForeground(new java.awt.Color(24, 23, 23));
         discountper.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         discountper.setAA_TextHint("");
         discountper.setAB_LineColor(new java.awt.Color(51, 51, 51));
 
         discount.setEditable(false);
-        discount.setForeground(new java.awt.Color(255, 255, 255));
+        discount.setForeground(new java.awt.Color(24, 23, 23));
         discount.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         discount.setAA_TextHint("");
         discount.setAB_LineColor(new java.awt.Color(51, 51, 51));
 
         subtotal.setEditable(false);
-        subtotal.setForeground(new java.awt.Color(255, 255, 255));
+        subtotal.setForeground(new java.awt.Color(24, 23, 23));
         subtotal.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         subtotal.setAA_TextHint("");
         subtotal.setAB_LineColor(new java.awt.Color(51, 51, 51));
 
         total.setEditable(false);
-        total.setForeground(new java.awt.Color(255, 255, 255));
+        total.setForeground(new java.awt.Color(24, 23, 23));
         total.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         total.setAA_TextHint("");
         total.setAB_LineColor(new java.awt.Color(51, 51, 51));

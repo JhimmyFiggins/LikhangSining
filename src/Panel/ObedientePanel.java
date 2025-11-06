@@ -5,9 +5,9 @@ import java.awt.Desktop;
 import java.net.URL;
 import javax.swing.ImageIcon;
 
-public class ClarkPanel extends javax.swing.JPanel {
+public class ObedientePanel extends javax.swing.JPanel {
 
-    public ClarkPanel() {
+    public ObedientePanel() {
         initComponents();
     }
 

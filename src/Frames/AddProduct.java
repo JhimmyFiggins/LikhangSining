@@ -55,9 +55,9 @@ public class AddProduct extends javax.swing.JFrame {
         hidden.setVisible(false);
         Add.setVisible(true);
         color.UIcolor();
-        ImageIcon AddIcon = new ImageIcon(getClass().getResource("/Images/transparentHB.jpg"));
-        setIconImage(AddIcon.getImage());
-        setTitle("Add Product");
+        ImageIcon logo = new ImageIcon(getClass().getResource("/Images/LS Icon.png"));
+        setIconImage(logo.getImage());
+        setTitle("Likhang Sining");
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
@@ -255,7 +255,7 @@ public class AddProduct extends javax.swing.JFrame {
             }
         });
 
-        CancelBT.setBackground(new java.awt.Color(24, 23, 23));
+        CancelBT.setBackground(new java.awt.Color(255, 255, 255));
         CancelBT.setText("Cancel");
         CancelBT.setAAA_ImageBoundArcSize(10);
         CancelBT.setAAA_roundBottomLeft(10);
@@ -264,10 +264,10 @@ public class AddProduct extends javax.swing.JFrame {
         CancelBT.setAAA_roundTopRight(10);
         CancelBT.setAA_ArcSize(10);
         CancelBT.setAA_BorderColor(new java.awt.Color(51, 51, 51));
-        CancelBT.setAA_ButtonColor(new java.awt.Color(24, 23, 23));
+        CancelBT.setAA_ButtonColor(new java.awt.Color(255, 255, 255));
         CancelBT.setAA_DrawBorder(true);
-        CancelBT.setAA_HoverColor(new java.awt.Color(38, 38, 38));
-        CancelBT.setAA_PressColor(new java.awt.Color(54, 53, 53));
+        CancelBT.setAA_HoverColor(new java.awt.Color(204, 204, 204));
+        CancelBT.setAA_PressColor(new java.awt.Color(204, 204, 204));
         CancelBT.setAA_RippleColor(new java.awt.Color(215, 54, 54));
         CancelBT.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         CancelBT.addActionListener(new java.awt.event.ActionListener() {
@@ -304,14 +304,21 @@ public class AddProduct extends javax.swing.JFrame {
         AddCategory.setBackground(new java.awt.Color(247, 235, 221));
         AddCategory.setForeground(new java.awt.Color(24, 23, 23));
         AddCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Painting", "Digital Art", "Sculpture", "Craft" }));
-        AddCategory.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
+        AddCategory.setAAA_ComboBoxScrollColor(new java.awt.Color(24, 23, 23));
+        AddCategory.setAA_ArrowColor(new java.awt.Color(24, 23, 23));
+        AddCategory.setAA_CellSelectedColor(new java.awt.Color(24, 23, 23));
+        AddCategory.setAA_HintForeground(new java.awt.Color(24, 23, 23));
+        AddCategory.setAA_PopForeground(new java.awt.Color(24, 23, 23));
+        AddCategory.setAA_SelectedArrowColor(new java.awt.Color(24, 23, 23));
+        AddCategory.setAA_UnSelectedArrowColor(new java.awt.Color(24, 23, 23));
+        AddCategory.setAA_WordLinerColor(new java.awt.Color(24, 23, 23));
         AddCategory.setAA_lineColor(new java.awt.Color(45, 187, 63));
         AddCategory.setFocusable(false);
         AddCategory.setLabeText("    ");
         AddCategory.setRequestFocusEnabled(false);
         AddCategory.setVerifyInputWhenFocusTarget(false);
 
-        AddDescriptionText.setForeground(new java.awt.Color(255, 255, 255));
+        AddDescriptionText.setForeground(new java.awt.Color(24, 23, 23));
         AddDescriptionText.setText("Description:");
 
         AddDescriptionScroll.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
