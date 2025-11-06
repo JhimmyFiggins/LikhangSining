@@ -171,7 +171,7 @@ public class Items extends javax.swing.JPanel {
         AddCartBT.setAAA_roundTopLeft(20);
         AddCartBT.setAAA_roundTopRight(20);
         AddCartBT.setAA_ArcSize(20);
-        AddCartBT.setAA_ButtonColor(new java.awt.Color(24, 23, 23));
+        AddCartBT.setAA_ButtonColor(new java.awt.Color(72, 53, 40));
         AddCartBT.setAA_HoverColor(new java.awt.Color(242, 197, 160));
         AddCartBT.setAA_PressColor(new java.awt.Color(242, 197, 160));
         AddCartBT.setAA_RippleColor(new java.awt.Color(242, 197, 160));
@@ -182,7 +182,7 @@ public class Items extends javax.swing.JPanel {
         });
         add(AddCartBT, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 50, 40));
 
-        quantityTXT.setForeground(new java.awt.Color(255, 255, 255));
+        quantityTXT.setForeground(new java.awt.Color(24, 23, 23));
         quantityTXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         quantityTXT.setText("1");
         quantityTXT.setAA_TextHint("");

@@ -859,10 +859,15 @@ public class Main extends javax.swing.JFrame {
         HistoryText.setText("Transaction History");
 
         HistoryCategorySort.setBackground(new java.awt.Color(247, 235, 221));
-        HistoryCategorySort.setForeground(new java.awt.Color(255, 255, 255));
+        HistoryCategorySort.setForeground(new java.awt.Color(24, 23, 23));
         HistoryCategorySort.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Painting", "Digital Art", "Sculpture", "Craft" }));
-        HistoryCategorySort.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
-        HistoryCategorySort.setAA_lineColor(new java.awt.Color(45, 187, 63));
+        HistoryCategorySort.setAAA_ComboBoxScrollColor(new java.awt.Color(24, 23, 23));
+        HistoryCategorySort.setAA_ArrowColor(new java.awt.Color(24, 23, 23));
+        HistoryCategorySort.setAA_HintForeground(new java.awt.Color(24, 23, 23));
+        HistoryCategorySort.setAA_SelectedArrowColor(new java.awt.Color(24, 23, 23));
+        HistoryCategorySort.setAA_UnSelectedArrowColor(new java.awt.Color(24, 23, 23));
+        HistoryCategorySort.setAA_WordLinerColor(new java.awt.Color(24, 23, 23));
+        HistoryCategorySort.setAA_lineColor(new java.awt.Color(24, 23, 23));
         HistoryCategorySort.setFocusable(false);
         HistoryCategorySort.setLabeText("");
         HistoryCategorySort.setRequestFocusEnabled(false);
@@ -973,7 +978,7 @@ public class Main extends javax.swing.JFrame {
 
         HistoryTable.setBackground(new java.awt.Color(255, 255, 255));
         HistoryTable.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        HistoryTable.setForeground(new java.awt.Color(247, 235, 221));
+        HistoryTable.setForeground(new java.awt.Color(24, 23, 23));
         HistoryTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -998,9 +1003,9 @@ public class Main extends javax.swing.JFrame {
             }
         });
         HistoryTable.setFocusable(false);
-        HistoryTable.setGridColor(new java.awt.Color(24, 23, 23));
+        HistoryTable.setGridColor(new java.awt.Color(72, 53, 40));
         HistoryTable.setRowHeight(40);
-        HistoryTable.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        HistoryTable.setSelectionBackground(new java.awt.Color(72, 53, 40));
         HistoryTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 HistoryTableMouseClicked(evt);
@@ -1250,9 +1255,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
@@ -1390,10 +1395,10 @@ public class Main extends javax.swing.JFrame {
         CartTotalCostTXT.setText("0");
         CartTotalCostTXT.setToolTipText("cost");
 
-        CostIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/coins.png"))); // NOI18N
+        CostIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (9).png"))); // NOI18N
         CostIcon.setToolTipText("cost");
 
-        quantityIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/quantity.png"))); // NOI18N
+        quantityIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Vector (10).png"))); // NOI18N
         quantityIcon.setToolTipText("quantity");
 
         CartImageTXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 51, 51)));
@@ -1469,7 +1474,6 @@ public class Main extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
-        paymentTXT.setEditable(false);
         paymentTXT.setBackground(new java.awt.Color(255, 255, 255));
         paymentTXT.setForeground(new java.awt.Color(51, 51, 51));
         paymentTXT.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -1489,6 +1493,11 @@ public class Main extends javax.swing.JFrame {
         paymentTXT.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 paymentTXTCaretUpdate(evt);
+            }
+        });
+        paymentTXT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                paymentTXTActionPerformed(evt);
             }
         });
 
@@ -1590,12 +1599,13 @@ public class Main extends javax.swing.JFrame {
 
         totaldiscountTXT.setEditable(false);
         totaldiscountTXT.setBackground(new java.awt.Color(255, 255, 255));
-        totaldiscountTXT.setForeground(new java.awt.Color(204, 204, 204));
+        totaldiscountTXT.setForeground(new java.awt.Color(24, 23, 23));
         totaldiscountTXT.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         totaldiscountTXT.setAAA_roundBottomLeft(20);
         totaldiscountTXT.setAAA_roundBottomRight(20);
         totaldiscountTXT.setAAA_roundTopLeft(20);
         totaldiscountTXT.setAAA_roundTopRight(20);
+        totaldiscountTXT.setAA_BorderColor(new java.awt.Color(51, 51, 51));
         totaldiscountTXT.setAA_DrawLine(false);
         totaldiscountTXT.setAA_TextHint("   0.00");
         totaldiscountTXT.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -1605,9 +1615,9 @@ public class Main extends javax.swing.JFrame {
         TotalDiscountHeading.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         TotalDiscountHeading.setText("Total Discount:");
 
-        CartTable.setBackground(new java.awt.Color(247, 235, 221));
+        CartTable.setBackground(new java.awt.Color(255, 255, 255));
         CartTable.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        CartTable.setForeground(new java.awt.Color(255, 255, 255));
+        CartTable.setForeground(new java.awt.Color(24, 23, 23));
         CartTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1634,7 +1644,7 @@ public class Main extends javax.swing.JFrame {
         CartTable.setFocusable(false);
         CartTable.setGridColor(new java.awt.Color(24, 23, 23));
         CartTable.setRowHeight(40);
-        CartTable.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        CartTable.setSelectionBackground(new java.awt.Color(72, 53, 40));
         CartTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CartTableMouseClicked(evt);
@@ -1805,14 +1815,17 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 44, Short.MAX_VALUE)
         );
 
-        categories.setBackground(new java.awt.Color(255, 255, 255));
+        categories.setBackground(new java.awt.Color(247, 235, 221));
         categories.setForeground(new java.awt.Color(24, 23, 23));
         categories.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "All", "Painting", "Digital Art", "Sculpture", "Craft" }));
         categories.setAAA_ComboBoxScrollColor(new java.awt.Color(255, 255, 255));
-        categories.setAA_BorderColor(new java.awt.Color(255, 255, 255));
-        categories.setAA_ComboBoxColor(new java.awt.Color(255, 255, 255));
+        categories.setAA_ArrowColor(new java.awt.Color(24, 23, 23));
+        categories.setAA_HintForeground(new java.awt.Color(24, 23, 23));
+        categories.setAA_PopForeground(new java.awt.Color(24, 23, 23));
+        categories.setAA_SelectedArrowColor(new java.awt.Color(24, 23, 23));
+        categories.setAA_UnSelectedArrowColor(new java.awt.Color(24, 23, 23));
         categories.setAA_WordLinerColor(new java.awt.Color(51, 51, 51));
-        categories.setAA_lineColor(new java.awt.Color(72, 53, 40));
+        categories.setAA_lineColor(new java.awt.Color(24, 23, 23));
         categories.setFocusable(false);
         categories.setLabeText("");
         categories.setRequestFocusEnabled(false);
@@ -1823,7 +1836,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        GameSearchTXT.setForeground(new java.awt.Color(255, 255, 255));
+        GameSearchTXT.setForeground(new java.awt.Color(24, 23, 23));
         GameSearchTXT.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         GameSearchTXT.setAA_TextHint("Search...");
         GameSearchTXT.setAB_LineColor(new java.awt.Color(51, 51, 51));
@@ -2368,8 +2381,8 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        EditDeleteBT.setBackground(new java.awt.Color(24, 23, 23));
-        EditDeleteBT.setForeground(new java.awt.Color(255, 255, 255));
+        EditDeleteBT.setBackground(new java.awt.Color(255, 255, 255));
+        EditDeleteBT.setForeground(new java.awt.Color(24, 23, 23));
         EditDeleteBT.setText("Delete");
         EditDeleteBT.setAAA_ImageBoundArcSize(10);
         EditDeleteBT.setAAA_roundBottomLeft(10);
@@ -3076,6 +3089,10 @@ public class Main extends javax.swing.JFrame {
     private void GameSearchTXTCaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_GameSearchTXTCaretUpdate
         searching();
     }//GEN-LAST:event_GameSearchTXTCaretUpdate
+
+    private void paymentTXTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paymentTXTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_paymentTXTActionPerformed
   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
