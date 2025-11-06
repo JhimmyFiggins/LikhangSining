@@ -1255,9 +1255,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 989, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(
@@ -2921,12 +2921,12 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_CancelAllBTActionPerformed
 
     private void CartBackBTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CartBackBTMouseEntered
-        ImageIcon image = new ImageIcon(getClass().getResource("/Images/back2.png"));
+        ImageIcon image = new ImageIcon(getClass().getResource("/Images/ion_chevron-back.png"));
         CartBackBT.setIcon(image);
     }//GEN-LAST:event_CartBackBTMouseEntered
 
     private void CartBackBTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CartBackBTMouseExited
-        ImageIcon image = new ImageIcon(getClass().getResource("/Images/back.png"));
+        ImageIcon image = new ImageIcon(getClass().getResource("/Images/ion_chevron-back.png"));
         CartBackBT.setIcon(image);
     }//GEN-LAST:event_CartBackBTMouseExited
 
