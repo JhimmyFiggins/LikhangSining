@@ -620,7 +620,7 @@ public class Main extends javax.swing.JFrame {
         AboutQuote.setFont(new java.awt.Font("Mongolian Baiti", 1, 48)); // NOI18N
         AboutQuote.setForeground(new java.awt.Color(24, 23, 23));
         AboutQuote.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AboutQuote.setText("\"WE BRAIN THE STORM YET WE SKIBIDI\"");
+        AboutQuote.setText("\"WE BRAIN THE STORM\"");
 
         javax.swing.GroupLayout AboutLayout = new javax.swing.GroupLayout(About);
         About.setLayout(AboutLayout);
@@ -1249,9 +1249,9 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SettingsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(SettingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
-                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE))
+                    .addComponent(ChangeUsernamePN, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
+                    .addComponent(ChangePassPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE)
+                    .addComponent(AboutPN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1019, Short.MAX_VALUE))
                 .addContainerGap())
         );
         SettingsLayout.setVerticalGroup(

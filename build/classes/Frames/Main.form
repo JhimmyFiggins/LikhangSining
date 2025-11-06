@@ -489,7 +489,7 @@
                   <Color blue="17" green="17" red="18" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="&quot;WE BRAIN THE STORM YET WE SKIBIDI&quot;"/>
+                <Property name="text" type="java.lang.String" value="&quot;WE BRAIN THE STORM&quot;"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -1220,9 +1220,9 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ChangeUsernamePN" alignment="0" pref="406" max="32767" attributes="0"/>
-                          <Component id="ChangePassPN" alignment="1" pref="406" max="32767" attributes="0"/>
-                          <Component id="AboutPN" alignment="1" pref="406" max="32767" attributes="0"/>
+                          <Component id="ChangeUsernamePN" alignment="0" pref="1019" max="32767" attributes="0"/>
+                          <Component id="ChangePassPN" alignment="1" pref="1019" max="32767" attributes="0"/>
+                          <Component id="AboutPN" alignment="1" pref="1019" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
